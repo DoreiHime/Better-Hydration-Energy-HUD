@@ -1,1389 +1,1664 @@
-# Steam Workshop 全语种文案（30 种，v2.0，含按时间叠加的心里话）
+# Steam Workshop 全语种文案（30 种，v2.0，含按时间叠加的心里话 + FAQ 顶部改键提示）
 # 格式：###<key>|<Steam 语言下拉显示名> / TITLE: / DESC:
 # 功能部分为 v2.0 最新内容；文末 2026.10 为新心里话，2025.10 为旧版原文保留。
 
 ###简化中文|简体中文
-TITLE: 更好的吃喝数值可视化
-DESC:
-[h1]更好的吃喝数值可视化 v2.0[/h1]
-
-[h2]◆ 这次到底改了什么[/h2]
-[list]
-[*]数值改成事件驱动，不再高频轮询，性能开销几乎为零（实测约 0.3%~0.5% 帧耗时）
-[*]圆环上方：差多少补满；下方：当前 / 上限（当前值右对齐、斜杠居中、上限左对齐，看起来更整齐）
-[*]新增游戏内 F10 面板：打开时游戏暂停、鼠标可用，可以一边看 HUD 一边调位置 / 字号 / 格式，改完自动保存
-[*]每个数值旁边都有独立「重置」按钮，再也不怕手滑调坏，也不用为了一个数值重置全部
-[*]快捷键可以改了！F10 和其他 mod 冲突的鸭宝可以换键（默认 F10）
-[*]设置里新增了一个「吃喝数值」标签页，用的是游戏原生的样式，只放快捷键，不占常规设置的位置
-[*]单 DLL 多语言：跟随游戏语言自动切换，不用再替换 language 文件夹里的 DLL 了
-[*]修复：进出场景时黑屏出现 “0 100/100” 的问题
-[*]修复：关闭面板后角色会“补开枪 / 补移动”的输入回放问题
-[*]依旧零前置！不需要 ModConfig / ModSetting / HarmonyLib，订阅就能用
-[/list]
-
-[h2]◆ 操作[/h2]
-[list]
-[*]F10：打开 / 关闭本 mod 的设置面板（可在设置里改键）
-[*]每个数值右侧的「重置」：只重置这一项
-[*]面板底部「恢复默认」：重置全部
-[/list]
-
-[h2]◆ 从旧版升级[/h2]
-[list]
-[*]旧的 settings.ini 会自动读取，位置 / 字号 / 显示开关都不用重新设置
-[*]旧的 language 文件夹可以删掉了，2.0 只需要一个 DLL
-[/list]
-
-[h2]◆ 兼容性[/h2]
-[list]
-[*]游戏 2.3.30 实测通过；1.3.10 及以上应该都可以（官方设置页接口从 1.3.10 开始提供）
-[*]不改游戏 UI 资源、不用 Harmony、不 patch 游戏函数
-[*]如果装了完全替换 HUD 的 mod，数值位置可能需要用「位置微调」自己挪一下
-[/list]
-
-[h2]◆ 常见问题[/h2]
-[list]
-[*]看不到数字：先确认 mod 已启用，进档后按 F10 点一下“恢复默认”试试
-[*]低分辨率下面板显示不全：面板支持滚动，鼠标滚轮往下滑就好
-[*]只想要上面或下面：在设置里把不需要的那项关掉即可
-[/list]
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-对不起……我消失了整整一年。
-
-不是不想更新，是每次打开工坊，看到还有鸭宝在留言，就觉得是我没做好，不敢冒头……对不起嘛。
-这次终于把 2.0 写完了。可能还是有很多地方笨手笨脚的，如果哪里又让你失望了，请一定告诉我，我马上改。
-如果还愿意的话，回来看看这个最初的小 mod 现在变成什么样了吧。哪怕只是看一眼，我也会很开心的。
-呜……先说这么多，我去改 bug 了。
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-Ps.感谢大家的支持，你们是我更新的动力，从一开始的简单展示数值到现在的可调设置和多语言是大家和我一起完善了这个mod。我爱你们♥
-
-------------------------------------------------------------------------------------------------------
-
-立项的时候都没几个mod，，没想到刚刚写好就发现已经有大佬发了一个显示的，主要是这游戏买回来我就开始写了。。。。出于对自己努力的自我安慰还是发布出来了（更好是针对游戏原版显示来说的，不是针对先前发布的大佬啊啊）
-有些群友说这mod没用，有点伤心。。。。明明自学了好久这几天一直在搞这个的
-好吧现实点又不是小孩子了，欸
+TITLE: 更好的吃喝数值可视化
+DESC:
+[h1]更好的吃喝数值可视化 v2.0[/h1]
+
+[h2]◆ 这次到底改了什么[/h2]
+[list]
+[*]数值改成事件驱动，不再高频轮询，性能开销几乎为零（实测约 0.3%~0.5% 帧耗时）
+[*]圆环上方：差多少补满；下方：当前 / 上限（当前值右对齐、斜杠居中、上限左对齐，看起来更整齐）
+[*]新增游戏内 F10 面板：打开时游戏暂停、鼠标可用，可以一边看 HUD 一边调位置 / 字号 / 格式，改完自动保存
+[*]每个数值旁边都有独立「重置」按钮，再也不怕手滑调坏，也不用为了一个数值重置全部
+[*]快捷键可以改了！F10 和其他 mod 冲突的鸭宝可以换键（默认 F10）
+[*]设置里新增了一个「吃喝数值」标签页，用的是游戏原生的样式，只放快捷键，不占常规设置的位置
+[*]单 DLL 多语言：跟随游戏语言自动切换，不用再替换 language 文件夹里的 DLL 了
+[*]修复：进出场景时黑屏出现 “0 100/100” 的问题
+[*]修复：关闭面板后角色会“补开枪 / 补移动”的输入回放问题
+[*]依旧零前置！不需要 ModConfig / ModSetting / HarmonyLib，订阅就能用
+[/list]
+
+[h2]◆ 操作[/h2]
+[list]
+[*]F10：打开 / 关闭本 mod 的设置面板（可在设置里改键）
+[*]每个数值右侧的「重置」：只重置这一项
+[*]面板底部「恢复默认」：重置全部
+[/list]
+
+[h2]◆ 从旧版升级[/h2]
+[list]
+[*]旧的 settings.ini 会自动读取，位置 / 字号 / 显示开关都不用重新设置
+[*]旧的 language 文件夹可以删掉了，2.0 只需要一个 DLL
+[/list]
+
+[h2]◆ 兼容性[/h2]
+[list]
+[*]游戏 2.3.30 实测通过；1.3.10 及以上应该都可以（官方设置页接口从 1.3.10 开始提供）
+[*]不改游戏 UI 资源、不用 Harmony、不 patch 游戏函数
+[*]如果装了完全替换 HUD 的 mod，数值位置可能需要用「位置微调」自己挪一下
+[/list]
+
+[h2]◆ 常见问题[/h2]
+[list]
+[*]默认呼出面板的按键是 F10；如果和别的键位冲突，可以到「设置 → 吃喝数值」里修改按键。
+[*]看不到数字：先确认 mod 已启用，进档后按 F10 点一下“恢复默认”试试
+[*]低分辨率下面板显示不全：面板支持滚动，鼠标滚轮往下滑就好
+[*]只想要上面或下面：在设置里把不需要的那项关掉即可
+[/list]
+
+[hr][/hr]
+
+[h2]2026.10[/h2]
+对不起……我消失了整整一年。
+
+不是不想更新，是每次打开工坊，看到还有鸭宝在留言，就觉得是我没做好，不敢冒头……对不起嘛。
+这次终于把 2.0 写完了。可能还是有很多地方笨手笨脚的，如果哪里又让你失望了，请一定告诉我，我马上改。
+如果还愿意的话，回来看看这个最初的小 mod 现在变成什么样了吧。哪怕只是看一眼，我也会很开心的。
+呜……先说这么多，我去改 bug 了。
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+Ps.感谢大家的支持，你们是我更新的动力，从一开始的简单展示数值到现在的可调设置和多语言是大家和我一起完善了这个mod。我爱你们♥
+
+------------------------------------------------------------------------------------------------------
+
+立项的时候都没几个mod，，没想到刚刚写好就发现已经有大佬发了一个显示的，主要是这游戏买回来我就开始写了。。。。出于对自己努力的自我安慰还是发布出来了（更好是针对游戏原版显示来说的，不是针对先前发布的大佬啊啊）
+有些群友说这mod没用，有点伤心。。。。明明自学了好久这几天一直在搞这个的
+好吧现实点又不是小孩子了，欸
+
 
 ###繁体中文|繁体中文
-TITLE: 更好的吃喝數值可視化
-DESC:
-[h1]更好的吃喝數值可視化 v2.0[/h1]
-
-[h2]◆ 這次到底改了什麼[/h2]
-[list]
-[*]數值改成事件驅動，不再高頻輪詢，效能開銷幾乎為零（實測約 0.3%~0.5% 幀耗時）
-[*]圓環上方：差多少補滿；下方：目前 / 上限（目前值右對齊、斜線居中、上限左對齊，看起來更整齊）
-[*]新增遊戲內 F10 面板：開啟時遊戲暫停、滑鼠可用，可以一邊看 HUD 一邊調位置 / 字級 / 格式，改完自動儲存
-[*]每個數值旁邊都有獨立「重置」按鈕，再也不怕手滑調壞，也不用為了一個數值重置全部
-[*]快捷鍵可以改了！F10 和其他 mod 衝突的鴨寶可以換鍵（預設 F10）
-[*]設定裡新增了一個「吃喝數值」標籤頁，用的是遊戲原生的樣式，只放快捷鍵，不佔一般設定的位置
-[*]單 DLL 多語言：跟隨遊戲語言自動切換，不用再替換 language 資料夾裡的 DLL 了
-[*]修復：進出場景時黑屏出現「0 100/100」的問題
-[*]修復：關閉面板後角色會「補開槍 / 補移動」的輸入回放問題
-[*]依舊零前置！不需要 ModConfig / ModSetting / HarmonyLib，訂閱就能用
-[/list]
-
-[h2]◆ 操作[/h2]
-[list]
-[*]F10：開啟 / 關閉本 mod 的設定面板（可在設定裡改鍵）
-[*]每個數值右側的「重置」：只重置這一項
-[*]面板底部「恢復預設」：重置全部
-[/list]
-
-[h2]◆ 從舊版升級[/h2]
-[list]
-[*]舊的 settings.ini 會自動讀取，位置 / 字級 / 顯示開關都不用重新設定
-[*]舊的 language 資料夾可以刪掉了，2.0 只需要一個 DLL
-[/list]
-
-[h2]◆ 相容性[/h2]
-[list]
-[*]遊戲 2.3.30 實測通過；1.3.10 及以上應該都可以（官方設定頁介面從 1.3.10 開始提供）
-[*]不改遊戲 UI 資源、不用 Harmony、不 patch 遊戲函式
-[*]如果裝了完全替換 HUD 的 mod，數值位置可能需要用「位置微調」自己挪一下
-[/list]
-
-[h2]◆ 常見問題[/h2]
-[list]
-[*]看不到數字：先確認 mod 已啟用，進檔後按 F10 點一下「恢復預設」試試
-[*]低解析度下面板顯示不全：面板支援捲動，滑鼠滾輪往下滑就好
-[*]只想要上面或下面：在設定裡把不需要的那項關掉即可
-[/list]
-
-[hr][/hr]
-
-[h2]最後，說點心裡話[/h2]
-其實一年前剛發布的時候，立項那會兒都沒幾個 mod，沒想到剛寫好就發現已經有大佬發了類似的……當時出於對自己努力的自我安慰，還是厚著臉皮發出來了（「更好」是相對遊戲原版顯示來說的，不是針對那位大佬啊啊）。
-後來有些群友說這個 mod 沒用，說實話有點傷心。。。。明明自學了好久，那幾天一直在搞這個的。
-一年過去了，遊戲更新了好多，mod 也越來越多，我也從「只會顯示兩個數字」慢慢學著做設定面板、做多語言、做效能優化……
-這次的 2.0 算是我交給自己的一份答卷吧。
-
-雖然不知道還有多少鴨寶記得這個 mod，但如果你回來了，就試試看吧——這個最初的小東西，現在應該能幫上一點忙了。
-感謝大家一直以來的支持，你們是我更新的動力。我愛你們 ♥
-—— Dorei Hime  2026.10
-
-[hr][/hr]
-[i]P.S. 這次真的不是詐屍，是認真重寫的！有什麼問題歡迎留言，我會看的（小聲）[/i]
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-對不起……我消失了整整一年。
-
-不是不想更新，是每次打開工作坊，看到還有鴨寶在留言，就覺得是我沒做好，不敢冒頭……對不起嘛。
-這次終於把 2.0 寫完了。可能還是有很多地方笨手笨腳的，如果哪裡又讓你失望了，請一定要告訴我，我馬上改。
-如果還願意的話，回來看看這個最初的小 mod 現在變成什麼樣了吧。哪怕只是看一眼，我也會很開心的。
-嗚……先說這麼多，我去改 bug 了。
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-Ps.感謝大家的支持，你們是我更新的動力，從一開始的簡單展示數值到現在的可調設定和多語言是大家和我一起完善了這個mod。我愛你們♥
-
-------------------------------------------------------------------------------------------------------
-
-立項的時候都沒幾個mod，，沒想到剛剛寫好就發現已經有大佬發了一個顯示的，主要是這遊戲買回來我就開始寫了。。。。出於對自己努力的自我安慰還是發布出來了（更好是針對遊戲原版顯示來說的，不是針對先前發布的大佬啊啊）
-有些群友說這mod沒用，有點傷心。。。。明明自學了好久這幾天一直在搞這個的
-好吧現實點又不是小孩子了，欸
+TITLE: 更好的吃喝數值可視化
+DESC:
+[h1]更好的吃喝數值可視化 v2.0[/h1]
+
+[h2]◆ 這次到底改了什麼[/h2]
+[list]
+[*]數值改成事件驅動，不再高頻輪詢，效能開銷幾乎為零（實測約 0.3%~0.5% 幀耗時）
+[*]圓環上方：差多少補滿；下方：目前 / 上限（目前值右對齊、斜線居中、上限左對齊，看起來更整齊）
+[*]新增遊戲內 F10 面板：開啟時遊戲暫停、滑鼠可用，可以一邊看 HUD 一邊調位置 / 字級 / 格式，改完自動儲存
+[*]每個數值旁邊都有獨立「重置」按鈕，再也不怕手滑調壞，也不用為了一個數值重置全部
+[*]快捷鍵可以改了！F10 和其他 mod 衝突的鴨寶可以換鍵（預設 F10）
+[*]設定裡新增了一個「吃喝數值」標籤頁，用的是遊戲原生的樣式，只放快捷鍵，不佔一般設定的位置
+[*]單 DLL 多語言：跟隨遊戲語言自動切換，不用再替換 language 資料夾裡的 DLL 了
+[*]修復：進出場景時黑屏出現「0 100/100」的問題
+[*]修復：關閉面板後角色會「補開槍 / 補移動」的輸入回放問題
+[*]依舊零前置！不需要 ModConfig / ModSetting / HarmonyLib，訂閱就能用
+[/list]
+
+[h2]◆ 操作[/h2]
+[list]
+[*]F10：開啟 / 關閉本 mod 的設定面板（可在設定裡改鍵）
+[*]每個數值右側的「重置」：只重置這一項
+[*]面板底部「恢復預設」：重置全部
+[/list]
+
+[h2]◆ 從舊版升級[/h2]
+[list]
+[*]舊的 settings.ini 會自動讀取，位置 / 字級 / 顯示開關都不用重新設定
+[*]舊的 language 資料夾可以刪掉了，2.0 只需要一個 DLL
+[/list]
+
+[h2]◆ 相容性[/h2]
+[list]
+[*]遊戲 2.3.30 實測通過；1.3.10 及以上應該都可以（官方設定頁介面從 1.3.10 開始提供）
+[*]不改遊戲 UI 資源、不用 Harmony、不 patch 遊戲函式
+[*]如果裝了完全替換 HUD 的 mod，數值位置可能需要用「位置微調」自己挪一下
+[/list]
+
+[h2]◆ 常見問題[/h2]
+[list]
+[*]預設呼出面板的按鍵是 F10；如果和其他鍵位衝突，可以到「設定 → 吃喝數值」裡修改按鍵。
+[*]看不到數字：先確認 mod 已啟用，進檔後按 F10 點一下「恢復預設」試試
+[*]低解析度下面板顯示不全：面板支援捲動，滑鼠滾輪往下滑就好
+[*]只想要上面或下面：在設定裡把不需要的那項關掉即可
+[/list]
+
+[hr][/hr]
+
+[h2]最後，說點心裡話[/h2]
+其實一年前剛發布的時候，立項那會兒都沒幾個 mod，沒想到剛寫好就發現已經有大佬發了類似的……當時出於對自己努力的自我安慰，還是厚著臉皮發出來了（「更好」是相對遊戲原版顯示來說的，不是針對那位大佬啊啊）。
+後來有些群友說這個 mod 沒用，說實話有點傷心。。。。明明自學了好久，那幾天一直在搞這個的。
+一年過去了，遊戲更新了好多，mod 也越來越多，我也從「只會顯示兩個數字」慢慢學著做設定面板、做多語言、做效能優化……
+這次的 2.0 算是我交給自己的一份答卷吧。
+
+雖然不知道還有多少鴨寶記得這個 mod，但如果你回來了，就試試看吧——這個最初的小東西，現在應該能幫上一點忙了。
+感謝大家一直以來的支持，你們是我更新的動力。我愛你們 ♥
+—— Dorei Hime  2026.10
+
+[hr][/hr]
+[i]P.S. 這次真的不是詐屍，是認真重寫的！有什麼問題歡迎留言，我會看的（小聲）[/i]
+
+[hr][/hr]
+
+[h2]2026.10[/h2]
+對不起……我消失了整整一年。
+
+不是不想更新，是每次打開工作坊，看到還有鴨寶在留言，就覺得是我沒做好，不敢冒頭……對不起嘛。
+這次終於把 2.0 寫完了。可能還是有很多地方笨手笨腳的，如果哪裡又讓你失望了，請一定要告訴我，我馬上改。
+如果還願意的話，回來看看這個最初的小 mod 現在變成什麼樣了吧。哪怕只是看一眼，我也會很開心的。
+嗚……先說這麼多，我去改 bug 了。
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+Ps.感謝大家的支持，你們是我更新的動力，從一開始的簡單展示數值到現在的可調設定和多語言是大家和我一起完善了這個mod。我愛你們♥
+
+------------------------------------------------------------------------------------------------------
+
+立項的時候都沒幾個mod，，沒想到剛剛寫好就發現已經有大佬發了一個顯示的，主要是這遊戲買回來我就開始寫了。。。。出於對自己努力的自我安慰還是發布出來了（更好是針對遊戲原版顯示來說的，不是針對先前發布的大佬啊啊）
+有些群友說這mod沒用，有點傷心。。。。明明自學了好久這幾天一直在搞這個的
+好吧現實點又不是小孩子了，欸
+
 
 ###英语|英语
-TITLE: Better Hydration & Energy HUD
-DESC:
-[h1]Better Hydration & Energy HUD v2.0[/h1]
-
-[h2]◆ What's new[/h2]
-[list]
-[*]Event-driven values: no more high-frequency polling, near-zero performance cost (about 0.3%~0.5% of frame time in my test)
-[*]Top: how much is missing to fill the ring. Bottom: current / max (current right-aligned, slash centered, max left-aligned)
-[*]New in-game F10 panel: the game pauses and the mouse is usable, so you can tune position / font size / format while watching the HUD; changes save automatically
-[*]Every value has its own “Reset” button — no more resetting everything just because you messed up one setting
-[*]The hotkey is now rebindable! If F10 conflicts with another mod, just change it (default F10)
-[*]A new native-styled “HUD Values” tab in the game settings — it only contains the hotkeys and doesn't take over the Common page
-[*]One DLL for all languages: follows the game language. No more replacing the DLL in the language folder
-[*]Fixed: “0 100/100” appearing on the loading screen when entering/leaving a level
-[*]Fixed: after closing the panel, the character would “replay” clicks / movement (input buffering)
-[*]Still zero prerequisites! No ModConfig / ModSetting / HarmonyLib needed
-[/list]
-
-[h2]◆ Controls[/h2]
-[list]
-[*]F10: open / close the mod panel (rebindable in the settings)
-[*]“Reset” on each value row: reset only that value
-[*]“Reset to defaults” at the bottom: reset everything
-[/list]
-
-[h2]◆ Upgrading from 1.x[/h2]
-[list]
-[*]Your old settings.ini is read automatically — positions, font size and visibility toggles are kept
-[*]The old language folder can be deleted; 2.0 needs only one DLL
-[/list]
-
-[h2]◆ Compatibility[/h2]
-[list]
-[*]Tested on game 2.3.30; should work on 1.3.10+ (the official options hook was added in 1.3.10)
-[*]Doesn't modify game UI assets, doesn't use Harmony, doesn't patch game functions
-[*]If another mod fully replaces the HUD, you may need to adjust the position with the offset sliders
-[/list]
-
-[h2]◆ FAQ[/h2]
-[list]
-[*]Can't see the numbers: make sure the mod is enabled, then load a save, press F10 and click “Reset to defaults”
-[*]Panel doesn't fit on low resolutions: the panel scrolls — use the mouse wheel
-[*]Only want the top or bottom line: toggle the one you don't need in the settings
-[/list]
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-I'm sorry... I disappeared for a whole year.
-
-It's not that I didn't want to update. Every time I opened the Workshop and saw someone still leaving a comment, I felt like I hadn't done enough and was too scared to show up... I'm really sorry.
-I finally finished 2.0. I'm sure I was clumsy in places — if I let you down again somewhere, please tell me and I'll fix it right away.
-If you're still willing, come back and see what this little original mod has become. Even just a quick look would make me happy.
-Ugh... that's all for now. I'm going to fix bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Thanks for all the support—you're the reason I keep improving this mod. From a simple value display to adjustable settings and multilingual support, we've built this together. Love you all ♥
+TITLE: Better Hydration & Energy HUD
+DESC:
+[h1]Better Hydration & Energy HUD v2.0[/h1]
+
+[h2]◆ What's new[/h2]
+[list]
+[*]Event-driven values: no more high-frequency polling, near-zero performance cost (about 0.3%~0.5% of frame time in my test)
+[*]Top: how much is missing to fill the ring. Bottom: current / max (current right-aligned, slash centered, max left-aligned)
+[*]New in-game F10 panel: the game pauses and the mouse is usable, so you can tune position / font size / format while watching the HUD; changes save automatically
+[*]Every value has its own “Reset” button — no more resetting everything just because you messed up one setting
+[*]The hotkey is now rebindable! If F10 conflicts with another mod, just change it (default F10)
+[*]A new native-styled “HUD Values” tab in the game settings — it only contains the hotkeys and doesn't take over the Common page
+[*]One DLL for all languages: follows the game language. No more replacing the DLL in the language folder
+[*]Fixed: “0 100/100” appearing on the loading screen when entering/leaving a level
+[*]Fixed: after closing the panel, the character would “replay” clicks / movement (input buffering)
+[*]Still zero prerequisites! No ModConfig / ModSetting / HarmonyLib needed
+[/list]
+
+[h2]◆ Controls[/h2]
+[list]
+[*]F10: open / close the mod panel (rebindable in the settings)
+[*]“Reset” on each value row: reset only that value
+[*]“Reset to defaults” at the bottom: reset everything
+[/list]
+
+[h2]◆ Upgrading from 1.x[/h2]
+[list]
+[*]Your old settings.ini is read automatically — positions, font size and visibility toggles are kept
+[*]The old language folder can be deleted; 2.0 needs only one DLL
+[/list]
+
+[h2]◆ Compatibility[/h2]
+[list]
+[*]Tested on game 2.3.30; should work on 1.3.10+ (the official options hook was added in 1.3.10)
+[*]Doesn't modify game UI assets, doesn't use Harmony, doesn't patch game functions
+[*]If another mod fully replaces the HUD, you may need to adjust the position with the offset sliders
+[/list]
+
+[h2]◆ FAQ[/h2]
+[list]
+[*]The panel opens with F10 by default. If it conflicts with another key, you can change it in Settings → HUD Values.
+[*]Can't see the numbers: make sure the mod is enabled, then load a save, press F10 and click “Reset to defaults”
+[*]Panel doesn't fit on low resolutions: the panel scrolls — use the mouse wheel
+[*]Only want the top or bottom line: toggle the one you don't need in the settings
+[/list]
+
+[hr][/hr]
+
+[h2]2026.10[/h2]
+I'm sorry... I disappeared for a whole year.
+
+It's not that I didn't want to update. Every time I opened the Workshop and saw someone still leaving a comment, I felt like I hadn't done enough and was too scared to show up... I'm really sorry.
+I finally finished 2.0. I'm sure I was clumsy in places — if I let you down again somewhere, please tell me and I'll fix it right away.
+If you're still willing, come back and see what this little original mod has become. Even just a quick look would make me happy.
+Ugh... that's all for now. I'm going to fix bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Thanks for all the support—you're the reason I keep improving this mod. From a simple value display to adjustable settings and multilingual support, we've built this together. Love you all ♥
+
 
 ###日语|日语
-TITLE: もっと見やすい水分・満腹度表示
-DESC:
-[h1]もっと見やすい水分・満腹度表示 v2.0[/h1]
+TITLE: もっと見やすい水分・満腹度表示
+DESC:
+[h1]もっと見やすい水分・満腹度表示 v2.0[/h1]
+
+[h2]◆ 変わったこと[/h2]
+[list]
+[*]数値はイベント駆動に変更。高頻度のポーリングをやめ、パフォーマンス負荷はほぼゼロ（実測 0.3%~0.5% フレーム時間）
+[*]リングの上：埋めるまであとどれだけか。下：現在 / 最大（現在は右寄せ、スラッシュは中央、最大は左寄せ）
+[*]ゲーム内 F10 パネルを追加：開くとゲームが一時停止し、マウスが使えます。HUD を見ながら位置 / 文字サイズ / 表示形式を調整でき、変更は自動保存
+[*]各数値の横に個別の「リセット」ボタンを追加。一つ壊しても全部を戻す必要はありません
+[*]ホットキーを変更可能に！F10 が他の mod と衝突する場合は変えられます（既定は F10）
+[*]設定画面にネイティブ風の「HUD 数値」タブを追加（ホットキーのみ、通常設定の場所は取りません）
+[*]単一 DLL で多言語対応：ゲームの言語に自動追従。language フォルダの DLL 差し替えは不要に
+[*]修正：レベル出入り時の読み込み画面に「0 100/100」が出る問題
+[*]修正：パネルを閉じた後にキャラクターがクリック / 移動を「再生」してしまう入力バッファ問題
+[*]相変わらず前提 mod 不要！ModConfig / ModSetting / HarmonyLib は必要ありません
+[/list]
+
+[h2]◆ 操作[/h2]
+[list]
+[*]F10：設定パネルの開閉（設定で変更可能）
+[*]各行の「リセット」：その項目だけリセット
+[*]下部の「既定に戻す」：すべてリセット
+[/list]
+
+[h2]◆ 旧版からのアップグレード[/h2]
+古い settings.ini は自動で読み込まれます。古い language フォルダは削除して大丈夫です。
+
+[h2]◆ 互換性[/h2]
+2.3.30 で動作確認済み。1.3.10 以降なら動くはずです。UI アセットは変更せず、Harmony も使いません。
+
 
-[h2]◆ 変わったこと[/h2]
+[h2]◆ よくある質問[/h2]
 [list]
-[*]数値はイベント駆動に変更。高頻度のポーリングをやめ、パフォーマンス負荷はほぼゼロ（実測 0.3%~0.5% フレーム時間）
-[*]リングの上：埋めるまであとどれだけか。下：現在 / 最大（現在は右寄せ、スラッシュは中央、最大は左寄せ）
-[*]ゲーム内 F10 パネルを追加：開くとゲームが一時停止し、マウスが使えます。HUD を見ながら位置 / 文字サイズ / 表示形式を調整でき、変更は自動保存
-[*]各数値の横に個別の「リセット」ボタンを追加。一つ壊しても全部を戻す必要はありません
-[*]ホットキーを変更可能に！F10 が他の mod と衝突する場合は変えられます（既定は F10）
-[*]設定画面にネイティブ風の「HUD 数値」タブを追加（ホットキーのみ、通常設定の場所は取りません）
-[*]単一 DLL で多言語対応：ゲームの言語に自動追従。language フォルダの DLL 差し替えは不要に
-[*]修正：レベル出入り時の読み込み画面に「0 100/100」が出る問題
-[*]修正：パネルを閉じた後にキャラクターがクリック / 移動を「再生」してしまう入力バッファ問題
-[*]相変わらず前提 mod 不要！ModConfig / ModSetting / HarmonyLib は必要ありません
+[*]パネルを開く初期キーは F10 です。他のキーと衝突する場合は、「設定 → HUD Values」で変更できます。
+[*]数字が見えない：mod が有効になっているか確認し、セーブに入って F10 を押し、「既定に戻す」を試してください。
+[*]低解像度でパネルが収まらない：パネルはスクロールできます。マウスホイールで下へスクロールしてください。
+[*]上か下の行だけ表示したい：設定で不要な方の表示をオフにしてください。
 [/list]
 
-[h2]◆ 操作[/h2]
-[list]
-[*]F10：設定パネルの開閉（設定で変更可能）
-[*]各行の「リセット」：その項目だけリセット
-[*]下部の「既定に戻す」：すべてリセット
-[/list]
-
-[h2]◆ 旧版からのアップグレード[/h2]
-古い settings.ini は自動で読み込まれます。古い language フォルダは削除して大丈夫です。
-
-[h2]◆ 互換性[/h2]
-2.3.30 で動作確認済み。1.3.10 以降なら動くはずです。UI アセットは変更せず、Harmony も使いません。
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-ごめんなさい……まるまる一年も姿を消してしまいました。
-
-更新したくないわけじゃなくて、ワークショップを開いてコメントを見るたびに、まだ使ってくれているアヒルがいるのに自分がちゃんとできていない気がして、顔を出せなかったんです……本当にごめんなさい。
-やっと 2.0 を書き終えました。まだ不器用なところがたくさんあると思います。もしまたガッカリさせてしまったら、ぜひ教えてください。すぐ直します。
-もしよければ、この最初の小さな mod が今どうなったか、見に来てくれませんか。ちらっと見るだけでも、すごく嬉しいです。
-うぅ……まずはここまで。バグを直してきます。
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. いつも応援してくれてありがとう。あなたたちがいるから更新を続けられます。最初はただ数値を表示するだけでしたが、今は設定も多言語もあって、みんなと一緒にここまで育ててきました。大好きです♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+ごめんなさい……まるまる一年も姿を消してしまいました。
+
+更新したくないわけじゃなくて、ワークショップを開いてコメントを見るたびに、まだ使ってくれているアヒルがいるのに自分がちゃんとできていない気がして、顔を出せなかったんです……本当にごめんなさい。
+やっと 2.0 を書き終えました。まだ不器用なところがたくさんあると思います。もしまたガッカリさせてしまったら、ぜひ教えてください。すぐ直します。
+もしよければ、この最初の小さな mod が今どうなったか、見に来てくれませんか。ちらっと見るだけでも、すごく嬉しいです。
+うぅ……まずはここまで。バグを直してきます。
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. いつも応援してくれてありがとう。あなたたちがいるから更新を続けられます。最初はただ数値を表示するだけでしたが、今は設定も多言語もあって、みんなと一緒にここまで育ててきました。大好きです♥
+
 
 ###韩语|韩语
-TITLE: 더 나은 수분·포만감 수치 표시
-DESC:
-[h1]더 나은 수분·포만감 수치 표시 v2.0[/h1]
+TITLE: 더 나은 수분·포만감 수치 표시
+DESC:
+[h1]더 나은 수분·포만감 수치 표시 v2.0[/h1]
+
+[h2]◆ 달라진 점[/h2]
+[list]
+[*]수치를 이벤트 기반으로 변경. 잦은 폴링을 없애 성능 부담이 거의 없습니다(실측 0.3%~0.5% 프레임 시간)
+[*]링 위: 채우려면 얼마나 남았는지. 아래: 현재 / 최대 (현재는 오른쪽, 슬래시는 가운데, 최대는 왼쪽 정렬)
+[*]게임 내 F10 패널 추가: 열면 게임이 일시정지되고 마우스를 쓸 수 있습니다. HUD를 보면서 위치 / 글자 크기 / 형식을 조정하고 자동 저장
+[*]각 수치 옆에 개별 "초기화" 버튼 추가. 하나 잘못 건드려도 전체를 되돌릴 필요가 없습니다
+[*]단축키 변경 가능! F10이 다른 모드와 겹치면 바꾸세요(기본 F10)
+[*]설정에 게임 원본 스타일의 "HUD 수치" 탭 추가(단축키만, 일반 설정 자리는 차지하지 않음)
+[*]단일 DLL 다국어: 게임 언어를 자동으로 따릅니다. language 폴더의 DLL을 교체할 필요 없음
+[*]수정: 레벨을 드나들 때 검은 화면에 "0 100/100"이 뜨는 문제
+[*]수정: 패널을 닫은 뒤 캐릭터가 클릭 / 이동을 "재생"하던 입력 버퍼 문제
+[*]여전히 선행 모드 불필요! ModConfig / ModSetting / HarmonyLib 없이 동작
+[/list]
+
+[h2]◆ 조작[/h2]
+[list]
+[*]F10: 설정 패널 열기 / 닫기(설정에서 변경 가능)
+[*]각 행의 "초기화": 해당 항목만 초기화
+[*]하단 "기본값으로": 전체 초기화
+[/list]
+
+[h2]◆ 구버전에서 업그레이드[/h2]
+기존 settings.ini는 자동으로 읽습니다. 기존 language 폴더는 삭제해도 됩니다.
+
+[h2]◆ 호환성[/h2]
+2.3.30에서 테스트 완료. 1.3.10 이상에서 동작해야 합니다. UI 에셋을 바꾸지 않고 Harmony도 사용하지 않습니다.
+
 
-[h2]◆ 달라진 점[/h2]
+[h2]◆ 자주 묻는 질문[/h2]
 [list]
-[*]수치를 이벤트 기반으로 변경. 잦은 폴링을 없애 성능 부담이 거의 없습니다(실측 0.3%~0.5% 프레임 시간)
-[*]링 위: 채우려면 얼마나 남았는지. 아래: 현재 / 최대 (현재는 오른쪽, 슬래시는 가운데, 최대는 왼쪽 정렬)
-[*]게임 내 F10 패널 추가: 열면 게임이 일시정지되고 마우스를 쓸 수 있습니다. HUD를 보면서 위치 / 글자 크기 / 형식을 조정하고 자동 저장
-[*]각 수치 옆에 개별 "초기화" 버튼 추가. 하나 잘못 건드려도 전체를 되돌릴 필요가 없습니다
-[*]단축키 변경 가능! F10이 다른 모드와 겹치면 바꾸세요(기본 F10)
-[*]설정에 게임 원본 스타일의 "HUD 수치" 탭 추가(단축키만, 일반 설정 자리는 차지하지 않음)
-[*]단일 DLL 다국어: 게임 언어를 자동으로 따릅니다. language 폴더의 DLL을 교체할 필요 없음
-[*]수정: 레벨을 드나들 때 검은 화면에 "0 100/100"이 뜨는 문제
-[*]수정: 패널을 닫은 뒤 캐릭터가 클릭 / 이동을 "재생"하던 입력 버퍼 문제
-[*]여전히 선행 모드 불필요! ModConfig / ModSetting / HarmonyLib 없이 동작
+[*]패널 기본 단축키는 F10입니다. 다른 키와 겹치면 '설정 → HUD Values'에서 바꿀 수 있습니다.
+[*]숫자가 안 보여요: 모드가 켜져 있는지 확인하고, 세이브에 들어가 F10을 누른 뒤 '기본값으로'를 눌러 보세요.
+[*]저해상도에서 패널이 다 안 보여요: 패널은 스크롤됩니다. 마우스 휠로 내려 주세요.
+[*]위나 아래 한 줄만 보고 싶어요: 설정에서 필요 없는 쪽 표시를 끄면 됩니다.
 [/list]
 
-[h2]◆ 조작[/h2]
-[list]
-[*]F10: 설정 패널 열기 / 닫기(설정에서 변경 가능)
-[*]각 행의 "초기화": 해당 항목만 초기화
-[*]하단 "기본값으로": 전체 초기화
-[/list]
-
-[h2]◆ 구버전에서 업그레이드[/h2]
-기존 settings.ini는 자동으로 읽습니다. 기존 language 폴더는 삭제해도 됩니다.
-
-[h2]◆ 호환성[/h2]
-2.3.30에서 테스트 완료. 1.3.10 이상에서 동작해야 합니다. UI 에셋을 바꾸지 않고 Harmony도 사용하지 않습니다.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-죄송해요……꼬박 1년이나 사라져 버렸어요.
-
-업데이트하기 싫었던 게 아니라, 창작마당을 열고 댓글을 볼 때마다 아직 써 주는 오리들이 있는데 제가 잘 못하고 있는 것 같아서 얼굴을 못 들었어요…… 정말 죄송해요.
-이제야 2.0을 다 썼어요. 아직 서툰 곳이 많을 거예요. 또 실망시켰다면 꼭 알려 주세요. 바로 고칠게요.
-괜찮다면, 이 처음의 작은 모드가 지금 어떻게 변했는지 보러 와 주시겠어요? 잠깐만 봐 주셔도 정말 기쁠 거예요.
-으…… 우선 여기까지. 버그 고치러 갈게요.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. 늘 응원해 주셔서 감사합니다. 여러분이 있어서 계속 업데이트할 수 있어요. 처음엔 숫자만 보여주는 작은 모드였는데, 이제는 설정도 다국어도 생겼고, 여러분과 함께 여기까지 키워 왔어요. 사랑해요 ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+죄송해요……꼬박 1년이나 사라져 버렸어요.
+
+업데이트하기 싫었던 게 아니라, 창작마당을 열고 댓글을 볼 때마다 아직 써 주는 오리들이 있는데 제가 잘 못하고 있는 것 같아서 얼굴을 못 들었어요…… 정말 죄송해요.
+이제야 2.0을 다 썼어요. 아직 서툰 곳이 많을 거예요. 또 실망시켰다면 꼭 알려 주세요. 바로 고칠게요.
+괜찮다면, 이 처음의 작은 모드가 지금 어떻게 변했는지 보러 와 주시겠어요? 잠깐만 봐 주셔도 정말 기쁠 거예요.
+으…… 우선 여기까지. 버그 고치러 갈게요.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. 늘 응원해 주셔서 감사합니다. 여러분이 있어서 계속 업데이트할 수 있어요. 처음엔 숫자만 보여주는 작은 모드였는데, 이제는 설정도 다국어도 생겼고, 여러분과 함께 여기까지 키워 왔어요. 사랑해요 ♥
+
 
 ###俄语|俄语
-TITLE: Улучшенное отображение жажды и голода
-DESC:
-[h1]Улучшенное отображение жажды и голода v2.0[/h1]
+TITLE: Улучшенное отображение жажды и голода
+DESC:
+[h1]Улучшенное отображение жажды и голода v2.0[/h1]
+
+[h2]◆ Что нового[/h2]
+[list]
+[*]Значения на событиях: без частого опроса, почти нулевая нагрузка (около 0.3%~0.5% времени кадра в моём тесте)
+[*]Сверху: сколько не хватает до заполнения. Снизу: текущее / максимум (текущее по правому краю, слэш по центру, максимум по левому)
+[*]Новая панель F10 в игре: игра ставится на паузу, мышь работает; можно менять позицию / размер шрифта / формат, глядя на HUD. Изменения сохраняются автоматически
+[*]У каждого значения есть отдельная кнопка «Сброс» — не нужно сбрасывать всё из-за одной настройки
+[*]Горячую клавишу можно изменить! Если F10 конфликтует с другим модом, поменяйте её (по умолчанию F10)
+[*]Новая вкладка «Значения HUD» в настройках игры в нативном стиле (только горячие клавиши)
+[*]Один DLL для всех языков: следует языку игры. Больше не нужно заменять DLL в папке language
+[*]Исправлено: «0 100/100» на экране загрузки при входе/выходе с уровня
+[*]Исправлено: после закрытия панели персонаж «повторял» клики / движение (буферизация ввода)
+[*]По-прежнему без зависимостей! ModConfig / ModSetting / HarmonyLib не нужны
+[/list]
+
+[h2]◆ Управление[/h2]
+[list]
+[*]F10: открыть / закрыть панель настроек (переназначается)
+[*]«Сброс» в каждой строке: сбросить только это значение
+[*]«Сбросить всё» внизу: сбросить все настройки
+[/list]
+
+[h2]◆ Обновление с 1.x[/h2]
+Старый settings.ini читается автоматически. Старую папку language можно удалить.
+
+[h2]◆ Совместимость[/h2]
+Проверено на 2.3.30; должно работать на 1.3.10+. Не изменяет ресурсы UI и не использует Harmony.
+
 
-[h2]◆ Что нового[/h2]
+[h2]◆ Частые вопросы[/h2]
 [list]
-[*]Значения на событиях: без частого опроса, почти нулевая нагрузка (около 0.3%~0.5% времени кадра в моём тесте)
-[*]Сверху: сколько не хватает до заполнения. Снизу: текущее / максимум (текущее по правому краю, слэш по центру, максимум по левому)
-[*]Новая панель F10 в игре: игра ставится на паузу, мышь работает; можно менять позицию / размер шрифта / формат, глядя на HUD. Изменения сохраняются автоматически
-[*]У каждого значения есть отдельная кнопка «Сброс» — не нужно сбрасывать всё из-за одной настройки
-[*]Горячую клавишу можно изменить! Если F10 конфликтует с другим модом, поменяйте её (по умолчанию F10)
-[*]Новая вкладка «Значения HUD» в настройках игры в нативном стиле (только горячие клавиши)
-[*]Один DLL для всех языков: следует языку игры. Больше не нужно заменять DLL в папке language
-[*]Исправлено: «0 100/100» на экране загрузки при входе/выходе с уровня
-[*]Исправлено: после закрытия панели персонаж «повторял» клики / движение (буферизация ввода)
-[*]По-прежнему без зависимостей! ModConfig / ModSetting / HarmonyLib не нужны
+[*]По умолчанию панель открывается на F10. Если клавиша конфликтует с другой, её можно изменить в «Настройки → HUD Values».
+[*]Не вижу цифр: убедитесь, что мод включён, зайдите в сохранение, нажмите F10 и «Сбросить до стандартных».
+[*]Панель не помещается при низком разрешении: панель прокручивается — используйте колесо мыши.
+[*]Нужна только верхняя или нижняя строка: отключите ненужную в настройках.
 [/list]
 
-[h2]◆ Управление[/h2]
-[list]
-[*]F10: открыть / закрыть панель настроек (переназначается)
-[*]«Сброс» в каждой строке: сбросить только это значение
-[*]«Сбросить всё» внизу: сбросить все настройки
-[/list]
-
-[h2]◆ Обновление с 1.x[/h2]
-Старый settings.ini читается автоматически. Старую папку language можно удалить.
-
-[h2]◆ Совместимость[/h2]
-Проверено на 2.3.30; должно работать на 1.3.10+. Не изменяет ресурсы UI и не использует Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Простите…… я исчезла на целый год.
-
-Дело не в том, что мне не хотелось обновлять. Каждый раз, когда я открывала Мастерскую и видела комментарии, мне казалось, что я всё делаю недостаточно хорошо, и я боялась показаться…… правда простите.
-Наконец-то я дописала 2.0. Наверное, многое у меня получилось неуклюже. Если я снова вас где-то подвела — пожалуйста, скажите, и я сразу всё исправлю.
-Если вы всё ещё не против, загляните посмотреть, во что превратился этот маленький мод. Мне будет очень приятно, даже если вы просто бросите взгляд.
-Ух…… на этом пока всё. Пойду чинить баги.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Спасибо всем за поддержку — именно вы причина, по которой я продолжаю обновлять мод. Сначала это было просто отображение цифр, теперь появились настройки и несколько языков, и мы вырастили это вместе. Люблю вас ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Простите…… я исчезла на целый год.
+
+Дело не в том, что мне не хотелось обновлять. Каждый раз, когда я открывала Мастерскую и видела комментарии, мне казалось, что я всё делаю недостаточно хорошо, и я боялась показаться…… правда простите.
+Наконец-то я дописала 2.0. Наверное, многое у меня получилось неуклюже. Если я снова вас где-то подвела — пожалуйста, скажите, и я сразу всё исправлю.
+Если вы всё ещё не против, загляните посмотреть, во что превратился этот маленький мод. Мне будет очень приятно, даже если вы просто бросите взгляд.
+Ух…… на этом пока всё. Пойду чинить баги.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Спасибо всем за поддержку — именно вы причина, по которой я продолжаю обновлять мод. Сначала это было просто отображение цифр, теперь появились настройки и несколько языков, и мы вырастили это вместе. Люблю вас ♥
+
 
 ###泰语|泰语
-TITLE: แสดงค่าน้ำและความอิ่มได้ชัดขึ้น
-DESC:
-[h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.0[/h1]
+TITLE: แสดงค่าน้ำและความอิ่มได้ชัดขึ้น
+DESC:
+[h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.0[/h1]
+
+[h2]◆ มีอะไรใหม่[/h2]
+[list]
+[*]ค่าตัวเลขขับเคลื่อนด้วยอีเวนต์ ไม่มีการpollบ่อย ๆ อีกต่อไป ต้นทุนประสิทธิภาพเกือบเป็นศูนย์ (ประมาณ 0.3%~0.5% ของเวลเฟรม)
+[*]ด้านบน: อีกเท่าไรถึงเต็ม ด้านล่าง: ค่าปัจจุบัน / ค่าสูงสุด
+[*]แผง F10 ในเกม: เกมหยุดชั่วคราว ใช้เมาส์ได้ ปรับตำแหน่ง / ขนาดตัวอักษร / รูปแบบได้ทันที บันทึกอัตโนมัติ
+[*]ปุ่ม “รีเซ็ต” แยกสำหรับแต่ละค่า
+[*]เปลี่ยนปุ่มลัดได้ (ค่าเริ่มต้น F10)
+[*]แท็บ “ค่าฮัด” สไตล์ดั้งเดิมในหน้าตั้งค่าเกม (มีแค่ปุ่มลัด)
+[*]ไฟล์ DLL เดียว รองรับหลายภาษา ตามภาษาของเกม
+[*]แก้ปัญหา “0 100/100” ตอนโหลด และการเล่นอินพุตซ้ำหลังปิดแผง
+[*]ไม่ต้องใช้มอดพื้นฐาน (ไม่ต้องมี ModConfig / ModSetting / HarmonyLib)
+[/list]
+
+[h2]◆ การใช้งาน[/h2]
+[list]
+[*]F10: เปิด / ปิดแผงตั้งค่า (เปลี่ยนปุ่มได้)
+[*]ปุ่มรีเซ็ตแต่ละแถว: รีเซ็ตเฉพาะค่านั้น
+[*]ปุ่มล่างสุด: รีเซ็ตทั้งหมด
+[/list]
+
+[h2]◆ อัปเกรด / ความเข้ากันได้[/h2]
+settings.ini เดิมจะถูกอ่านอัตโนมัติ ลบโฟลเดอร์ language เดิมได้ ทดสอบบน 2.3.30 แล้ว ควรใช้ได้กับ 1.3.10+ ไม่แก้ไขทรัพยากร UI และไม่ใช้ Harmony
+
 
-[h2]◆ มีอะไรใหม่[/h2]
+[h2]◆ คำถามที่พบบ่อย[/h2]
 [list]
-[*]ค่าตัวเลขขับเคลื่อนด้วยอีเวนต์ ไม่มีการpollบ่อย ๆ อีกต่อไป ต้นทุนประสิทธิภาพเกือบเป็นศูนย์ (ประมาณ 0.3%~0.5% ของเวลเฟรม)
-[*]ด้านบน: อีกเท่าไรถึงเต็ม ด้านล่าง: ค่าปัจจุบัน / ค่าสูงสุด
-[*]แผง F10 ในเกม: เกมหยุดชั่วคราว ใช้เมาส์ได้ ปรับตำแหน่ง / ขนาดตัวอักษร / รูปแบบได้ทันที บันทึกอัตโนมัติ
-[*]ปุ่ม “รีเซ็ต” แยกสำหรับแต่ละค่า
-[*]เปลี่ยนปุ่มลัดได้ (ค่าเริ่มต้น F10)
-[*]แท็บ “ค่าฮัด” สไตล์ดั้งเดิมในหน้าตั้งค่าเกม (มีแค่ปุ่มลัด)
-[*]ไฟล์ DLL เดียว รองรับหลายภาษา ตามภาษาของเกม
-[*]แก้ปัญหา “0 100/100” ตอนโหลด และการเล่นอินพุตซ้ำหลังปิดแผง
-[*]ไม่ต้องใช้มอดพื้นฐาน (ไม่ต้องมี ModConfig / ModSetting / HarmonyLib)
+[*]ปุ่มเริ่มต้นสำหรับเปิดแผงคือ F10 ถ้าชนกับปุ่มอื่น เปลี่ยนได้ที่ 'การตั้งค่า → HUD Values'
+[*]มองไม่เห็นตัวเลข: เช็กว่าเปิดมอดแล้ว เข้าเซฟ กด F10 แล้วกด 'คืนค่าเริ่มต้น' ดู
+[*]ความละเอียดต่ำแล้วแผงแสดงไม่หมด: แผงเลื่อนได้ ใช้ล้อเมาส์เลื่อนลง
+[*]อยากเห็นแค่บรรทัดบนหรือล่าง: ปิดอีกอันในตั้งค่าได้เลย
 [/list]
 
-[h2]◆ การใช้งาน[/h2]
-[list]
-[*]F10: เปิด / ปิดแผงตั้งค่า (เปลี่ยนปุ่มได้)
-[*]ปุ่มรีเซ็ตแต่ละแถว: รีเซ็ตเฉพาะค่านั้น
-[*]ปุ่มล่างสุด: รีเซ็ตทั้งหมด
-[/list]
-
-[h2]◆ อัปเกรด / ความเข้ากันได้[/h2]
-settings.ini เดิมจะถูกอ่านอัตโนมัติ ลบโฟลเดอร์ language เดิมได้ ทดสอบบน 2.3.30 แล้ว ควรใช้ได้กับ 1.3.10+ ไม่แก้ไขทรัพยากร UI และไม่ใช้ Harmony
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-ขอโทษนะ…… ฉันหายไปทั้งปีเลย
-
-ไม่ใช่ไม่อยากอัปเดต แต่ทุกครั้งที่เปิด Workshop แล้วเห็นยังมีลูกเป็ดคอมเมนต์อยู่ ฉันรู้สึกว่าตัวเองทำได้ไม่ดีพอเลยไม่กล้าโผล่หน้า…… ขอโทษจริง ๆ
-ในที่สุดก็เขียน 2.0 เสร็จแล้ว อาจจะยังมีหลายจุดที่ทำได้เงอะงะ ถ้าฉันทำให้ผิดหวังอีก บอกฉันได้เลยนะ ฉันจะรีบแก้ทันที
-ถ้ายังไม่รังเกียจ กลับมาดูสิว่ามอดเล็ก ๆ ตัวแรกนี้ตอนนี้เป็นยังไง แค่มองแวบเดียวฉันก็ดีใจมากแล้ว
-อือ…… พอแค่นี้ก่อนนะ ฉันไปแก้บั๊กก่อน
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. ขอบคุณทุกคนที่สนับสนุนกันเสมอมานะ พวกคุณคือเหตุผลที่ฉันอัปเดตต่อ จากตอนแรกที่มีแค่ตัวเลข มาตอนนี้มีตั้งค่าและหลายภาษา แล้วเราก็ช่วยกันเติบโตมาถึงตรงนี้ด้วยกัน รักทุกคนเลย ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+ขอโทษนะ…… ฉันหายไปทั้งปีเลย
+
+ไม่ใช่ไม่อยากอัปเดต แต่ทุกครั้งที่เปิด Workshop แล้วเห็นยังมีลูกเป็ดคอมเมนต์อยู่ ฉันรู้สึกว่าตัวเองทำได้ไม่ดีพอเลยไม่กล้าโผล่หน้า…… ขอโทษจริง ๆ
+ในที่สุดก็เขียน 2.0 เสร็จแล้ว อาจจะยังมีหลายจุดที่ทำได้เงอะงะ ถ้าฉันทำให้ผิดหวังอีก บอกฉันได้เลยนะ ฉันจะรีบแก้ทันที
+ถ้ายังไม่รังเกียจ กลับมาดูสิว่ามอดเล็ก ๆ ตัวแรกนี้ตอนนี้เป็นยังไง แค่มองแวบเดียวฉันก็ดีใจมากแล้ว
+อือ…… พอแค่นี้ก่อนนะ ฉันไปแก้บั๊กก่อน
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. ขอบคุณทุกคนที่สนับสนุนกันเสมอมานะ พวกคุณคือเหตุผลที่ฉันอัปเดตต่อ จากตอนแรกที่มีแค่ตัวเลข มาตอนนี้มีตั้งค่าและหลายภาษา แล้วเราก็ช่วยกันเติบโตมาถึงตรงนี้ด้วยกัน รักทุกคนเลย ♥
+
 
 ###印度尼西亚语|印度尼西亚语
-TITLE: Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik
-DESC:
-[h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.0[/h1]
+TITLE: Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik
+DESC:
+[h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.0[/h1]
+
+[h2]◆ Apa yang baru[/h2]
+[list]
+[*]Nilai berbasis event: tidak ada polling frekuensi tinggi lagi, biaya performa hampir nol (sekitar 0.3%~0.5% waktu frame)
+[*]Atas: berapa lagi untuk penuh. Bawah: saat ini / maksimum
+[*]Panel F10 dalam game: game berhenti sementara, mouse bisa dipakai; atur posisi / ukuran font / format sambil melihat HUD, tersimpan otomatis
+[*]Tombol “Reset” terpisah untuk setiap nilai
+[*]Hotkey bisa diganti (default F10)
+[*]Tab “Nilai HUD” bergaya asli di pengaturan game (hanya hotkey)
+[*]Satu DLL untuk semua bahasa, mengikuti bahasa game
+[*]Memperbaiki “0 100/100” di layar memuat dan input yang terulang setelah panel ditutup
+[*]Tanpa prasyarat! Tidak perlu ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Kontrol[/h2]
+[list]
+[*]F10: buka / tutup panel pengaturan (bisa diganti)
+[*]“Reset” di tiap baris: reset nilai itu saja
+[*]“Kembalikan ke default” di bawah: reset semua
+[/list]
+
+[h2]◆ Upgrade / Kompatibilitas[/h2]
+settings.ini lama dibaca otomatis; folder language lama boleh dihapus. Diuji di 2.3.30; seharusnya berfungsi di 1.3.10+. Tidak mengubah aset UI dan tidak memakai Harmony.
+
 
-[h2]◆ Apa yang baru[/h2]
+[h2]◆ Pertanyaan umum[/h2]
 [list]
-[*]Nilai berbasis event: tidak ada polling frekuensi tinggi lagi, biaya performa hampir nol (sekitar 0.3%~0.5% waktu frame)
-[*]Atas: berapa lagi untuk penuh. Bawah: saat ini / maksimum
-[*]Panel F10 dalam game: game berhenti sementara, mouse bisa dipakai; atur posisi / ukuran font / format sambil melihat HUD, tersimpan otomatis
-[*]Tombol “Reset” terpisah untuk setiap nilai
-[*]Hotkey bisa diganti (default F10)
-[*]Tab “Nilai HUD” bergaya asli di pengaturan game (hanya hotkey)
-[*]Satu DLL untuk semua bahasa, mengikuti bahasa game
-[*]Memperbaiki “0 100/100” di layar memuat dan input yang terulang setelah panel ditutup
-[*]Tanpa prasyarat! Tidak perlu ModConfig / ModSetting / HarmonyLib
+[*]Tombol default untuk membuka panel adalah F10. Kalau bentrok dengan tombol lain, ubah di 'Pengaturan → HUD Values'.
+[*]Tidak melihat angka: pastikan mod aktif, masuk save, tekan F10 lalu klik 'Kembalikan ke default'.
+[*]Panel tidak muat di resolusi rendah: panel bisa digulir — pakai roda mouse.
+[*]Hanya ingin baris atas atau bawah: matikan yang tidak perlu di pengaturan.
 [/list]
 
-[h2]◆ Kontrol[/h2]
-[list]
-[*]F10: buka / tutup panel pengaturan (bisa diganti)
-[*]“Reset” di tiap baris: reset nilai itu saja
-[*]“Kembalikan ke default” di bawah: reset semua
-[/list]
-
-[h2]◆ Upgrade / Kompatibilitas[/h2]
-settings.ini lama dibaca otomatis; folder language lama boleh dihapus. Diuji di 2.3.30; seharusnya berfungsi di 1.3.10+. Tidak mengubah aset UI dan tidak memakai Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Maaf ya…… aku menghilang setahun penuh.
-
-Bukan karena tidak mau update. Setiap kali aku buka Workshop dan lihat masih ada anak bebek yang berkomentar, aku merasa belum melakukan yang terbaik dan jadi takut muncul…… maafkan aku ya.
-Akhirnya 2.0 selesai juga. Pasti masih banyak bagian yang aku buat dengan canggung. Kalau aku mengecewakanmu lagi, tolong bilang ya, aku langsung perbaiki.
-Kalau kamu masih mau, coba kembali dan lihat mod kecil pertama ini sekarang jadi seperti apa. Cuma melihat sebentar pun aku sudah sangat senang.
-Huh…… segitu dulu ya. Aku mau memperbaiki bug.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Terima kasih atas dukungannya selama ini—kalian alasan aku terus memperbarui mod ini. Awalnya cuma menampilkan angka, sekarang ada pengaturan dan banyak bahasa, dan kita tumbuh bersama. Aku sayang kalian ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Maaf ya…… aku menghilang setahun penuh.
+
+Bukan karena tidak mau update. Setiap kali aku buka Workshop dan lihat masih ada anak bebek yang berkomentar, aku merasa belum melakukan yang terbaik dan jadi takut muncul…… maafkan aku ya.
+Akhirnya 2.0 selesai juga. Pasti masih banyak bagian yang aku buat dengan canggung. Kalau aku mengecewakanmu lagi, tolong bilang ya, aku langsung perbaiki.
+Kalau kamu masih mau, coba kembali dan lihat mod kecil pertama ini sekarang jadi seperti apa. Cuma melihat sebentar pun aku sudah sangat senang.
+Huh…… segitu dulu ya. Aku mau memperbaiki bug.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Terima kasih atas dukungannya selama ini—kalian alasan aku terus memperbarui mod ini. Awalnya cuma menampilkan angka, sekarang ada pengaturan dan banyak bahasa, dan kita tumbuh bersama. Aku sayang kalian ♥
+
 
 ###马来语|马来语
-TITLE: Paparan Nilai Hidrasi & Kenyang yang Lebih Baik
-DESC:
-[h1]Paparan Nilai Hidrasi & Kenyang v2.0[/h1]
+TITLE: Paparan Nilai Hidrasi & Kenyang yang Lebih Baik
+DESC:
+[h1]Paparan Nilai Hidrasi & Kenyang v2.0[/h1]
+
+[h2]◆ Apa yang baharu[/h2]
+[list]
+[*]Nilai dipacu peristiwa — kos prestasi hampir sifar (sekitar 0.3%~0.5% masa bingkai)
+[*]Atas: berapa lagi untuk penuh. Bawah: semasa / maksimum
+[*]Panel dalam permainan (F10): permainan berhenti seketika, tetikus boleh digunakan; laraskan kedudukan/saiz fon/format sambil melihat HUD
+[*]Butang "Set semula" berasingan untuk setiap nilai
+[*]Pintasan boleh ditukar (lalai F10)
+[*]Tab "Nilai HUD" baharu dalam tetapan permainan (gaya asli)
+[*]Satu DLL untuk semua bahasa, mengikut bahasa permainan
+[*]Membaiki paparan "0 100/100" pada skrin pemuatan dan input berulang selepas panel ditutup
+[*]Tiada prasyarat — tidak perlu ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Kawalan[/h2]
+[list]
+[*]F10: buka / tutup panel tetapan (boleh ditukar)
+[*]Butang set semula setiap baris: set semula nilai itu sahaja
+[*]Butang bawah: set semula semua
+[/list]
+
+[h2]◆ Naik taraf dari 1.x[/h2]
+settings.ini lama dibaca secara automatik; folder language lama boleh dipadam.
+
+[h2]◆ Keserasian[/h2]
+Diuji pada 2.3.30; sepatutnya berfungsi pada 1.3.10+. Tidak mengubah aset UI, tidak menggunakan Harmony.
+
 
-[h2]◆ Apa yang baharu[/h2]
+[h2]◆ Soalan lazim[/h2]
 [list]
-[*]Nilai dipacu peristiwa — kos prestasi hampir sifar (sekitar 0.3%~0.5% masa bingkai)
-[*]Atas: berapa lagi untuk penuh. Bawah: semasa / maksimum
-[*]Panel dalam permainan (F10): permainan berhenti seketika, tetikus boleh digunakan; laraskan kedudukan/saiz fon/format sambil melihat HUD
-[*]Butang "Set semula" berasingan untuk setiap nilai
-[*]Pintasan boleh ditukar (lalai F10)
-[*]Tab "Nilai HUD" baharu dalam tetapan permainan (gaya asli)
-[*]Satu DLL untuk semua bahasa, mengikut bahasa permainan
-[*]Membaiki paparan "0 100/100" pada skrin pemuatan dan input berulang selepas panel ditutup
-[*]Tiada prasyarat — tidak perlu ModConfig / ModSetting / HarmonyLib
+[*]Butang lalai untuk membuka panel ialah F10. Kalau bertembung dengan butang lain, tukar di 'Tetapan → HUD Values'.
+[*]Tak nampak angka: pastikan mod diaktifkan, masuk save, tekan F10 dan klik 'Set semula'.
+[*]Panel tak muat pada resolusi rendah: panel boleh diskrol — guna roda tetikus.
+[*]Hanya mahu baris atas atau bawah: matikan yang tak perlu dalam tetapan.
 [/list]
 
-[h2]◆ Kawalan[/h2]
-[list]
-[*]F10: buka / tutup panel tetapan (boleh ditukar)
-[*]Butang set semula setiap baris: set semula nilai itu sahaja
-[*]Butang bawah: set semula semua
-[/list]
-
-[h2]◆ Naik taraf dari 1.x[/h2]
-settings.ini lama dibaca secara automatik; folder language lama boleh dipadam.
-
-[h2]◆ Keserasian[/h2]
-Diuji pada 2.3.30; sepatutnya berfungsi pada 1.3.10+. Tidak mengubah aset UI, tidak menggunakan Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Maaf ya…… saya hilang selama setahun.
-
-Bukan kerana tak mahu mengemas kini. Setiap kali saya buka Workshop dan nampak masih ada anak itik yang komen, saya rasa saya belum buat dengan cukup baik, jadi saya tak berani muncul…… maafkan saya.
-Akhirnya 2.0 siap juga. Mesti masih banyak bahagian yang saya buat dengan kekok. Kalau saya mengecewakan awak lagi, beritahu saya ya, saya betulkan segera.
-Kalau awak masih sudi, cuba balik dan lihat mod kecil pertama ini sekarang jadi macam mana. Walaupun sekadar tengok sekejap, saya dah sangat gembira.
-Huh…… setakat ini dulu ya. Saya pergi betulkan bug.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Terima kasih atas sokongan semua—kamu sebab saya terus mengemas kini mod ini. Dulu cuma tunjuk angka, sekarang ada tetapan dan banyak bahasa, dan kita membesarkannya bersama. Saya sayang kamu semua ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Maaf ya…… saya hilang selama setahun.
+
+Bukan kerana tak mahu mengemas kini. Setiap kali saya buka Workshop dan nampak masih ada anak itik yang komen, saya rasa saya belum buat dengan cukup baik, jadi saya tak berani muncul…… maafkan saya.
+Akhirnya 2.0 siap juga. Mesti masih banyak bahagian yang saya buat dengan kekok. Kalau saya mengecewakan awak lagi, beritahu saya ya, saya betulkan segera.
+Kalau awak masih sudi, cuba balik dan lihat mod kecil pertama ini sekarang jadi macam mana. Walaupun sekadar tengok sekejap, saya dah sangat gembira.
+Huh…… setakat ini dulu ya. Saya pergi betulkan bug.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Terima kasih atas sokongan semua—kamu sebab saya terus mengemas kini mod ini. Dulu cuma tunjuk angka, sekarang ada tetapan dan banyak bahasa, dan kita membesarkannya bersama. Saya sayang kamu semua ♥
+
 
 ###保加利亚语|保加利亚语
-TITLE: По-добро показване на хидратация и ситост
-DESC:
-[h1]По-добро показване на хидратация и ситост v2.0[/h1]
+TITLE: По-добро показване на хидратация и ситост
+DESC:
+[h1]По-добро показване на хидратация и ситост v2.0[/h1]
+
+[h2]◆ Какво е ново[/h2]
+[list]
+[*]Стойности, задвижвани от събития: без често запитване, почти нулева цена за производителност (около 0.3%~0.5% от времето за кадър)
+[*]Отгоре: колко липсва до пълно. Отдолу: текущо / максимум
+[*]Нов панел F10 в играта: играта се паузира, мишката работи; нагласяйте позиция / размер на шрифта / формат, докато гледате HUD. Промените се запазват автоматично
+[*]Отделен бутон „Нулиране“ за всяка стойност
+[*]Горещият клавиш може да се сменя (по подразбиране F10)
+[*]Нов раздел „Стойности на HUD“ в настройките на играта в оригинален стил (само горещи клавиши)
+[*]Един DLL за всички езици: следва езика на играта
+[*]Поправено: „0 100/100“ на екрана за зареждане и повтарящ се вход след затваряне на панела
+[*]Без предварителни изисквания! Няма нужда от ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Управление[/h2]
+[list]
+[*]F10: отваряне / затваряне на панела с настройки (може да се смени)
+[*]„Нулиране“ на всеки ред: нулира само тази стойност
+[*]„Връщане към стандартните“ отдолу: нулира всичко
+[/list]
+
+[h2]◆ Надграждане / Съвместимост[/h2]
+Старият settings.ini се чете автоматично; старата папка language може да се изтрие. Тествано на 2.3.30; трябва да работи на 1.3.10+. Не променя UI ресурси и не използва Harmony.
+
 
-[h2]◆ Какво е ново[/h2]
+[h2]◆ Често задавани въпроси[/h2]
 [list]
-[*]Стойности, задвижвани от събития: без често запитване, почти нулева цена за производителност (около 0.3%~0.5% от времето за кадър)
-[*]Отгоре: колко липсва до пълно. Отдолу: текущо / максимум
-[*]Нов панел F10 в играта: играта се паузира, мишката работи; нагласяйте позиция / размер на шрифта / формат, докато гледате HUD. Промените се запазват автоматично
-[*]Отделен бутон „Нулиране“ за всяка стойност
-[*]Горещият клавиш може да се сменя (по подразбиране F10)
-[*]Нов раздел „Стойности на HUD“ в настройките на играта в оригинален стил (само горещи клавиши)
-[*]Един DLL за всички езици: следва езика на играта
-[*]Поправено: „0 100/100“ на екрана за зареждане и повтарящ се вход след затваряне на панела
-[*]Без предварителни изисквания! Няма нужда от ModConfig / ModSetting / HarmonyLib
+[*]По подразбиране панелът се отваря с F10. Ако клавишата се сблъсква с друга, можете да я смените в „Настройки → HUD Values“.
+[*]Не виждам числа: уверете се, че модът е включен, влезте в запис, натиснете F10 и „Връщане към стандартните“.
+[*]Панелът не се побира при ниска резолюция: панелът се превърта — използвайте колелото на мишката.
+[*]Искам само горния или долния ред: изключете ненужния от настройките.
 [/list]
 
-[h2]◆ Управление[/h2]
-[list]
-[*]F10: отваряне / затваряне на панела с настройки (може да се смени)
-[*]„Нулиране“ на всеки ред: нулира само тази стойност
-[*]„Връщане към стандартните“ отдолу: нулира всичко
-[/list]
-
-[h2]◆ Надграждане / Съвместимост[/h2]
-Старият settings.ini се чете автоматично; старата папка language може да се изтрие. Тествано на 2.3.30; трябва да работи на 1.3.10+. Не променя UI ресурси и не използва Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Извинете…… изчезнах за цяла година.
-
-Не че не исках да обновя. Всеки път, когато отворя Workshop и видя, че някой още оставя коментар, усещам, че не съм се справила достатъчно добре, и ме е страх да се покажа…… наистина съжалявам.
-Най-накрая завърших 2.0. Сигурно на много места съм била непохватна. Ако отново ви разочаровам някъде, моля, кажете ми и аз веднага ще поправя.
-Ако все още желаете, върнете се и вижте в какво се превърна това малко първоначално модче. Дори само един поглед ще ме зарадва много.
-Ъх…… това е засега. Отивам да поправям бъгове.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Благодаря на всички за подкрепата—вие сте причината да продължавам да обновявам мода. В началото показвахме само числа, сега има настройки и много езици, и го израснахме заедно. Обичам ви ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Извинете…… изчезнах за цяла година.
+
+Не че не исках да обновя. Всеки път, когато отворя Workshop и видя, че някой още оставя коментар, усещам, че не съм се справила достатъчно добре, и ме е страх да се покажа…… наистина съжалявам.
+Най-накрая завърших 2.0. Сигурно на много места съм била непохватна. Ако отново ви разочаровам някъде, моля, кажете ми и аз веднага ще поправя.
+Ако все още желаете, върнете се и вижте в какво се превърна това малко първоначално модче. Дори само един поглед ще ме зарадва много.
+Ъх…… това е засега. Отивам да поправям бъгове.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Благодаря на всички за подкрепата—вие сте причината да продължавам да обновявам мода. В началото показвахме само числа, сега има настройки и много езици, и го израснахме заедно. Обичам ви ♥
+
 
 ###捷克语|捷克语
-TITLE: Lepší zobrazení hydratace a sytosti
-DESC:
-[h1]Lepší zobrazení hydratace a sytosti v2.0[/h1]
+TITLE: Lepší zobrazení hydratace a sytosti
+DESC:
+[h1]Lepší zobrazení hydratace a sytosti v2.0[/h1]
+
+[h2]◆ Co je nového[/h2]
+[list]
+[*]Hodnoty řízené událostmi: žádné časté dotazování, téměř nulová zátěž (asi 0.3%~0.5% času snímku)
+[*]Nahoře: kolik chybí do plna. Dole: aktuální / maximum
+[*]Nový panel F10 ve hře: hra se pozastaví, myš funguje; upravujte pozici / velikost písma / formát při sledování HUD. Změny se ukládají automaticky
+[*]Samostatné tlačítko „Obnovit“ pro každou hodnotu
+[*]Klávesovou zkratku lze změnit (výchozí F10)
+[*]Nová karta „Hodnoty HUD“ v nastavení hry v původním stylu (jen klávesové zkratky)
+[*]Jeden DLL pro všechny jazyky: sleduje jazyk hry
+[*]Opraveno: „0 100/100“ na načítací obrazovce a opakovaný vstup po zavření panelu
+[*]Bez předpokladů! Není potřeba ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Ovládání[/h2]
+[list]
+[*]F10: otevřít / zavřít panel nastavení (lze změnit)
+[*]„Obnovit“ u každého řádku: obnoví jen tuto hodnotu
+[*]„Obnovit výchozí“ dole: obnoví vše
+[/list]
+
+[h2]◆ Aktualizace / Kompatibilita[/h2]
+Starý settings.ini se načte automaticky; starou složku language lze smazat. Testováno na 2.3.30; mělo by fungovat na 1.3.10+. Nemění UI assety a nepoužívá Harmony.
+
 
-[h2]◆ Co je nového[/h2]
+[h2]◆ Časté dotazy[/h2]
 [list]
-[*]Hodnoty řízené událostmi: žádné časté dotazování, téměř nulová zátěž (asi 0.3%~0.5% času snímku)
-[*]Nahoře: kolik chybí do plna. Dole: aktuální / maximum
-[*]Nový panel F10 ve hře: hra se pozastaví, myš funguje; upravujte pozici / velikost písma / formát při sledování HUD. Změny se ukládají automaticky
-[*]Samostatné tlačítko „Obnovit“ pro každou hodnotu
-[*]Klávesovou zkratku lze změnit (výchozí F10)
-[*]Nová karta „Hodnoty HUD“ v nastavení hry v původním stylu (jen klávesové zkratky)
-[*]Jeden DLL pro všechny jazyky: sleduje jazyk hry
-[*]Opraveno: „0 100/100“ na načítací obrazovce a opakovaný vstup po zavření panelu
-[*]Bez předpokladů! Není potřeba ModConfig / ModSetting / HarmonyLib
+[*]Panel se ve výchozím nastavení otevírá klávesou F10. Pokud se kryje s jinou klávesou, můžete ji změnit v „Nastavení → HUD Values“.
+[*]Nevidím čísla: ujistěte se, že je mod zapnutý, načtěte uloženou hru, stiskněte F10 a klikněte na „Obnovit výchozí“.
+[*]Panel se při nízkém rozlišení nevejde: panel lze posouvat — použijte kolečko myši.
+[*]Chci jen horní nebo dolní řádek: vypněte nepotřebný v nastavení.
 [/list]
 
-[h2]◆ Ovládání[/h2]
-[list]
-[*]F10: otevřít / zavřít panel nastavení (lze změnit)
-[*]„Obnovit“ u každého řádku: obnoví jen tuto hodnotu
-[*]„Obnovit výchozí“ dole: obnoví vše
-[/list]
-
-[h2]◆ Aktualizace / Kompatibilita[/h2]
-Starý settings.ini se načte automaticky; starou složku language lze smazat. Testováno na 2.3.30; mělo by fungovat na 1.3.10+. Nemění UI assety a nepoužívá Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Promiň…… zmizela jsem na celý rok.
-
-Ne že bych nechtěla aktualizovat. Pokaždé, když otevřu Workshop a vidím, že někdo pořád komentuje, cítím, že jsem to neudělala dost dobře, a bojím se ukázat…… opravdu se omlouvám.
-Konečně jsem dokončila 2.0. Určitě jsem na mnoha místech byla neohrabaná. Jestli vás zase někde zklamu, prosím řekněte mi to a já to hned opravím.
-Jestli ještě chcete, vraťte se a podívejte se, čím se tenhle malý původní mod stal. I jen krátký pohled mě moc potěší.
-Uf…… to je zatím vše. Jdu opravovat bugy.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Díky všem za podporu—vy jste důvod, proč mod dál aktualizuji. Ze začátku jsme jen ukazovali čísla, teď má nastavení i mnoho jazyků, a vyrostli jsme to spolu. Mám vás rád ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Promiň…… zmizela jsem na celý rok.
+
+Ne že bych nechtěla aktualizovat. Pokaždé, když otevřu Workshop a vidím, že někdo pořád komentuje, cítím, že jsem to neudělala dost dobře, a bojím se ukázat…… opravdu se omlouvám.
+Konečně jsem dokončila 2.0. Určitě jsem na mnoha místech byla neohrabaná. Jestli vás zase někde zklamu, prosím řekněte mi to a já to hned opravím.
+Jestli ještě chcete, vraťte se a podívejte se, čím se tenhle malý původní mod stal. I jen krátký pohled mě moc potěší.
+Uf…… to je zatím vše. Jdu opravovat bugy.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Díky všem za podporu—vy jste důvod, proč mod dál aktualizuji. Ze začátku jsme jen ukazovali čísla, teď má nastavení i mnoho jazyků, a vyrostli jsme to spolu. Mám vás rád ♥
+
 
 ###丹麦语|丹麦语
-TITLE: Bedre visning af hydrering og mæthed
-DESC:
-[h1]Bedre visning af hydrering og mæthed v2.0[/h1]
+TITLE: Bedre visning af hydrering og mæthed
+DESC:
+[h1]Bedre visning af hydrering og mæthed v2.0[/h1]
+
+[h2]◆ Hvad er nyt[/h2]
+[list]
+[*]Værdier styret af hændelser: ingen hyppig polling, næsten nul ydeevneomkostning (ca. 0.3%~0.5% af frame-tiden)
+[*]Øverst: hvor meget der mangler. Nederst: nuværende / maksimum
+[*]Ny F10-panel i spillet: spillet sættes på pause, musen virker; juster position / skriftstørrelse / format, mens du ser HUD'en. Ændringer gemmes automatisk
+[*]Separat “Nulstil”-knap for hver værdi
+[*]Genvejstasten kan ændres (standard F10)
+[*]Ny fane “HUD-værdier” i spilindstillingerne i original stil (kun genveje)
+[*]Én DLL til alle sprog: følger spillets sprog
+[*]Rettet: “0 100/100” på indlæsningsskærmen og gentaget input efter lukning af panelet
+[*]Ingen forudsætninger! ModConfig / ModSetting / HarmonyLib er ikke nødvendige
+[/list]
+
+[h2]◆ Betjening[/h2]
+[list]
+[*]F10: åbn / luk indstillingspanelet (kan ændres)
+[*]“Nulstil” på hver række: nulstil kun den værdi
+[*]“Nulstil til standard” nederst: nulstil alt
+[/list]
+
+[h2]◆ Opgradering / Kompatibilitet[/h2]
+Gammel settings.ini læses automatisk; den gamle language-mappe kan slettes. Testet på 2.3.30; bør virke på 1.3.10+. Ændrer ikke UI-assets og bruger ikke Harmony.
+
 
-[h2]◆ Hvad er nyt[/h2]
+[h2]◆ Ofte stillede spørgsmål[/h2]
 [list]
-[*]Værdier styret af hændelser: ingen hyppig polling, næsten nul ydeevneomkostning (ca. 0.3%~0.5% af frame-tiden)
-[*]Øverst: hvor meget der mangler. Nederst: nuværende / maksimum
-[*]Ny F10-panel i spillet: spillet sættes på pause, musen virker; juster position / skriftstørrelse / format, mens du ser HUD'en. Ændringer gemmes automatisk
-[*]Separat “Nulstil”-knap for hver værdi
-[*]Genvejstasten kan ændres (standard F10)
-[*]Ny fane “HUD-værdier” i spilindstillingerne i original stil (kun genveje)
-[*]Én DLL til alle sprog: følger spillets sprog
-[*]Rettet: “0 100/100” på indlæsningsskærmen og gentaget input efter lukning af panelet
-[*]Ingen forudsætninger! ModConfig / ModSetting / HarmonyLib er ikke nødvendige
+[*]Panelet åbnes som standard med F10. Hvis tasten støder sammen med en anden, kan du ændre den i »Indstillinger → HUD Values«.
+[*]Kan ikke se tallene: tjek at moddet er aktiveret, indlæs et save, tryk F10 og klik »Nulstil til standard«.
+[*]Panelet passer ikke ved lav opløsning: panelet kan scrolles — brug mussehjulet.
+[*]Vil kun have den øverste eller nederste linje: slå den anden fra i indstillingerne.
 [/list]
 
-[h2]◆ Betjening[/h2]
-[list]
-[*]F10: åbn / luk indstillingspanelet (kan ændres)
-[*]“Nulstil” på hver række: nulstil kun den værdi
-[*]“Nulstil til standard” nederst: nulstil alt
-[/list]
-
-[h2]◆ Opgradering / Kompatibilitet[/h2]
-Gammel settings.ini læses automatisk; den gamle language-mappe kan slettes. Testet på 2.3.30; bør virke på 1.3.10+. Ændrer ikke UI-assets og bruger ikke Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Undskyld…… jeg forsvandt i et helt år.
-
-Ikke fordi jeg ikke ville opdatere. Hver gang jeg åbner Workshop og ser, at nogen stadig skriver en kommentar, føler jeg, at jeg ikke har gjort det godt nok, og jeg tør ikke vise mig…… undskyld virkelig.
-Nu er 2.0 endelig færdig. Jeg har sikkert været klodset flere steder. Hvis jeg skuffer jer igen, så sig endelig til, så retter jeg det med det samme.
-Hvis I stadig vil, så kom tilbage og se, hvad dette lille oprindelige mod er blevet til. Bare et hurtigt kig vil gøre mig rigtig glad.
-Øh…… det er alt for nu. Jeg går ud og retter bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Tak til alle for støtten—I er grunden til, at jeg bliver ved med at opdatere moddet. I starten viste vi bare tal, nu er der indstillinger og mange sprog, og vi har bygget det sammen. Jeg elsker jer ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Undskyld…… jeg forsvandt i et helt år.
+
+Ikke fordi jeg ikke ville opdatere. Hver gang jeg åbner Workshop og ser, at nogen stadig skriver en kommentar, føler jeg, at jeg ikke har gjort det godt nok, og jeg tør ikke vise mig…… undskyld virkelig.
+Nu er 2.0 endelig færdig. Jeg har sikkert været klodset flere steder. Hvis jeg skuffer jer igen, så sig endelig til, så retter jeg det med det samme.
+Hvis I stadig vil, så kom tilbage og se, hvad dette lille oprindelige mod er blevet til. Bare et hurtigt kig vil gøre mig rigtig glad.
+Øh…… det er alt for nu. Jeg går ud og retter bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Tak til alle for støtten—I er grunden til, at jeg bliver ved med at opdatere moddet. I starten viste vi bare tal, nu er der indstillinger og mange sprog, og vi har bygget det sammen. Jeg elsker jer ♥
+
 
 ###德语|德语
-TITLE: Bessere Anzeige von Hydration & Sättigung
-DESC:
-[h1]Bessere Anzeige von Hydration & Sättigung v2.0[/h1]
+TITLE: Bessere Anzeige von Hydration & Sättigung
+DESC:
+[h1]Bessere Anzeige von Hydration & Sättigung v2.0[/h1]
+
+[h2]◆ Was ist neu[/h2]
+[list]
+[*]Eventgesteuerte Werte: kein häufiges Polling mehr, fast keine Performancekosten (ca. 0.3%~0.5% der Frame-Zeit)
+[*]Oben: wie viel bis zum Vollstand fehlt. Unten: aktuell / Maximum
+[*]Neues F10-Panel im Spiel: Das Spiel pausiert, die Maus ist nutzbar; Position / Schriftgröße / Format lassen sich live anpassen und werden automatisch gespeichert
+[*]Eigener „Zurücksetzen“-Button für jeden Wert
+[*]Hotkey änderbar (Standard: F10)
+[*]Neuer „HUD-Werte“-Tab in den Spieleinstellungen im nativen Stil (nur Hotkeys)
+[*]Eine DLL für alle Sprachen: folgt der Spielsprache
+[*]Behoben: „0 100/100“ auf dem Ladebildschirm und wiederholte Eingaben nach dem Schließen des Panels
+[*]Weiterhin ohne Voraussetzungen! Kein ModConfig / ModSetting / HarmonyLib nötig
+[/list]
+
+[h2]◆ Steuerung[/h2]
+[list]
+[*]F10: Einstellungs-Panel öffnen / schließen (änderbar)
+[*]„Zurücksetzen“ in jeder Zeile: nur diesen Wert zurücksetzen
+[*]„Auf Standard zurücksetzen“ unten: alles zurücksetzen
+[/list]
+
+[h2]◆ Upgrade / Kompatibilität[/h2]
+Die alte settings.ini wird automatisch gelesen; der alte language-Ordner kann gelöscht werden. Getestet auf 2.3.30; sollte ab 1.3.10 funktionieren. Ändert keine UI-Assets, nutzt kein Harmony.
+
 
-[h2]◆ Was ist neu[/h2]
+[h2]◆ Häufige Fragen[/h2]
 [list]
-[*]Eventgesteuerte Werte: kein häufiges Polling mehr, fast keine Performancekosten (ca. 0.3%~0.5% der Frame-Zeit)
-[*]Oben: wie viel bis zum Vollstand fehlt. Unten: aktuell / Maximum
-[*]Neues F10-Panel im Spiel: Das Spiel pausiert, die Maus ist nutzbar; Position / Schriftgröße / Format lassen sich live anpassen und werden automatisch gespeichert
-[*]Eigener „Zurücksetzen“-Button für jeden Wert
-[*]Hotkey änderbar (Standard: F10)
-[*]Neuer „HUD-Werte“-Tab in den Spieleinstellungen im nativen Stil (nur Hotkeys)
-[*]Eine DLL für alle Sprachen: folgt der Spielsprache
-[*]Behoben: „0 100/100“ auf dem Ladebildschirm und wiederholte Eingaben nach dem Schließen des Panels
-[*]Weiterhin ohne Voraussetzungen! Kein ModConfig / ModSetting / HarmonyLib nötig
+[*]Das Panel öffnet sich standardmäßig mit F10. Wenn die Taste mit einer anderen kollidiert, kannst du sie unter „Einstellungen → HUD Values“ ändern.
+[*]Keine Zahlen sichtbar: prüfe, ob der Mod aktiv ist, lade einen Spielstand, drücke F10 und klicke „Auf Standard zurücksetzen“.
+[*]Panel passt bei niedriger Auflösung nicht: Das Panel scrollt — nutze das Mausrad.
+[*]Nur die obere oder untere Zeile: Schalte die andere in den Einstellungen aus.
 [/list]
 
-[h2]◆ Steuerung[/h2]
-[list]
-[*]F10: Einstellungs-Panel öffnen / schließen (änderbar)
-[*]„Zurücksetzen“ in jeder Zeile: nur diesen Wert zurücksetzen
-[*]„Auf Standard zurücksetzen“ unten: alles zurücksetzen
-[/list]
-
-[h2]◆ Upgrade / Kompatibilität[/h2]
-Die alte settings.ini wird automatisch gelesen; der alte language-Ordner kann gelöscht werden. Getestet auf 2.3.30; sollte ab 1.3.10 funktionieren. Ändert keine UI-Assets, nutzt kein Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Entschuldigung…… ich bin ein ganzes Jahr verschwunden.
-
-Nicht, weil ich nicht updaten wollte. Jedes Mal, wenn ich den Workshop öffne und sehe, dass noch jemand kommentiert, habe ich das Gefühl, es nicht gut genug gemacht zu haben, und traue mich nicht hervor…… es tut mir wirklich leid.
-Jetzt ist 2.0 endlich fertig. Ich war bestimmt an vielen Stellen ungeschickt. Wenn ich euch wieder irgendwo enttäusche, sagt es mir bitte, und ich repariere es sofort.
-Wenn ihr noch mögt, kommt zurück und schaut, was aus diesem kleinen ursprünglichen Mod geworden ist. Schon ein kurzer Blick würde mich sehr freuen.
-Uff…… erst mal so viel. Ich gehe Bugs fixen.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Danke euch allen für die Unterstützung—ihr seid der Grund, warum ich den Mod weiter aktualisiere. Am Anfang gab es nur Zahlen, jetzt gibt es Einstellungen und viele Sprachen, und wir haben das zusammen wachsen lassen. Hab euch lieb ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Entschuldigung…… ich bin ein ganzes Jahr verschwunden.
+
+Nicht, weil ich nicht updaten wollte. Jedes Mal, wenn ich den Workshop öffne und sehe, dass noch jemand kommentiert, habe ich das Gefühl, es nicht gut genug gemacht zu haben, und traue mich nicht hervor…… es tut mir wirklich leid.
+Jetzt ist 2.0 endlich fertig. Ich war bestimmt an vielen Stellen ungeschickt. Wenn ich euch wieder irgendwo enttäusche, sagt es mir bitte, und ich repariere es sofort.
+Wenn ihr noch mögt, kommt zurück und schaut, was aus diesem kleinen ursprünglichen Mod geworden ist. Schon ein kurzer Blick würde mich sehr freuen.
+Uff…… erst mal so viel. Ich gehe Bugs fixen.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Danke euch allen für die Unterstützung—ihr seid der Grund, warum ich den Mod weiter aktualisiere. Am Anfang gab es nur Zahlen, jetzt gibt es Einstellungen und viele Sprachen, und wir haben das zusammen wachsen lassen. Hab euch lieb ♥
+
 
 ###西班牙语-西班牙|西班牙语 - 西班牙
-TITLE: Mejor visualización de hidratación y saciedad
-DESC:
-[h1]Mejor visualización de hidratación y saciedad v2.0[/h1]
+TITLE: Mejor visualización de hidratación y saciedad
+DESC:
+[h1]Mejor visualización de hidratación y saciedad v2.0[/h1]
+
+[h2]◆ Novedades[/h2]
+[list]
+[*]Valores basados en eventos: sin sondeos frecuentes, coste de rendimiento casi nulo (unos 0.3%~0.5% del tiempo de fotograma)
+[*]Arriba: cuánto falta para llenar. Abajo: actual / máximo
+[*]Nuevo panel F10 en el juego: el juego se pausa y el ratón funciona; ajusta posición / tamaño de fuente / formato mientras ves el HUD. Los cambios se guardan automáticamente
+[*]Botón «Restablecer» independiente para cada valor
+[*]Atajo de teclado modificable (por defecto F10)
+[*]Nueva pestaña «Valores del HUD» en los ajustes del juego con estilo nativo (solo atajos)
+[*]Un solo DLL para todos los idiomas: sigue el idioma del juego
+[*]Corregido: «0 100/100» en la pantalla de carga y la repetición de entradas tras cerrar el panel
+[*]¡Sin requisitos previos! No hace falta ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Controles[/h2]
+[list]
+[*]F10: abrir / cerrar el panel de ajustes (se puede cambiar)
+[*]«Restablecer» en cada fila: restablece solo ese valor
+[*]«Restablecer valores predeterminados» abajo: restablece todo
+[/list]
+
+[h2]◆ Actualización / Compatibilidad[/h2]
+El settings.ini antiguo se lee automáticamente; la carpeta language antigua se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
+
 
-[h2]◆ Novedades[/h2]
+[h2]◆ Preguntas frecuentes[/h2]
 [list]
-[*]Valores basados en eventos: sin sondeos frecuentes, coste de rendimiento casi nulo (unos 0.3%~0.5% del tiempo de fotograma)
-[*]Arriba: cuánto falta para llenar. Abajo: actual / máximo
-[*]Nuevo panel F10 en el juego: el juego se pausa y el ratón funciona; ajusta posición / tamaño de fuente / formato mientras ves el HUD. Los cambios se guardan automáticamente
-[*]Botón «Restablecer» independiente para cada valor
-[*]Atajo de teclado modificable (por defecto F10)
-[*]Nueva pestaña «Valores del HUD» en los ajustes del juego con estilo nativo (solo atajos)
-[*]Un solo DLL para todos los idiomas: sigue el idioma del juego
-[*]Corregido: «0 100/100» en la pantalla de carga y la repetición de entradas tras cerrar el panel
-[*]¡Sin requisitos previos! No hace falta ModConfig / ModSetting / HarmonyLib
+[*]La tecla predeterminada para abrir el panel es F10. Si choca con otra tecla, puedes cambiarla en «Ajustes → HUD Values».
+[*]No veo los números: comprueba que el mod esté activado, carga una partida, pulsa F10 y haz clic en «Restablecer valores predeterminados».
+[*]El panel no cabe en resoluciones bajas: el panel se desplaza — usa la rueda del ratón.
+[*]Solo quiero la línea superior o la inferior: desactiva la que no necesites en los ajustes.
 [/list]
 
-[h2]◆ Controles[/h2]
-[list]
-[*]F10: abrir / cerrar el panel de ajustes (se puede cambiar)
-[*]«Restablecer» en cada fila: restablece solo ese valor
-[*]«Restablecer valores predeterminados» abajo: restablece todo
-[/list]
-
-[h2]◆ Actualización / Compatibilidad[/h2]
-El settings.ini antiguo se lee automáticamente; la carpeta language antigua se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Perdón…… he desaparecido un año entero.
-
-No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo bastante bien y me daba miedo aparecer…… perdón de verdad.
-Por fin he terminado la 2.0. Seguro que en muchas cosas he sido torpe. Si vuelvo a decepcionarte en algo, dímelo, por favor, y lo arreglo enseguida.
-Si todavía quieres, vuelve y mira en qué se ha convertido este pequeño mod original. Con que le eches un vistazo, ya me hará muy feliz.
-Uf…… eso es todo por ahora. Me voy a arreglar bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Gracias a todos por el apoyo—vosotros sois la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hemos hecho crecer juntos. Os quiero ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Perdón…… he desaparecido un año entero.
+
+No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo bastante bien y me daba miedo aparecer…… perdón de verdad.
+Por fin he terminado la 2.0. Seguro que en muchas cosas he sido torpe. Si vuelvo a decepcionarte en algo, dímelo, por favor, y lo arreglo enseguida.
+Si todavía quieres, vuelve y mira en qué se ha convertido este pequeño mod original. Con que le eches un vistazo, ya me hará muy feliz.
+Uf…… eso es todo por ahora. Me voy a arreglar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Gracias a todos por el apoyo—vosotros sois la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hemos hecho crecer juntos. Os quiero ♥
+
 
 ###西班牙语-拉丁美洲|西班牙语 - 拉丁美洲
-TITLE: Mejor visualización de hidratación y saciedad
-DESC:
-[h1]Mejor visualización de hidratación y saciedad v2.0[/h1]
+TITLE: Mejor visualización de hidratación y saciedad
+DESC:
+[h1]Mejor visualización de hidratación y saciedad v2.0[/h1]
+
+[h2]◆ Novedades[/h2]
+[list]
+[*]Valores basados en eventos: sin sondeos frecuentes, costo de rendimiento casi nulo (aprox. 0.3%~0.5% del tiempo de cuadro)
+[*]Arriba: cuánto falta para llenar. Abajo: actual / máximo
+[*]Nuevo panel F10 dentro del juego: el juego se pausa y el mouse funciona; ajustá posición / tamaño de fuente / formato mientras ves el HUD. Los cambios se guardan solos
+[*]Botón «Restablecer» independiente para cada valor
+[*]Atajo de teclado modificable (por defecto F10)
+[*]Nueva pestaña «Valores del HUD» en la configuración del juego con estilo nativo (solo atajos)
+[*]Un solo DLL para todos los idiomas: sigue el idioma del juego
+[*]Corregido: «0 100/100» en la pantalla de carga y la repetición de entradas al cerrar el panel
+[*]¡Sin requisitos previos! No necesitás ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Controles[/h2]
+[list]
+[*]F10: abrir / cerrar el panel de configuración (se puede cambiar)
+[*]«Restablecer» en cada fila: restablece solo ese valor
+[*]«Restablecer valores predeterminados» abajo: restablece todo
+[/list]
+
+[h2]◆ Actualización / Compatibilidad[/h2]
+El settings.ini viejo se lee automáticamente; la carpeta language vieja se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
+
 
-[h2]◆ Novedades[/h2]
+[h2]◆ Preguntas frecuentes[/h2]
 [list]
-[*]Valores basados en eventos: sin sondeos frecuentes, costo de rendimiento casi nulo (aprox. 0.3%~0.5% del tiempo de cuadro)
-[*]Arriba: cuánto falta para llenar. Abajo: actual / máximo
-[*]Nuevo panel F10 dentro del juego: el juego se pausa y el mouse funciona; ajustá posición / tamaño de fuente / formato mientras ves el HUD. Los cambios se guardan solos
-[*]Botón «Restablecer» independiente para cada valor
-[*]Atajo de teclado modificable (por defecto F10)
-[*]Nueva pestaña «Valores del HUD» en la configuración del juego con estilo nativo (solo atajos)
-[*]Un solo DLL para todos los idiomas: sigue el idioma del juego
-[*]Corregido: «0 100/100» en la pantalla de carga y la repetición de entradas al cerrar el panel
-[*]¡Sin requisitos previos! No necesitás ModConfig / ModSetting / HarmonyLib
+[*]La tecla predeterminada para abrir el panel es F10. Si choca con otra tecla, podés cambiarla en «Ajustes → HUD Values».
+[*]No veo los números: fijate que el mod esté activado, cargá una partida, presioná F10 y hacé clic en «Restablecer valores predeterminados».
+[*]El panel no entra en resoluciones bajas: el panel se desplaza — usá la rueda del mouse.
+[*]Solo quiero la línea de arriba o la de abajo: desactivá la que no necesites en los ajustes.
 [/list]
 
-[h2]◆ Controles[/h2]
-[list]
-[*]F10: abrir / cerrar el panel de configuración (se puede cambiar)
-[*]«Restablecer» en cada fila: restablece solo ese valor
-[*]«Restablecer valores predeterminados» abajo: restablece todo
-[/list]
-
-[h2]◆ Actualización / Compatibilidad[/h2]
-El settings.ini viejo se lee automáticamente; la carpeta language vieja se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Perdón…… desaparezcí un año entero.
-
-No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo suficientemente bien y me daba miedo aparecer…… perdón de verdad.
-Por fin terminé la 2.0. Seguro que en muchas cosas fui torpe. Si vuelvo a decepcionarte en algo, decime, por favor, y lo arreglo enseguida.
-Si todavía querés, volvé y mirá en qué se convirtió este pequeño mod original. Con que le eches un vistazo, ya me hará muy feliz.
-Uf…… eso es todo por ahora. Me voy a arreglar bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Gracias a todos por el apoyo—ustedes son la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hicimos crecer juntos. Los quiero ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Perdón…… desaparezcí un año entero.
+
+No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo suficientemente bien y me daba miedo aparecer…… perdón de verdad.
+Por fin terminé la 2.0. Seguro que en muchas cosas fui torpe. Si vuelvo a decepcionarte en algo, decime, por favor, y lo arreglo enseguida.
+Si todavía querés, volvé y mirá en qué se convirtió este pequeño mod original. Con que le eches un vistazo, ya me hará muy feliz.
+Uf…… eso es todo por ahora. Me voy a arreglar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Gracias a todos por el apoyo—ustedes son la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hicimos crecer juntos. Los quiero ♥
+
 
 ###希腊语|希腊语
-TITLE: Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού
-DESC:
-[h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.0[/h1]
+TITLE: Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού
+DESC:
+[h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.0[/h1]
+
+[h2]◆ Τι νέο υπάρχει[/h2]
+[list]
+[*]Τιμές που οδηγούνται από συμβάντα: χωρίς συχνά polls, σχεδόν μηδενικό κόστος απόδοσης (περίπου 0.3%~0.5% του χρόνου καρέ)
+[*]Πάνω: πόσο λείπει για να γεμίσει. Κάτω: τρέχον / μέγιστο
+[*]Νέο πάνελ F10 στο παιχνίδι: το παιχνίδι παγώνει και το ποντίκι λειτουργεί· ρυθμίστε θέση / μέγεθος γραμματοσειράς / μορφή βλέποντας το HUD. Οι αλλαγές αποθηκεύονται αυτόματα
+[*]Ξεχωριστό κουμπί «Επαναφορά» για κάθε τιμή
+[*]Το hotkey αλλάζει (προεπιλογή F10)
+[*]Νέα καρτέλα «Τιμές HUD» στις ρυθμίσεις του παιχνιδιού σε εγγενές στυλ (μόνο hotkeys)
+[*]Ένα DLL για όλες τις γλώσσες: ακολουθεί τη γλώσσα του παιχνιδιού
+[*]Διορθώθηκε: «0 100/100» στην οθόνη φόρτωσης και επανάληψη εισόδου μετά το κλείσιμο του πάνελ
+[*]Χωρίς προαπαιτούμενα! Δεν χρειάζεται ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Χειριστήρια[/h2]
+[list]
+[*]F10: άνοιγμα / κλείσιμο του πάνελ ρυθμίσεων (αλλάζει)
+[*]«Επαναφορά» σε κάθε σειρά: επαναφέρει μόνο αυτή την τιμή
+[*]«Επαναφορά προεπιλογών» κάτω: επαναφέρει τα πάντα
+[/list]
+
+[h2]◆ Αναβάθμιση / Συμβατότητα[/h2]
+Το παλιό settings.ini διαβάζεται αυτόματα· ο παλιός φάκελος language μπορεί να διαγραφεί. Δοκιμασμένο στο 2.3.30· πρέπει να δουλεύει από 1.3.10+. Δεν αλλάζει πόρους UI και δεν χρησιμοποιεί Harmony.
+
 
-[h2]◆ Τι νέο υπάρχει[/h2]
+[h2]◆ Συχνές ερωτήσεις[/h2]
 [list]
-[*]Τιμές που οδηγούνται από συμβάντα: χωρίς συχνά polls, σχεδόν μηδενικό κόστος απόδοσης (περίπου 0.3%~0.5% του χρόνου καρέ)
-[*]Πάνω: πόσο λείπει για να γεμίσει. Κάτω: τρέχον / μέγιστο
-[*]Νέο πάνελ F10 στο παιχνίδι: το παιχνίδι παγώνει και το ποντίκι λειτουργεί· ρυθμίστε θέση / μέγεθος γραμματοσειράς / μορφή βλέποντας το HUD. Οι αλλαγές αποθηκεύονται αυτόματα
-[*]Ξεχωριστό κουμπί «Επαναφορά» για κάθε τιμή
-[*]Το hotkey αλλάζει (προεπιλογή F10)
-[*]Νέα καρτέλα «Τιμές HUD» στις ρυθμίσεις του παιχνιδιού σε εγγενές στυλ (μόνο hotkeys)
-[*]Ένα DLL για όλες τις γλώσσες: ακολουθεί τη γλώσσα του παιχνιδιού
-[*]Διορθώθηκε: «0 100/100» στην οθόνη φόρτωσης και επανάληψη εισόδου μετά το κλείσιμο του πάνελ
-[*]Χωρίς προαπαιτούμενα! Δεν χρειάζεται ModConfig / ModSetting / HarmonyLib
+[*]Το προεπιλεγμένο κουμπί για το πάνελ είναι το F10. Αν συγκρούεται με άλλο κουμπί, μπορείτε να το αλλάξετε στις «Ρυθμίσεις → HUD Values».
+[*]Δεν βλέπω αριθμούς: βεβαιωθείτε ότι το mod είναι ενεργό, φορτώστε ένα save, πατήστε F10 και κάντε κλικ στο «Επαναφορά προεπιλογών».
+[*]Το πάνελ δεν χωράει σε χαμηλή ανάλυση: το πάνελ κυλάει — χρησιμοποιήστε τη ροδέλα του ποντικιού.
+[*]Θέλω μόνο την πάνω ή την κάτω γραμμή: απενεργοποιήστε την άλλη στις ρυθμίσεις.
 [/list]
 
-[h2]◆ Χειριστήρια[/h2]
-[list]
-[*]F10: άνοιγμα / κλείσιμο του πάνελ ρυθμίσεων (αλλάζει)
-[*]«Επαναφορά» σε κάθε σειρά: επαναφέρει μόνο αυτή την τιμή
-[*]«Επαναφορά προεπιλογών» κάτω: επαναφέρει τα πάντα
-[/list]
-
-[h2]◆ Αναβάθμιση / Συμβατότητα[/h2]
-Το παλιό settings.ini διαβάζεται αυτόματα· ο παλιός φάκελος language μπορεί να διαγραφεί. Δοκιμασμένο στο 2.3.30· πρέπει να δουλεύει από 1.3.10+. Δεν αλλάζει πόρους UI και δεν χρησιμοποιεί Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Συγγνώμη…… εξαφανίστηκα για έναν ολόκληρο χρόνο.
-
-Δεν είναι ότι δεν ήθελα να ενημερώσω. Κάθε φορά που άνοιγα το Workshop και έβλεπα ότι κάποιος ακόμα σχολιάζει, ένιωθα ότι δεν το είχα κάνει αρκετά καλά και φοβόμουν να εμφανιστώ…… πραγματικά συγγνώμη.
-Επιτέλους τελείωσα το 2.0. Σίγουρα σε πολλά σημεία ήμουν αδεξια. Αν σε απογοητεύσω ξανά κάπου, πες μου, σε παρακαλώ, και θα το διορθώσω αμέσως.
-Αν ακόμα θέλεις, γύρνα και δες σε τι έγινε αυτό το μικρό αρχικό mod. Ακόμα και μια ματιά θα με κάνει πολύ χαρούμενη.
-Ωχ…… αυτά για τώρα. Πάω να διορθώσω bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Ευχαριστώ όλους για την υποστήριξη—εσείς είστε ο λόγος που συνεχίζω να ενημερώνω το mod. Στην αρχή δείχναμε μόνο αριθμούς, τώρα υπάρχουν ρυθμίσεις και πολλές γλώσσες, και το μεγαλώσαμε μαζί. Σας αγαπώ ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Συγγνώμη…… εξαφανίστηκα για έναν ολόκληρο χρόνο.
+
+Δεν είναι ότι δεν ήθελα να ενημερώσω. Κάθε φορά που άνοιγα το Workshop και έβλεπα ότι κάποιος ακόμα σχολιάζει, ένιωθα ότι δεν το είχα κάνει αρκετά καλά και φοβόμουν να εμφανιστώ…… πραγματικά συγγνώμη.
+Επιτέλους τελείωσα το 2.0. Σίγουρα σε πολλά σημεία ήμουν αδεξια. Αν σε απογοητεύσω ξανά κάπου, πες μου, σε παρακαλώ, και θα το διορθώσω αμέσως.
+Αν ακόμα θέλεις, γύρνα και δες σε τι έγινε αυτό το μικρό αρχικό mod. Ακόμα και μια ματιά θα με κάνει πολύ χαρούμενη.
+Ωχ…… αυτά για τώρα. Πάω να διορθώσω bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Ευχαριστώ όλους για την υποστήριξη—εσείς είστε ο λόγος που συνεχίζω να ενημερώνω το mod. Στην αρχή δείχναμε μόνο αριθμούς, τώρα υπάρχουν ρυθμίσεις και πολλές γλώσσες, και το μεγαλώσαμε μαζί. Σας αγαπώ ♥
+
 
 ###法语|法语
-TITLE: Meilleur affichage de l'hydratation et de la satiété
-DESC:
-[h1]Meilleur affichage de l'hydratation et de la satiété v2.0[/h1]
+TITLE: Meilleur affichage de l'hydratation et de la satiété
+DESC:
+[h1]Meilleur affichage de l'hydratation et de la satiété v2.0[/h1]
+
+[h2]◆ Quoi de neuf[/h2]
+[list]
+[*]Valeurs pilotées par événements : plus d'interrogation fréquente, coût de performance quasi nul (environ 0.3%~0.5% du temps de frame)
+[*]En haut : combien il manque pour remplir. En bas : actuel / maximum
+[*]Nouveau panneau F10 en jeu : le jeu se met en pause et la souris fonctionne ; ajustez la position / taille de police / format en regardant le HUD. Les changements sont sauvegardés automatiquement
+[*]Bouton « Réinitialiser » séparé pour chaque valeur
+[*]Raccourci clavier modifiable (F10 par défaut)
+[*]Nouvel onglet « Valeurs du HUD » dans les paramètres du jeu, style natif (raccourcis uniquement)
+[*]Un seul DLL pour toutes les langues : suit la langue du jeu
+[*]Corrigé : « 0 100/100 » sur l'écran de chargement et les entrées rejouées après la fermeture du panneau
+[*]Toujours sans prérequis ! Pas besoin de ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Commandes[/h2]
+[list]
+[*]F10 : ouvrir / fermer le panneau de réglages (modifiable)
+[*]« Réinitialiser » sur chaque ligne : réinitialise seulement cette valeur
+[*]« Rétablir les valeurs par défaut » en bas : tout réinitialiser
+[/list]
+
+[h2]◆ Mise à niveau / Compatibilité[/h2]
+L'ancien settings.ini est lu automatiquement ; l'ancien dossier language peut être supprimé. Testé sur 2.3.30 ; devrait fonctionner à partir de 1.3.10. Ne modifie pas les ressources UI et n'utilise pas Harmony.
+
 
-[h2]◆ Quoi de neuf[/h2]
+[h2]◆ Questions fréquentes[/h2]
 [list]
-[*]Valeurs pilotées par événements : plus d'interrogation fréquente, coût de performance quasi nul (environ 0.3%~0.5% du temps de frame)
-[*]En haut : combien il manque pour remplir. En bas : actuel / maximum
-[*]Nouveau panneau F10 en jeu : le jeu se met en pause et la souris fonctionne ; ajustez la position / taille de police / format en regardant le HUD. Les changements sont sauvegardés automatiquement
-[*]Bouton « Réinitialiser » séparé pour chaque valeur
-[*]Raccourci clavier modifiable (F10 par défaut)
-[*]Nouvel onglet « Valeurs du HUD » dans les paramètres du jeu, style natif (raccourcis uniquement)
-[*]Un seul DLL pour toutes les langues : suit la langue du jeu
-[*]Corrigé : « 0 100/100 » sur l'écran de chargement et les entrées rejouées après la fermeture du panneau
-[*]Toujours sans prérequis ! Pas besoin de ModConfig / ModSetting / HarmonyLib
+[*]La touche par défaut pour ouvrir le panneau est F10. Si elle entre en conflit avec une autre touche, tu peux la modifier dans « Paramètres → HUD Values ».
+[*]Je ne vois pas les chiffres : vérifie que le mod est activé, charge une sauvegarde, appuie sur F10 et clique sur « Rétablir les valeurs par défaut ».
+[*]Le panneau ne tient pas en basse résolution : le panneau défile — utilise la molette de la souris.
+[*]Je ne veux que la ligne du haut ou du bas : désactive celle dont tu n'as pas besoin dans les paramètres.
 [/list]
 
-[h2]◆ Commandes[/h2]
-[list]
-[*]F10 : ouvrir / fermer le panneau de réglages (modifiable)
-[*]« Réinitialiser » sur chaque ligne : réinitialise seulement cette valeur
-[*]« Rétablir les valeurs par défaut » en bas : tout réinitialiser
-[/list]
-
-[h2]◆ Mise à niveau / Compatibilité[/h2]
-L'ancien settings.ini est lu automatiquement ; l'ancien dossier language peut être supprimé. Testé sur 2.3.30 ; devrait fonctionner à partir de 1.3.10. Ne modifie pas les ressources UI et n'utilise pas Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Pardon…… j'ai disparu pendant une année entière.
-
-Ce n'est pas que je ne voulais pas mettre à jour. Chaque fois que j'ouvrais le Workshop et que je voyais quelqu'un commenter encore, je sentais que je n'avais pas fait assez bien et je n'osais pas me montrer…… je suis vraiment désolée.
-J'ai enfin terminé la 2.0. J'ai sûrement été maladroite à plein d'endroits. Si je te déçois encore quelque part, dis-le-moi, s'il te plaît, et je corrige tout de suite.
-Si tu veux bien, reviens voir ce que ce petit mod d'origine est devenu. Même un simple coup d'œil me ferait très plaisir.
-Euh…… c'est tout pour l'instant. Je vais corriger des bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Merci à tous pour votre soutien—c'est vous la raison pour laquelle je continue à mettre à jour ce mod. Au début, on n'affichait que des chiffres, maintenant il y a des réglages et plein de langues, et on l'a fait grandir ensemble. Je vous aime ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Pardon…… j'ai disparu pendant une année entière.
+
+Ce n'est pas que je ne voulais pas mettre à jour. Chaque fois que j'ouvrais le Workshop et que je voyais quelqu'un commenter encore, je sentais que je n'avais pas fait assez bien et je n'osais pas me montrer…… je suis vraiment désolée.
+J'ai enfin terminé la 2.0. J'ai sûrement été maladroite à plein d'endroits. Si je te déçois encore quelque part, dis-le-moi, s'il te plaît, et je corrige tout de suite.
+Si tu veux bien, reviens voir ce que ce petit mod d'origine est devenu. Même un simple coup d'œil me ferait très plaisir.
+Euh…… c'est tout pour l'instant. Je vais corriger des bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Merci à tous pour votre soutien—c'est vous la raison pour laquelle je continue à mettre à jour ce mod. Au début, on n'affichait que des chiffres, maintenant il y a des réglages et plein de langues, et on l'a fait grandir ensemble. Je vous aime ♥
+
 
 ###意大利语|意大利语
-TITLE: Visualizzazione migliore di idratazione e sazietà
-DESC:
-[h1]Visualizzazione migliore di idratazione e sazietà v2.0[/h1]
+TITLE: Visualizzazione migliore di idratazione e sazietà
+DESC:
+[h1]Visualizzazione migliore di idratazione e sazietà v2.0[/h1]
+
+[h2]◆ Novità[/h2]
+[list]
+[*]Valori basati su eventi: niente polling frequente, costo prestazioni quasi nullo (circa 0.3%~0.5% del tempo di frame)
+[*]Sopra: quanto manca per riempire. Sotto: attuale / massimo
+[*]Nuovo pannello F10 in gioco: il gioco va in pausa e il mouse funziona; regola posizione / dimensione carattere / formato guardando l'HUD. Le modifiche si salvano automaticamente
+[*]Pulsante «Reimposta» separato per ogni valore
+[*]Tasto rapido modificabile (predefinito F10)
+[*]Nuova scheda «Valori HUD» nelle impostazioni di gioco in stile nativo (solo tasti rapidi)
+[*]Un solo DLL per tutte le lingue: segue la lingua del gioco
+[*]Corretto: «0 100/100» nella schermata di caricamento e input ripetuti dopo la chiusura del pannello
+[*]Sempre senza prerequisiti! Non servono ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Comandi[/h2]
+[list]
+[*]F10: apri / chiudi il pannello delle impostazioni (modificabile)
+[*]«Reimposta» su ogni riga: reimposta solo quel valore
+[*]«Ripristina i valori predefiniti» in basso: reimposta tutto
+[/list]
+
+[h2]◆ Aggiornamento / Compatibilità[/h2]
+Il vecchio settings.ini viene letto automaticamente; la vecchia cartella language può essere eliminata. Testato su 2.3.30; dovrebbe funzionare da 1.3.10 in su. Non modifica risorse UI e non usa Harmony.
+
 
-[h2]◆ Novità[/h2]
+[h2]◆ Domande frequenti[/h2]
 [list]
-[*]Valori basati su eventi: niente polling frequente, costo prestazioni quasi nullo (circa 0.3%~0.5% del tempo di frame)
-[*]Sopra: quanto manca per riempire. Sotto: attuale / massimo
-[*]Nuovo pannello F10 in gioco: il gioco va in pausa e il mouse funziona; regola posizione / dimensione carattere / formato guardando l'HUD. Le modifiche si salvano automaticamente
-[*]Pulsante «Reimposta» separato per ogni valore
-[*]Tasto rapido modificabile (predefinito F10)
-[*]Nuova scheda «Valori HUD» nelle impostazioni di gioco in stile nativo (solo tasti rapidi)
-[*]Un solo DLL per tutte le lingue: segue la lingua del gioco
-[*]Corretto: «0 100/100» nella schermata di caricamento e input ripetuti dopo la chiusura del pannello
-[*]Sempre senza prerequisiti! Non servono ModConfig / ModSetting / HarmonyLib
+[*]Il tasto predefinito per aprire il pannello è F10. Se entra in conflitto con un altro tasto, puoi cambiarlo in «Impostazioni → HUD Values».
+[*]Non vedo i numeri: assicurati che la mod sia attiva, carica un salvataggio, premi F10 e clicca «Ripristina i valori predefiniti».
+[*]Il pannello non entra a basse risoluzioni: il pannello scorre — usa la rotella del mouse.
+[*]Voglio solo la riga superiore o inferiore: disattiva quella che non ti serve nelle impostazioni.
 [/list]
 
-[h2]◆ Comandi[/h2]
-[list]
-[*]F10: apri / chiudi il pannello delle impostazioni (modificabile)
-[*]«Reimposta» su ogni riga: reimposta solo quel valore
-[*]«Ripristina i valori predefiniti» in basso: reimposta tutto
-[/list]
-
-[h2]◆ Aggiornamento / Compatibilità[/h2]
-Il vecchio settings.ini viene letto automaticamente; la vecchia cartella language può essere eliminata. Testato su 2.3.30; dovrebbe funzionare da 1.3.10 in su. Non modifica risorse UI e non usa Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Scusate…… sono sparita per un anno intero.
-
-Non è che non volessi aggiornare. Ogni volta che aprivo il Workshop e vedevo che qualcuno commentava ancora, sentivo di non aver fatto abbastanza bene e non osavo farmi vedere…… scusate davvero.
-Finalmente ho finito la 2.0. Sicuramente in tanti punti sono stata goffa. Se vi deludo di nuovo da qualche parte, ditelo, per favore, e lo sistemo subito.
-Se ancora volete, tornate a vedere in cosa si è trasformata questa piccola mod originale. Anche solo uno sguardo mi renderebbe molto felice.
-Uff…… per ora è tutto. Vado a sistemare i bug.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Grazie a tutti per il supporto—siete il motivo per cui continuo ad aggiornare questa mod. All'inizio mostravamo solo numeri, ora ci sono impostazioni e tante lingue, e l'abbiamo fatto crescere insieme. Vi voglio bene ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Scusate…… sono sparita per un anno intero.
+
+Non è che non volessi aggiornare. Ogni volta che aprivo il Workshop e vedevo che qualcuno commentava ancora, sentivo di non aver fatto abbastanza bene e non osavo farmi vedere…… scusate davvero.
+Finalmente ho finito la 2.0. Sicuramente in tanti punti sono stata goffa. Se vi deludo di nuovo da qualche parte, ditelo, per favore, e lo sistemo subito.
+Se ancora volete, tornate a vedere in cosa si è trasformata questa piccola mod originale. Anche solo uno sguardo mi renderebbe molto felice.
+Uff…… per ora è tutto. Vado a sistemare i bug.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Grazie a tutti per il supporto—siete il motivo per cui continuo ad aggiornare questa mod. All'inizio mostravamo solo numeri, ora ci sono impostazioni e tante lingue, e l'abbiamo fatto crescere insieme. Vi voglio bene ♥
+
 
 ###匈牙利语|匈牙利语
-TITLE: Jobb hidratáció- és jóllakottság-kijelző
-DESC:
-[h1]Jobb hidratáció- és jóllakottság-kijelző v2.0[/h1]
+TITLE: Jobb hidratáció- és jóllakottság-kijelző
+DESC:
+[h1]Jobb hidratáció- és jóllakottság-kijelző v2.0[/h1]
+
+[h2]◆ Mi új?[/h2]
+[list]
+[*]Eseményvezérelt értékek: nincs gyakori lekérdezés, szinte nulla teljesítményköltség (kb. 0.3%~0.5% képkockaidő)
+[*]Felül: mennyi hiányzik a teljes feltöltéshez. Alul: aktuális / maximum
+[*]Új F10 panel a játékban: a játék megáll, az egér használható; pozíció / betűméret / formátum állítása a HUD nézése közben. A módosítások automatikusan mentődnek
+[*]Külön „Visszaállítás” gomb minden értékhez
+[*]A gyorsbillentyű módosítható (alapértelmezés: F10)
+[*]Új, natív stílusú „HUD-értékek” fül a játék beállításaiban (csak gyorsbillentyűk)
+[*]Egy DLL minden nyelvhez: a játék nyelvét követi
+[*]Javítva: „0 100/100” a betöltőképernyőn és az ismétlődő bemenet a panel bezárása után
+[*]Továbbra is előfeltételek nélkül! Nem kell ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Irányítás[/h2]
+[list]
+[*]F10: a beállításpanel megnyitása / bezárása (módosítható)
+[*]„Visszaállítás” minden sorban: csak azt az értéket állítja vissza
+[*]„Alapértelmezések visszaállítása” alul: mindent visszaállít
+[/list]
+
+[h2]◆ Frissítés / Kompatibilitás[/h2]
+A régi settings.ini automatikusan betöltődik; a régi language mappa törölhető. Tesztelve 2.3.30-on; 1.3.10-től működnie kell. Nem módosít UI-erőforrásokat, és nem használ Harmony-t.
+
 
-[h2]◆ Mi új?[/h2]
+[h2]◆ Gyakran ismételt kérdések[/h2]
 [list]
-[*]Eseményvezérelt értékek: nincs gyakori lekérdezés, szinte nulla teljesítményköltség (kb. 0.3%~0.5% képkockaidő)
-[*]Felül: mennyi hiányzik a teljes feltöltéshez. Alul: aktuális / maximum
-[*]Új F10 panel a játékban: a játék megáll, az egér használható; pozíció / betűméret / formátum állítása a HUD nézése közben. A módosítások automatikusan mentődnek
-[*]Külön „Visszaállítás” gomb minden értékhez
-[*]A gyorsbillentyű módosítható (alapértelmezés: F10)
-[*]Új, natív stílusú „HUD-értékek” fül a játék beállításaiban (csak gyorsbillentyűk)
-[*]Egy DLL minden nyelvhez: a játék nyelvét követi
-[*]Javítva: „0 100/100” a betöltőképernyőn és az ismétlődő bemenet a panel bezárása után
-[*]Továbbra is előfeltételek nélkül! Nem kell ModConfig / ModSetting / HarmonyLib
+[*]A panel alapértelmezett nyitógombja az F10. Ha ütközik egy másik gombbal, a „Beállítások → HUD Values” menüben módosíthatod.
+[*]Nem látom a számokat: ellenőrizd, hogy a mod aktív-e, tölts be egy mentést, nyomd meg az F10-et, majd kattints az „Alapértelmezések visszaállítása” gombra.
+[*]A panel nem fér el alacsony felbontáson: a panel görgethető — használd az egérgörgőt.
+[*]Csak a felső vagy az alsó sort szeretném: kapcsold ki a másikat a beállításokban.
 [/list]
 
-[h2]◆ Irányítás[/h2]
-[list]
-[*]F10: a beállításpanel megnyitása / bezárása (módosítható)
-[*]„Visszaállítás” minden sorban: csak azt az értéket állítja vissza
-[*]„Alapértelmezések visszaállítása” alul: mindent visszaállít
-[/list]
-
-[h2]◆ Frissítés / Kompatibilitás[/h2]
-A régi settings.ini automatikusan betöltődik; a régi language mappa törölhető. Tesztelve 2.3.30-on; 1.3.10-től működnie kell. Nem módosít UI-erőforrásokat, és nem használ Harmony-t.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Bocsánat…… egy egész évre eltűntem.
-
-Nem azért, mert nem akartam frissíteni. Valahányszor megnyitottam a Workshopot és láttam, hogy valaki még mindig kommentel, úgy éreztem, nem csináltam elég jól, és féltem előjönni…… tényleg nagyon sajnálom.
-Végre elkészült a 2.0. Biztos sok helyen ügyetlen voltam. Ha valahol megint csalódást okozok, kérlek mondd el, és azonnal kijavítom.
-Ha még van kedved, gyere vissza és nézd meg, mivé lett ez a kis eredeti mod. Már egy pillantás is nagyon boldoggá tenne.
-Hú…… egyelőre ennyi. Megyek javítani a bugokat.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Köszönöm mindenkinek a támogatást—ti vagytok az ok, amiért tovább frissítem ezt a modot. Az elején csak számokat mutattunk, most már beállítások és sok nyelv is van, és együtt növesztettük. Szeretlek titeket ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Bocsánat…… egy egész évre eltűntem.
+
+Nem azért, mert nem akartam frissíteni. Valahányszor megnyitottam a Workshopot és láttam, hogy valaki még mindig kommentel, úgy éreztem, nem csináltam elég jól, és féltem előjönni…… tényleg nagyon sajnálom.
+Végre elkészült a 2.0. Biztos sok helyen ügyetlen voltam. Ha valahol megint csalódást okozok, kérlek mondd el, és azonnal kijavítom.
+Ha még van kedved, gyere vissza és nézd meg, mivé lett ez a kis eredeti mod. Már egy pillantás is nagyon boldoggá tenne.
+Hú…… egyelőre ennyi. Megyek javítani a bugokat.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Köszönöm mindenkinek a támogatást—ti vagytok az ok, amiért tovább frissítem ezt a modot. Az elején csak számokat mutattunk, most már beállítások és sok nyelv is van, és együtt növesztettük. Szeretlek titeket ♥
+
 
 ###荷兰语|荷兰语
-TITLE: Betere weergave van hydratatie en verzadiging
-DESC:
-[h1]Betere weergave van hydratatie en verzadiging v2.0[/h1]
+TITLE: Betere weergave van hydratatie en verzadiging
+DESC:
+[h1]Betere weergave van hydratatie en verzadiging v2.0[/h1]
+
+[h2]◆ Wat is er nieuw[/h2]
+[list]
+[*]Waarden op basis van events: geen frequente polling meer, bijna geen prestatiekosten (ongeveer 0.3%~0.5% van de frametijd)
+[*]Boven: hoeveel er nog ontbreekt. Onder: huidig / maximaal
+[*]Nieuw F10-paneel in de game: de game pauzeert en de muis werkt; pas positie / lettergrootte / formaat aan terwijl je de HUD ziet. Wijzigingen worden automatisch opgeslagen
+[*]Aparte “Reset”-knop voor elke waarde
+[*]Sneltoets aanpasbaar (standaard F10)
+[*]Nieuw tabblad “HUD-waarden” in de game-instellingen in native stijl (alleen sneltoetsen)
+[*]Eén DLL voor alle talen: volgt de gametaal
+[*]Opgelost: “0 100/100” op het laadscherm en herhaalde invoer na het sluiten van het paneel
+[*]Nog steeds zonder vereisten! Geen ModConfig / ModSetting / HarmonyLib nodig
+[/list]
+
+[h2]◆ Besturing[/h2]
+[list]
+[*]F10: instellingenpaneel openen / sluiten (aanpasbaar)
+[*]“Reset” op elke rij: alleen die waarde resetten
+[*]“Standaardwaarden herstellen” onderaan: alles resetten
+[/list]
+
+[h2]◆ Upgraden / Compatibiliteit[/h2]
+De oude settings.ini wordt automatisch gelezen; de oude language-map kan worden verwijderd. Getest op 2.3.30; zou moeten werken vanaf 1.3.10. Wijzigt geen UI-assets en gebruikt geen Harmony.
+
 
-[h2]◆ Wat is er nieuw[/h2]
+[h2]◆ Veelgestelde vragen[/h2]
 [list]
-[*]Waarden op basis van events: geen frequente polling meer, bijna geen prestatiekosten (ongeveer 0.3%~0.5% van de frametijd)
-[*]Boven: hoeveel er nog ontbreekt. Onder: huidig / maximaal
-[*]Nieuw F10-paneel in de game: de game pauzeert en de muis werkt; pas positie / lettergrootte / formaat aan terwijl je de HUD ziet. Wijzigingen worden automatisch opgeslagen
-[*]Aparte “Reset”-knop voor elke waarde
-[*]Sneltoets aanpasbaar (standaard F10)
-[*]Nieuw tabblad “HUD-waarden” in de game-instellingen in native stijl (alleen sneltoetsen)
-[*]Eén DLL voor alle talen: volgt de gametaal
-[*]Opgelost: “0 100/100” op het laadscherm en herhaalde invoer na het sluiten van het paneel
-[*]Nog steeds zonder vereisten! Geen ModConfig / ModSetting / HarmonyLib nodig
+[*]De standaardtoets om het paneel te openen is F10. Als die botst met een andere toets, kun je hem wijzigen in 'Instellingen → HUD Values'.
+[*]Ik zie geen cijfers: controleer of de mod actief is, laad een save, druk op F10 en klik op 'Standaardwaarden herstellen'.
+[*]Het paneel past niet bij een lage resolutie: het paneel scrollt — gebruik het muiswiel.
+[*]Alleen de bovenste of onderste regel: schakel de andere uit in de instellingen.
 [/list]
 
-[h2]◆ Besturing[/h2]
-[list]
-[*]F10: instellingenpaneel openen / sluiten (aanpasbaar)
-[*]“Reset” op elke rij: alleen die waarde resetten
-[*]“Standaardwaarden herstellen” onderaan: alles resetten
-[/list]
-
-[h2]◆ Upgraden / Compatibiliteit[/h2]
-De oude settings.ini wordt automatisch gelezen; de oude language-map kan worden verwijderd. Getest op 2.3.30; zou moeten werken vanaf 1.3.10. Wijzigt geen UI-assets en gebruikt geen Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Sorry…… ik ben een heel jaar verdwenen.
-
-Niet omdat ik niet wilde updaten. Elke keer als ik de Workshop opende en zag dat er nog iemand reageerde, voelde ik dat ik het niet goed genoeg had gedaan en durfde ik me niet te laten zien…… het spijt me echt.
-Nu is 2.0 eindelijk klaar. Ik ben vast op veel plekken onhandig geweest. Als ik jullie weer ergens teleurstel, zeg het alsjeblieft en ik maak het meteen goed.
-Als je nog wilt, kom terug en kijk wat dit kleine originele mod is geworden. Alleen al een snelle blik zou me heel blij maken.
-Eh…… dat is het voor nu. Ik ga bugs fixen.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Dank jullie allemaal voor de steun—jullie zijn de reden dat ik deze mod blijf updaten. In het begin lieten we alleen cijfers zien, nu zijn er instellingen en veel talen, en we hebben het samen laten groeien. Ik hou van jullie ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Sorry…… ik ben een heel jaar verdwenen.
+
+Niet omdat ik niet wilde updaten. Elke keer als ik de Workshop opende en zag dat er nog iemand reageerde, voelde ik dat ik het niet goed genoeg had gedaan en durfde ik me niet te laten zien…… het spijt me echt.
+Nu is 2.0 eindelijk klaar. Ik ben vast op veel plekken onhandig geweest. Als ik jullie weer ergens teleurstel, zeg het alsjeblieft en ik maak het meteen goed.
+Als je nog wilt, kom terug en kijk wat dit kleine originele mod is geworden. Alleen al een snelle blik zou me heel blij maken.
+Eh…… dat is het voor nu. Ik ga bugs fixen.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Dank jullie allemaal voor de steun—jullie zijn de reden dat ik deze mod blijf updaten. In het begin lieten we alleen cijfers zien, nu zijn er instellingen en veel talen, en we hebben het samen laten groeien. Ik hou van jullie ♥
+
 
 ###挪威语|挪威语
-TITLE: Bedre visning av hydrering og metthet
-DESC:
-[h1]Bedre visning av hydrering og metthet v2.0[/h1]
+TITLE: Bedre visning av hydrering og metthet
+DESC:
+[h1]Bedre visning av hydrering og metthet v2.0[/h1]
+
+[h2]◆ Hva er nytt[/h2]
+[list]
+[*]Hendelsesdrevne verdier: ingen hyppig polling, nesten null ytelseskostnad (ca. 0.3%~0.5% av bildetiden)
+[*]Øverst: hvor mye som mangler. Nederst: nåværende / maksimum
+[*]Nytt F10-panel i spillet: spillet pauses og musen fungerer; juster posisjon / skriftstørrelse / format mens du ser på HUD-en. Endringene lagres automatisk
+[*]Egen «Tilbakestill»-knapp for hver verdi
+[*]Hurtigtasten kan endres (standard F10)
+[*]Ny «HUD-verdier»-fane i spillinnstillingene i original stil (bare hurtigtaster)
+[*]Én DLL for alle språk: følger spillspråket
+[*]Rettet: «0 100/100» på lasteskjermen og gjentatt input etter at panelet lukkes
+[*]Fortatt uten forutsetninger! ModConfig / ModSetting / HarmonyLib er ikke nødvendig
+[/list]
+
+[h2]◆ Kontroller[/h2]
+[list]
+[*]F10: åpne / lukke innstillingspanelet (kan endres)
+[*]«Tilbakestill» på hver rad: tilbakestill bare den verdien
+[*]«Tilbakestill til standard» nederst: tilbakestill alt
+[/list]
+
+[h2]◆ Oppgradering / Kompatibilitet[/h2]
+Gammel settings.ini leses automatisk; den gamle language-mappen kan slettes. Testet på 2.3.30; bør fungere på 1.3.10+. Endrer ikke UI-ressurser og bruker ikke Harmony.
+
 
-[h2]◆ Hva er nytt[/h2]
+[h2]◆ Ofte stilte spørsmål[/h2]
 [list]
-[*]Hendelsesdrevne verdier: ingen hyppig polling, nesten null ytelseskostnad (ca. 0.3%~0.5% av bildetiden)
-[*]Øverst: hvor mye som mangler. Nederst: nåværende / maksimum
-[*]Nytt F10-panel i spillet: spillet pauses og musen fungerer; juster posisjon / skriftstørrelse / format mens du ser på HUD-en. Endringene lagres automatisk
-[*]Egen «Tilbakestill»-knapp for hver verdi
-[*]Hurtigtasten kan endres (standard F10)
-[*]Ny «HUD-verdier»-fane i spillinnstillingene i original stil (bare hurtigtaster)
-[*]Én DLL for alle språk: følger spillspråket
-[*]Rettet: «0 100/100» på lasteskjermen og gjentatt input etter at panelet lukkes
-[*]Fortatt uten forutsetninger! ModConfig / ModSetting / HarmonyLib er ikke nødvendig
+[*]Standardtasten for å åpne panelet er F10. Hvis den kolliderer med en annen tast, kan du endre den i «Innstillinger → HUD Values».
+[*]Jeg ser ikke tallene: sjekk at modden er aktiv, last inn et spill, trykk F10 og klikk «Tilbakestill til standard».
+[*]Panelet passer ikke ved lav oppløsning: panelet kan rulles — bruk musehjulet.
+[*]Vil bare ha øverste eller nederste linje: slå av den du ikke trenger i innstillingene.
 [/list]
 
-[h2]◆ Kontroller[/h2]
-[list]
-[*]F10: åpne / lukke innstillingspanelet (kan endres)
-[*]«Tilbakestill» på hver rad: tilbakestill bare den verdien
-[*]«Tilbakestill til standard» nederst: tilbakestill alt
-[/list]
-
-[h2]◆ Oppgradering / Kompatibilitet[/h2]
-Gammel settings.ini leses automatisk; den gamle language-mappen kan slettes. Testet på 2.3.30; bør fungere på 1.3.10+. Endrer ikke UI-ressurser og bruker ikke Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Beklager…… jeg forsvant i et helt år.
-
-Ikke fordi jeg ikke ville oppdatere. Hver gang jeg åpnet Workshop og så at noen fortsatt kommenterte, følte jeg at jeg ikke hadde gjort det godt nok, og jeg turte ikke vise meg…… jeg er virkelig lei meg.
-Nå er 2.0 endelig ferdig. Jeg har sikkert vært klønete mange steder. Hvis jeg skuffer dere igjen, si det, og jeg fikser det med en gang.
-Hvis dere fortsatt vil, kom tilbake og se hva denne lille opprinnelige modden har blitt. Bare et raskt blikk ville gjort meg veldig glad.
-Æh…… det er alt for nå. Jeg går og fikser bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Takk til alle for støtten—dere er grunnen til at jeg fortsetter å oppdatere denne modden. I starten viste vi bare tall, nå er det innstillinger og mange språk, og vi har bygget det sammen. Jeg elsker dere ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Beklager…… jeg forsvant i et helt år.
+
+Ikke fordi jeg ikke ville oppdatere. Hver gang jeg åpnet Workshop og så at noen fortsatt kommenterte, følte jeg at jeg ikke hadde gjort det godt nok, og jeg turte ikke vise meg…… jeg er virkelig lei meg.
+Nå er 2.0 endelig ferdig. Jeg har sikkert vært klønete mange steder. Hvis jeg skuffer dere igjen, si det, og jeg fikser det med en gang.
+Hvis dere fortsatt vil, kom tilbake og se hva denne lille opprinnelige modden har blitt. Bare et raskt blikk ville gjort meg veldig glad.
+Æh…… det er alt for nå. Jeg går og fikser bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Takk til alle for støtten—dere er grunnen til at jeg fortsetter å oppdatere denne modden. I starten viste vi bare tall, nå er det innstillinger og mange språk, og vi har bygget det sammen. Jeg elsker dere ♥
+
 
 ###波兰语|波兰语
-TITLE: Lepsze wyświetlanie nawodnienia i sytości
-DESC:
-[h1]Lepsze wyświetlanie nawodnienia i sytości v2.0[/h1]
+TITLE: Lepsze wyświetlanie nawodnienia i sytości
+DESC:
+[h1]Lepsze wyświetlanie nawodnienia i sytości v2.0[/h1]
+
+[h2]◆ Co nowego[/h2]
+[list]
+[*]Wartości oparte na zdarzeniach: bez częstego odpytywania, niemal zerowy koszt wydajności (około 0.3%~0.5% czasu klatki)
+[*]Góra: ile brakuje do pełna. Dół: aktualne / maksimum
+[*]Nowy panel F10 w grze: gra się zatrzymuje, mysz działa; dostosuj pozycję / rozmiar czcionki / format, patrząc na HUD. Zmiany zapisują się automatycznie
+[*]Osobny przycisk „Resetuj” dla każdej wartości
+[*]Klawisz skrótu można zmienić (domyślnie F10)
+[*]Nowa karta „Wartości HUD” w ustawieniach gry w natywnym stylu (tylko skróty)
+[*]Jeden DLL dla wszystkich języków: podąża za językiem gry
+[*]Naprawiono: „0 100/100” na ekranie ładowania i powtarzanie wejścia po zamknięciu panelu
+[*]Nadal bez wymagań! Nie trzeba ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Sterowanie[/h2]
+[list]
+[*]F10: otwórz / zamknij panel ustawień (można zmienić)
+[*]„Resetuj” w każdym wierszu: resetuje tylko tę wartość
+[*]„Przywróć domyślne” na dole: resetuje wszystko
+[/list]
+
+[h2]◆ Aktualizacja / Kompatybilność[/h2]
+Stary settings.ini jest czytany automatycznie; stary folder language można usunąć. Przetestowano na 2.3.30; powinno działać od 1.3.10. Nie zmienia zasobów UI i nie używa Harmony.
+
 
-[h2]◆ Co nowego[/h2]
+[h2]◆ Najczęstsze pytania[/h2]
 [list]
-[*]Wartości oparte na zdarzeniach: bez częstego odpytywania, niemal zerowy koszt wydajności (około 0.3%~0.5% czasu klatki)
-[*]Góra: ile brakuje do pełna. Dół: aktualne / maksimum
-[*]Nowy panel F10 w grze: gra się zatrzymuje, mysz działa; dostosuj pozycję / rozmiar czcionki / format, patrząc na HUD. Zmiany zapisują się automatycznie
-[*]Osobny przycisk „Resetuj” dla każdej wartości
-[*]Klawisz skrótu można zmienić (domyślnie F10)
-[*]Nowa karta „Wartości HUD” w ustawieniach gry w natywnym stylu (tylko skróty)
-[*]Jeden DLL dla wszystkich języków: podąża za językiem gry
-[*]Naprawiono: „0 100/100” na ekranie ładowania i powtarzanie wejścia po zamknięciu panelu
-[*]Nadal bez wymagań! Nie trzeba ModConfig / ModSetting / HarmonyLib
+[*]Domyślnym klawiszem otwierania panelu jest F10. Jeśli koliduje z innym klawiszem, możesz go zmienić w „Ustawienia → HUD Values”.
+[*]Nie widzę liczb: upewnij się, że mod jest włączony, wczytaj zapis, naciśnij F10 i kliknij „Przywróć domyślne”.
+[*]Panel nie mieści się przy niskiej rozdzielczości: panel można przewijać — użyj kółka myszy.
+[*]Chcę tylko górny lub dolny wiersz: wyłącz niepotrzebny w ustawieniach.
 [/list]
 
-[h2]◆ Sterowanie[/h2]
-[list]
-[*]F10: otwórz / zamknij panel ustawień (można zmienić)
-[*]„Resetuj” w każdym wierszu: resetuje tylko tę wartość
-[*]„Przywróć domyślne” na dole: resetuje wszystko
-[/list]
-
-[h2]◆ Aktualizacja / Kompatybilność[/h2]
-Stary settings.ini jest czytany automatycznie; stary folder language można usunąć. Przetestowano na 2.3.30; powinno działać od 1.3.10. Nie zmienia zasobów UI i nie używa Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Przepraszam…… zniknęłam na cały rok.
-
-Nie dlatego, że nie chciałam aktualizować. Za każdym razem, gdy otwierałam Workshop i widziałam, że ktoś wciąż komentuje, czułam, że nie zrobiłam tego wystarczająco dobrze, i bałam się pokazać…… naprawdę przepraszam.
-W końcu skończyłam 2.0. Na pewno w wielu miejscach byłam niezdarna. Jeśli znowu gdzieś was zawiodę, proszę, powiedzcie mi, a od razu naprawię.
-Jeśli nadal chcecie, wróćcie i zobaczcie, w co zmienił się ten mały pierwotny mod. Nawet krótkie spojrzenie bardzo mnie ucieszy.
-Uch…… to na razie tyle. Idę naprawiać bugi.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Dziękuję wszystkim za wsparcie—to wy jesteście powodem, dla którego wciąż aktualizuję tego moda. Na początku pokazywaliśmy tylko liczby, teraz są ustawienia i wiele języków, i wspólnie to rozwinęliśmy. Kocham was ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Przepraszam…… zniknęłam na cały rok.
+
+Nie dlatego, że nie chciałam aktualizować. Za każdym razem, gdy otwierałam Workshop i widziałam, że ktoś wciąż komentuje, czułam, że nie zrobiłam tego wystarczająco dobrze, i bałam się pokazać…… naprawdę przepraszam.
+W końcu skończyłam 2.0. Na pewno w wielu miejscach byłam niezdarna. Jeśli znowu gdzieś was zawiodę, proszę, powiedzcie mi, a od razu naprawię.
+Jeśli nadal chcecie, wróćcie i zobaczcie, w co zmienił się ten mały pierwotny mod. Nawet krótkie spojrzenie bardzo mnie ucieszy.
+Uch…… to na razie tyle. Idę naprawiać bugi.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Dziękuję wszystkim za wsparcie—to wy jesteście powodem, dla którego wciąż aktualizuję tego moda. Na początku pokazywaliśmy tylko liczby, teraz są ustawienia i wiele języków, i wspólnie to rozwinęliśmy. Kocham was ♥
+
 
 ###葡萄牙语-葡萄牙|葡萄牙语 - 葡萄牙
-TITLE: Melhor visualização de hidratação e saciedade
-DESC:
-[h1]Melhor visualização de hidratação e saciedade v2.0[/h1]
+TITLE: Melhor visualização de hidratação e saciedade
+DESC:
+[h1]Melhor visualização de hidratação e saciedade v2.0[/h1]
+
+[h2]◆ O que há de novo[/h2]
+[list]
+[*]Valores baseados em eventos: sem sondagens frequentes, custo de desempenho quase nulo (cerca de 0.3%~0.5% do tempo de frame)
+[*]Em cima: quanto falta para encher. Em baixo: atual / máximo
+[*]Novo painel F10 no jogo: o jogo pausa e o rato funciona; ajuste posição / tamanho da fonte / formato enquanto vê o HUD. As alterações são guardadas automaticamente
+[*]Botão «Repor» separado para cada valor
+[*]Atalho de teclado alterável (predefinição F10)
+[*]Novo separador «Valores do HUD» nas definições do jogo em estilo nativo (apenas atalhos)
+[*]Um único DLL para todos os idiomas: segue o idioma do jogo
+[*]Corrigido: «0 100/100» no ecrã de carregamento e repetição de input após fechar o painel
+[*]Continua sem pré-requisitos! Não precisa de ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Controlos[/h2]
+[list]
+[*]F10: abrir / fechar o painel de definições (alterável)
+[*]«Repor» em cada linha: repõe apenas esse valor
+[*]«Repor predefinições» em baixo: repõe tudo
+[/list]
+
+[h2]◆ Atualização / Compatibilidade[/h2]
+O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado em 2.3.30; deve funcionar a partir de 1.3.10. Não altera recursos de UI nem usa Harmony.
+
 
-[h2]◆ O que há de novo[/h2]
+[h2]◆ Perguntas frequentes[/h2]
 [list]
-[*]Valores baseados em eventos: sem sondagens frequentes, custo de desempenho quase nulo (cerca de 0.3%~0.5% do tempo de frame)
-[*]Em cima: quanto falta para encher. Em baixo: atual / máximo
-[*]Novo painel F10 no jogo: o jogo pausa e o rato funciona; ajuste posição / tamanho da fonte / formato enquanto vê o HUD. As alterações são guardadas automaticamente
-[*]Botão «Repor» separado para cada valor
-[*]Atalho de teclado alterável (predefinição F10)
-[*]Novo separador «Valores do HUD» nas definições do jogo em estilo nativo (apenas atalhos)
-[*]Um único DLL para todos os idiomas: segue o idioma do jogo
-[*]Corrigido: «0 100/100» no ecrã de carregamento e repetição de input após fechar o painel
-[*]Continua sem pré-requisitos! Não precisa de ModConfig / ModSetting / HarmonyLib
+[*]A tecla predefinida para abrir o painel é F10. Se entrar em conflito com outra tecla, podes alterá-la em «Definições → HUD Values».
+[*]Não vejo os números: confirma se o mod está ativo, carrega um save, prime F10 e clica em «Repor predefinições».
+[*]O painel não cabe em resoluções baixas: o painel desliza — usa a roda do rato.
+[*]Só quero a linha de cima ou a de baixo: desativa a que não precisas nas definições.
 [/list]
 
-[h2]◆ Controlos[/h2]
-[list]
-[*]F10: abrir / fechar o painel de definições (alterável)
-[*]«Repor» em cada linha: repõe apenas esse valor
-[*]«Repor predefinições» em baixo: repõe tudo
-[/list]
-
-[h2]◆ Atualização / Compatibilidade[/h2]
-O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado em 2.3.30; deve funcionar a partir de 1.3.10. Não altera recursos de UI nem usa Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Desculpem…… desapareci um ano inteiro.
-
-Não é que não quisesse atualizar. Sempre que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpem mesmo.
-Finalmente terminei a 2.0. De certeza que fui desajeitada em muitos sítios. Se vos desiludir outra vez, digam, por favor, e eu corrijo logo.
-Se ainda quiserem, voltem e vejam no que se tornou este pequeno mod original. Só um olhar rápido já me deixaria muito feliz.
-Uh…… é tudo por agora. Vou arranjar bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo a atualizar este mod. No início só mostrávamos números, agora há definições e muitas línguas, e fizemo-lo crescer juntos. Amo-vos ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Desculpem…… desapareci um ano inteiro.
+
+Não é que não quisesse atualizar. Sempre que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpem mesmo.
+Finalmente terminei a 2.0. De certeza que fui desajeitada em muitos sítios. Se vos desiludir outra vez, digam, por favor, e eu corrijo logo.
+Se ainda quiserem, voltem e vejam no que se tornou este pequeno mod original. Só um olhar rápido já me deixaria muito feliz.
+Uh…… é tudo por agora. Vou arranjar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo a atualizar este mod. No início só mostrávamos números, agora há definições e muitas línguas, e fizemo-lo crescer juntos. Amo-vos ♥
+
 
 ###葡萄牙语-巴西|葡萄牙语 - 巴西
-TITLE: Melhor exibição de hidratação e saciedade
-DESC:
-[h1]Melhor exibição de hidratação e saciedade v2.0[/h1]
+TITLE: Melhor exibição de hidratação e saciedade
+DESC:
+[h1]Melhor exibição de hidratação e saciedade v2.0[/h1]
+
+[h2]◆ O que há de novo[/h2]
+[list]
+[*]Valores baseados em eventos: sem polling frequente, custo de desempenho quase zero (cerca de 0.3%~0.5% do tempo de frame)
+[*]Em cima: quanto falta para encher. Embaixo: atual / máximo
+[*]Novo painel F10 no jogo: o jogo pausa e o mouse funciona; ajuste posição / tamanho da fonte / formato enquanto vê o HUD. As alterações são salvas automaticamente
+[*]Botão “Redefinir” separado para cada valor
+[*]Atalho de teclado pode ser alterado (padrão F10)
+[*]Nova aba “Valores do HUD” nas configurações do jogo em estilo nativo (apenas atalhos)
+[*]Um único DLL para todos os idiomas: segue o idioma do jogo
+[*]Corrigido: “0 100/100” na tela de carregamento e repetição de input após fechar o painel
+[*]Continua sem pré-requisitos! Não precisa de ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Controles[/h2]
+[list]
+[*]F10: abrir / fechar o painel de configurações (alterável)
+[*]“Redefinir” em cada linha: redefine apenas esse valor
+[*]“Redefinir padrões” embaixo: redefine tudo
+[/list]
+
+[h2]◆ Atualização / Compatibilidade[/h2]
+O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado no 2.3.30; deve funcionar a partir do 1.3.10. Não altera recursos de UI nem usa Harmony.
+
 
-[h2]◆ O que há de novo[/h2]
+[h2]◆ Perguntas frequentes[/h2]
 [list]
-[*]Valores baseados em eventos: sem polling frequente, custo de desempenho quase zero (cerca de 0.3%~0.5% do tempo de frame)
-[*]Em cima: quanto falta para encher. Embaixo: atual / máximo
-[*]Novo painel F10 no jogo: o jogo pausa e o mouse funciona; ajuste posição / tamanho da fonte / formato enquanto vê o HUD. As alterações são salvas automaticamente
-[*]Botão “Redefinir” separado para cada valor
-[*]Atalho de teclado pode ser alterado (padrão F10)
-[*]Nova aba “Valores do HUD” nas configurações do jogo em estilo nativo (apenas atalhos)
-[*]Um único DLL para todos os idiomas: segue o idioma do jogo
-[*]Corrigido: “0 100/100” na tela de carregamento e repetição de input após fechar o painel
-[*]Continua sem pré-requisitos! Não precisa de ModConfig / ModSetting / HarmonyLib
+[*]A tecla padrão para abrir o painel é F10. Se entrar em conflito com outra tecla, você pode alterá-la em «Configurações → HUD Values».
+[*]Não vejo os números: confirme se o mod está ativo, carregue um save, aperte F10 e clique em «Redefinir padrões».
+[*]O painel não cabe em resoluções baixas: o painel rola — use a roda do mouse.
+[*]Só quero a linha de cima ou a de baixo: desative a que não precisa nas configurações.
 [/list]
 
-[h2]◆ Controles[/h2]
-[list]
-[*]F10: abrir / fechar o painel de configurações (alterável)
-[*]“Redefinir” em cada linha: redefine apenas esse valor
-[*]“Redefinir padrões” embaixo: redefine tudo
-[/list]
-
-[h2]◆ Atualização / Compatibilidade[/h2]
-O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado no 2.3.30; deve funcionar a partir do 1.3.10. Não altera recursos de UI nem usa Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Desculpa…… eu desapareci por um ano inteiro.
-
-Não é que eu não quisesse atualizar. Toda vez que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpa de verdade.
-Finalmente terminei a 2.0. Com certeza fui desastrada em muitos lugares. Se eu te decepcionar de novo em algo, por favor me avise, e eu corrijo na hora.
-Se você ainda quiser, volte e veja no que este pequeno mod original se transformou. Só um olhar rápido já me deixaria muito feliz.
-Uf…… é tudo por agora. Vou consertar bugs.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo atualizando este mod. No começo só mostrávamos números, agora há configurações e muitos idiomas, e fizemos isso crescer juntos. Amo vocês ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Desculpa…… eu desapareci por um ano inteiro.
+
+Não é que eu não quisesse atualizar. Toda vez que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpa de verdade.
+Finalmente terminei a 2.0. Com certeza fui desastrada em muitos lugares. Se eu te decepcionar de novo em algo, por favor me avise, e eu corrijo na hora.
+Se você ainda quiser, volte e veja no que este pequeno mod original se transformou. Só um olhar rápido já me deixaria muito feliz.
+Uf…… é tudo por agora. Vou consertar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo atualizando este mod. No começo só mostrávamos números, agora há configurações e muitos idiomas, e fizemos isso crescer juntos. Amo vocês ♥
+
 
 ###罗马尼亚语|罗马尼亚语
-TITLE: Afișare mai bună a hidratării și sațietății
-DESC:
-[h1]Afișare mai bună a hidratării și sațietății v2.0[/h1]
+TITLE: Afișare mai bună a hidratării și sațietății
+DESC:
+[h1]Afișare mai bună a hidratării și sațietății v2.0[/h1]
+
+[h2]◆ Ce este nou[/h2]
+[list]
+[*]Valori bazate pe evenimente: fără interogări frecvente, cost de performanță aproape zero (aproximativ 0.3%~0.5% din timpul cadrului)
+[*]Sus: cât lipsește până la plin. Jos: curent / maxim
+[*]Panou F10 nou în joc: jocul se oprește, mouse-ul funcționează; ajustați poziția / dimensiunea fontului / formatul uitându-vă la HUD. Modificările se salvează automat
+[*]Buton „Resetează” separat pentru fiecare valoare
+[*]Tasta rapidă poate fi schimbată (implicit F10)
+[*]Filă nouă „Valori HUD” în setările jocului, în stil nativ (doar taste rapide)
+[*]Un singur DLL pentru toate limbile: urmează limba jocului
+[*]Rezolvat: „0 100/100” pe ecranul de încărcare și input repetat după închiderea panoului
+[*]Fără cerințe preliminare! Nu este nevoie de ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Comenzi[/h2]
+[list]
+[*]F10: deschide / închide panoul de setări (poate fi schimbat)
+[*]„Resetează” pe fiecare rând: resetează doar acea valoare
+[*]„Resetează la valorile implicite” jos: resetează tot
+[/list]
+
+[h2]◆ Actualizare / Compatibilitate[/h2]
+Vechiul settings.ini este citit automat; vechiul folder language poate fi șters. Testat pe 2.3.30; ar trebui să funcționeze de la 1.3.10. Nu modifică resurse UI și nu folosește Harmony.
+
 
-[h2]◆ Ce este nou[/h2]
+[h2]◆ Întrebări frecvente[/h2]
 [list]
-[*]Valori bazate pe evenimente: fără interogări frecvente, cost de performanță aproape zero (aproximativ 0.3%~0.5% din timpul cadrului)
-[*]Sus: cât lipsește până la plin. Jos: curent / maxim
-[*]Panou F10 nou în joc: jocul se oprește, mouse-ul funcționează; ajustați poziția / dimensiunea fontului / formatul uitându-vă la HUD. Modificările se salvează automat
-[*]Buton „Resetează” separat pentru fiecare valoare
-[*]Tasta rapidă poate fi schimbată (implicit F10)
-[*]Filă nouă „Valori HUD” în setările jocului, în stil nativ (doar taste rapide)
-[*]Un singur DLL pentru toate limbile: urmează limba jocului
-[*]Rezolvat: „0 100/100” pe ecranul de încărcare și input repetat după închiderea panoului
-[*]Fără cerințe preliminare! Nu este nevoie de ModConfig / ModSetting / HarmonyLib
+[*]Tasta implicită pentru deschiderea panoului este F10. Dacă intră în conflict cu altă tastă, o poți schimba în „Setări → HUD Values”.
+[*]Nu văd numerele: verifică dacă modul este activ, încarcă un save, apasă F10 și dă click pe „Resetează la valorile implicite”.
+[*]Panoul nu încape la rezoluții mici: panoul se derulează — folosește rotița mouse-ului.
+[*]Vreau doar linia de sus sau de jos: dezactivează-o pe cealaltă din setări.
 [/list]
 
-[h2]◆ Comenzi[/h2]
-[list]
-[*]F10: deschide / închide panoul de setări (poate fi schimbat)
-[*]„Resetează” pe fiecare rând: resetează doar acea valoare
-[*]„Resetează la valorile implicite” jos: resetează tot
-[/list]
-
-[h2]◆ Actualizare / Compatibilitate[/h2]
-Vechiul settings.ini este citit automat; vechiul folder language poate fi șters. Testat pe 2.3.30; ar trebui să funcționeze de la 1.3.10. Nu modifică resurse UI și nu folosește Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Îmi pare rău…… am dispărut un an întreg.
-
-Nu pentru că nu voiam să actualizez. De fiecare dată când deschideam Workshop-ul și vedeam că cineva încă mai comentează, simțeam că nu am făcut destul de bine și nu îndrăzneam să apar…… chiar îmi pare rău.
-Am terminat în sfârșit 2.0. Sigur am fost stângace în multe locuri. Dacă vă dezamăgesc din nou undeva, vă rog să-mi spuneți și repar imediat.
-Dacă mai vreți, întoarceți-vă să vedeți în ce a devenit acest mic mod original. Chiar și o simplă privire m-ar face foarte fericită.
-Of…… asta e tot deocamdată. Mă duc să repar bug-uri.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Mulțumesc tuturor pentru sprijin—voi sunteți motivul pentru care continui să actualizez acest mod. La început arătam doar numere, acum sunt setări și multe limbi, și l-am crescut împreună. Vă iubesc ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Îmi pare rău…… am dispărut un an întreg.
+
+Nu pentru că nu voiam să actualizez. De fiecare dată când deschideam Workshop-ul și vedeam că cineva încă mai comentează, simțeam că nu am făcut destul de bine și nu îndrăzneam să apar…… chiar îmi pare rău.
+Am terminat în sfârșit 2.0. Sigur am fost stângace în multe locuri. Dacă vă dezamăgesc din nou undeva, vă rog să-mi spuneți și repar imediat.
+Dacă mai vreți, întoarceți-vă să vedeți în ce a devenit acest mic mod original. Chiar și o simplă privire m-ar face foarte fericită.
+Of…… asta e tot deocamdată. Mă duc să repar bug-uri.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Mulțumesc tuturor pentru sprijin—voi sunteți motivul pentru care continui să actualizez acest mod. La început arătam doar numere, acum sunt setări și multe limbi, și l-am crescut împreună. Vă iubesc ♥
+
 
 ###芬兰语|芬兰语
-TITLE: Parempi nesteytyksen ja kylläisyyden näyttö
-DESC:
-[h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.0[/h1]
+TITLE: Parempi nesteytyksen ja kylläisyyden näyttö
+DESC:
+[h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.0[/h1]
+
+[h2]◆ Mitä uutta[/h2]
+[list]
+[*]Tapahtumapohjaiset arvot: ei tiheää kyselyä, lähes nolla suorituskykykustannus (noin 0.3%~0.5% kuvakehyksen ajasta)
+[*]Ylhäällä: paljonko puuttuu täyteen. Alhaalla: nykyinen / maksimi
+[*]Uusi F10-paneeli pelissä: peli pysähtyy ja hiiri toimii; säädä sijaintia / fonttikokoa / muotoa HUD:ia katsoen. Muutokset tallentuvat automaattisesti
+[*]Jokaiselle arvolle erillinen „Nollaa”-painike
+[*]Pikanäppäimen voi vaihtaa (oletus F10)
+[*]Uusi „HUD-arvot”-välilehti pelin asetuksissa alkuperäisellä tyylillä (vain pikanäppäimet)
+[*]Yksi DLL kaikille kielille: seuraa pelin kieltä
+[*]Korjattu: „0 100/100” latausruudulla ja toistuva syöte paneelin sulkemisen jälkeen
+[*]Edelleen ilman edellytyksiä! ModConfig / ModSetting / HarmonyLib ei tarvita
+[/list]
+
+[h2]◆ Ohjaus[/h2]
+[list]
+[*]F10: avaa / sulje asetuspaneeli (vaihdettavissa)
+[*]„Nollaa” jokaisella rivillä: nollaa vain kyseinen arvo
+[*]„Palauta oletukset” alhaalla: nollaa kaikki
+[/list]
+
+[h2]◆ Päivitys / Yhteensopivuus[/h2]
+Vanha settings.ini luetaan automaattisesti; vanhan language-kansion voi poistaa. Testattu versiolla 2.3.30; pitäisi toimia 1.3.10+. Ei muuta UI-resursseja eikä käytä Harmonya.
+
 
-[h2]◆ Mitä uutta[/h2]
+[h2]◆ Usein kysytyt kysymykset[/h2]
 [list]
-[*]Tapahtumapohjaiset arvot: ei tiheää kyselyä, lähes nolla suorituskykykustannus (noin 0.3%~0.5% kuvakehyksen ajasta)
-[*]Ylhäällä: paljonko puuttuu täyteen. Alhaalla: nykyinen / maksimi
-[*]Uusi F10-paneeli pelissä: peli pysähtyy ja hiiri toimii; säädä sijaintia / fonttikokoa / muotoa HUD:ia katsoen. Muutokset tallentuvat automaattisesti
-[*]Jokaiselle arvolle erillinen „Nollaa”-painike
-[*]Pikanäppäimen voi vaihtaa (oletus F10)
-[*]Uusi „HUD-arvot”-välilehti pelin asetuksissa alkuperäisellä tyylillä (vain pikanäppäimet)
-[*]Yksi DLL kaikille kielille: seuraa pelin kieltä
-[*]Korjattu: „0 100/100” latausruudulla ja toistuva syöte paneelin sulkemisen jälkeen
-[*]Edelleen ilman edellytyksiä! ModConfig / ModSetting / HarmonyLib ei tarvita
+[*]Paneelin oletusavausnäppäin on F10. Jos se on ristiriidassa toisen näppäimen kanssa, voit vaihtaa sen kohdassa »Asetukset → HUD Values».
+[*]En näe numeroita: varmista, että modi on käytössä, lataa tallennus, paina F10 ja napsauta »Palauta oletukset».
+[*]Paneeli ei mahdu matalalla resoluutiolla: paneelia voi vierittää — käytä hiiren rullaa.
+[*]Haluan vain ylä- tai alarivin: sammuta tarpeeton asetuksissa.
 [/list]
 
-[h2]◆ Ohjaus[/h2]
-[list]
-[*]F10: avaa / sulje asetuspaneeli (vaihdettavissa)
-[*]„Nollaa” jokaisella rivillä: nollaa vain kyseinen arvo
-[*]„Palauta oletukset” alhaalla: nollaa kaikki
-[/list]
-
-[h2]◆ Päivitys / Yhteensopivuus[/h2]
-Vanha settings.ini luetaan automaattisesti; vanhan language-kansion voi poistaa. Testattu versiolla 2.3.30; pitäisi toimia 1.3.10+. Ei muuta UI-resursseja eikä käytä Harmonya.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Anteeksi…… katosin kokonaiseksi vuodeksi.
-
-Ei siksi, ettenkö olisi halunnut päivittää. Aina kun avasin Workshopin ja näin jonkun vielä kommentoivan, tunsin etten ollut tehnyt tarpeeksi hyvin, enkä uskaltanut näyttäytyä…… olen todella pahoillani.
-Sain vihdoin 2.0:n valmiiksi. Olin varmasti monessa paikassa kömpelö. Jos petän sinut jossain taas, kerrothan minulle, niin korjaan heti.
-Jos vielä haluat, tule takaisin katsomaan, miksi tämä pieni alkuperäinen modi on muuttunut. Pelkkä vilkaisu tekisi minut hyvin iloiseksi.
-Huh…… siinä kaikki tältä erää. Menen korjaamaan bugeja.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Kiitos kaikille tuesta—te olette syy, miksi jatkan tämän modin päivittämistä. Alussa näytimme vain numeroita, nyt on asetuksia ja monta kieltä, ja kasvatimme tämän yhdessä. Rakastan teitä ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Anteeksi…… katosin kokonaiseksi vuodeksi.
+
+Ei siksi, ettenkö olisi halunnut päivittää. Aina kun avasin Workshopin ja näin jonkun vielä kommentoivan, tunsin etten ollut tehnyt tarpeeksi hyvin, enkä uskaltanut näyttäytyä…… olen todella pahoillani.
+Sain vihdoin 2.0:n valmiiksi. Olin varmasti monessa paikassa kömpelö. Jos petän sinut jossain taas, kerrothan minulle, niin korjaan heti.
+Jos vielä haluat, tule takaisin katsomaan, miksi tämä pieni alkuperäinen modi on muuttunut. Pelkkä vilkaisu tekisi minut hyvin iloiseksi.
+Huh…… siinä kaikki tältä erää. Menen korjaamaan bugeja.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Kiitos kaikille tuesta—te olette syy, miksi jatkan tämän modin päivittämistä. Alussa näytimme vain numeroita, nyt on asetuksia ja monta kieltä, ja kasvatimme tämän yhdessä. Rakastan teitä ♥
+
 
 ###瑞典语|瑞典语
-TITLE: Bättre visning av hydrering och mättnad
-DESC:
-[h1]Bättre visning av hydrering och mättnad v2.0[/h1]
+TITLE: Bättre visning av hydrering och mättnad
+DESC:
+[h1]Bättre visning av hydrering och mättnad v2.0[/h1]
+
+[h2]◆ Vad är nytt[/h2]
+[list]
+[*]Händelsestyrda värden: ingen frekvent polling, nästan noll prestandakostnad (cirka 0.3%~0.5% av bildtiden)
+[*]Överst: hur mycket som saknas. Nederst: nuvarande / max
+[*]Ny F10-panel i spelet: spelet pausas och musen fungerar; justera position / teckenstorlek / format medan du ser HUD:en. Ändringarna sparas automatiskt
+[*]Separat ”Återställ”-knapp för varje värde
+[*]Snabbkommandot kan ändras (standard F10)
+[*]Ny flik ”HUD-värden” i spelinställningarna i originell stil (endast snabbkommandon)
+[*]En enda DLL för alla språk: följer spelets språk
+[*]Rättat: ”0 100/100” på laddningsskärmen och upprepat input efter att panelen stängts
+[*]Fortfarande utan förutsättningar! ModConfig / ModSetting / HarmonyLib behövs inte
+[/list]
+
+[h2]◆ Kontroller[/h2]
+[list]
+[*]F10: öppna / stäng inställningspanelen (kan ändras)
+[*]”Återställ” på varje rad: återställ bara det värdet
+[*]”Återställ till standard” längst ner: återställ allt
+[/list]
+
+[h2]◆ Uppgradering / Kompatibilitet[/h2]
+Gammal settings.ini läses automatiskt; den gamla language-mappen kan tas bort. Testad på 2.3.30; bör fungera från 1.3.10. Ändrar inte UI-resurser och använder inte Harmony.
+
 
-[h2]◆ Vad är nytt[/h2]
+[h2]◆ Vanliga frågor[/h2]
 [list]
-[*]Händelsestyrda värden: ingen frekvent polling, nästan noll prestandakostnad (cirka 0.3%~0.5% av bildtiden)
-[*]Överst: hur mycket som saknas. Nederst: nuvarande / max
-[*]Ny F10-panel i spelet: spelet pausas och musen fungerar; justera position / teckenstorlek / format medan du ser HUD:en. Ändringarna sparas automatiskt
-[*]Separat ”Återställ”-knapp för varje värde
-[*]Snabbkommandot kan ändras (standard F10)
-[*]Ny flik ”HUD-värden” i spelinställningarna i originell stil (endast snabbkommandon)
-[*]En enda DLL för alla språk: följer spelets språk
-[*]Rättat: ”0 100/100” på laddningsskärmen och upprepat input efter att panelen stängts
-[*]Fortfarande utan förutsättningar! ModConfig / ModSetting / HarmonyLib behövs inte
+[*]Standardtangenten för att öppna panelen är F10. Om den krockar med en annan tangent kan du ändra den i ”Inställningar → HUD Values”.
+[*]Jag ser inga siffror: kontrollera att modden är aktiv, ladda en sparning, tryck F10 och klicka på ”Återställ till standard”.
+[*]Panelen får inte plats vid låg upplösning: panelen kan scrollas — använd mushjulet.
+[*]Vill bara ha översta eller nedersta raden: stäng av den andra i inställningarna.
 [/list]
 
-[h2]◆ Kontroller[/h2]
-[list]
-[*]F10: öppna / stäng inställningspanelen (kan ändras)
-[*]”Återställ” på varje rad: återställ bara det värdet
-[*]”Återställ till standard” längst ner: återställ allt
-[/list]
-
-[h2]◆ Uppgradering / Kompatibilitet[/h2]
-Gammal settings.ini läses automatiskt; den gamla language-mappen kan tas bort. Testad på 2.3.30; bör fungera från 1.3.10. Ändrar inte UI-resurser och använder inte Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Förlåt…… jag försvann i ett helt år.
-
-Inte för att jag inte ville uppdatera. Varje gång jag öppnade Workshop och såg att någon fortfarande kommenterade kände jag att jag inte hade gjort det tillräckligt bra, och jag vågade inte visa mig…… jag är verkligen ledsen.
-Nu är 2.0 äntligen klar. Jag var säkert klumpig på många ställen. Om jag gör er besvikna igen, säg till, så fixar jag det direkt.
-Om ni fortfarande vill, kom tillbaka och se vad den här lilla ursprungliga modden har blivit. Bara en snabb titt skulle göra mig väldigt glad.
-Öh…… det var allt för nu. Jag ska fixa buggar.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Tack alla för stödet—ni är anledningen till att jag fortsätter uppdatera den här modden. I början visade vi bara siffror, nu finns inställningar och många språk, och vi har byggt det tillsammans. Jag älskar er ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Förlåt…… jag försvann i ett helt år.
+
+Inte för att jag inte ville uppdatera. Varje gång jag öppnade Workshop och såg att någon fortfarande kommenterade kände jag att jag inte hade gjort det tillräckligt bra, och jag vågade inte visa mig…… jag är verkligen ledsen.
+Nu är 2.0 äntligen klar. Jag var säkert klumpig på många ställen. Om jag gör er besvikna igen, säg till, så fixar jag det direkt.
+Om ni fortfarande vill, kom tillbaka och se vad den här lilla ursprungliga modden har blivit. Bara en snabb titt skulle göra mig väldigt glad.
+Öh…… det var allt för nu. Jag ska fixa buggar.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Tack alla för stödet—ni är anledningen till att jag fortsätter uppdatera den här modden. I början visade vi bara siffror, nu finns inställningar och många språk, och vi har byggt det tillsammans. Jag älskar er ♥
+
 
 ###土耳其语|土耳其语
-TITLE: Daha iyi sıvı ve tokluk göstergesi
-DESC:
-[h1]Daha iyi sıvı ve tokluk göstergesi v2.0[/h1]
+TITLE: Daha iyi sıvı ve tokluk göstergesi
+DESC:
+[h1]Daha iyi sıvı ve tokluk göstergesi v2.0[/h1]
+
+[h2]◆ Neler yeni[/h2]
+[list]
+[*]Olay tabanlı değerler: sık sorgulama yok, performans maliyeti neredeyse sıfır (kare süresinin yaklaşık %0.3~%0.5'i)
+[*]Üstte: dolması için ne kadar kaldığı. Altta: mevcut / maksimum
+[*]Oyunda yeni F10 paneli: oyun duraklar ve fare çalışır; HUD'u izlerken konum / yazı boyutu / biçim ayarlayın. Değişiklikler otomatik kaydedilir
+[*]Her değer için ayrı “Sıfırla” düğmesi
+[*]Kısayol tuşu değiştirilebilir (varsayılan F10)
+[*]Oyun ayarlarında yerel tarzda yeni “HUD Değerleri” sekmesi (yalnızca kısayollar)
+[*]Tüm diller için tek DLL: oyun dilini takip eder
+[*]Düzeltildi: yükleme ekranındaki “0 100/100” ve panel kapandıktan sonra tekrarlanan giriş
+[*]Hâlâ ön koşul yok! ModConfig / ModSetting / HarmonyLib gerekmez
+[/list]
+
+[h2]◆ Kontroller[/h2]
+[list]
+[*]F10: ayarlar panelini aç / kapat (değiştirilebilir)
+[*]Her satırdaki “Sıfırla”: yalnızca o değeri sıfırlar
+[*]Alttaki “Varsayılanlara sıfırla”: her şeyi sıfırlar
+[/list]
+
+[h2]◆ Yükseltme / Uyumluluk[/h2]
+Eski settings.ini otomatik okunur; eski language klasörü silinebilir. 2.3.30'da test edildi; 1.3.10+ sürümlerinde çalışmalı. UI kaynaklarını değiştirmez ve Harmony kullanmaz.
+
 
-[h2]◆ Neler yeni[/h2]
+[h2]◆ Sıkça sorulan sorular[/h2]
 [list]
-[*]Olay tabanlı değerler: sık sorgulama yok, performans maliyeti neredeyse sıfır (kare süresinin yaklaşık %0.3~%0.5'i)
-[*]Üstte: dolması için ne kadar kaldığı. Altta: mevcut / maksimum
-[*]Oyunda yeni F10 paneli: oyun duraklar ve fare çalışır; HUD'u izlerken konum / yazı boyutu / biçim ayarlayın. Değişiklikler otomatik kaydedilir
-[*]Her değer için ayrı “Sıfırla” düğmesi
-[*]Kısayol tuşu değiştirilebilir (varsayılan F10)
-[*]Oyun ayarlarında yerel tarzda yeni “HUD Değerleri” sekmesi (yalnızca kısayollar)
-[*]Tüm diller için tek DLL: oyun dilini takip eder
-[*]Düzeltildi: yükleme ekranındaki “0 100/100” ve panel kapandıktan sonra tekrarlanan giriş
-[*]Hâlâ ön koşul yok! ModConfig / ModSetting / HarmonyLib gerekmez
+[*]Paneli açmak için varsayılan tuş F10'dur. Başka bir tuşla çakışıyorsa «Ayarlar → HUD Values» bölümünden değiştirebilirsin.
+[*]Sayıları göremiyorum: modun açık olduğundan emin ol, bir kayıt yükle, F10'a bas ve «Varsayılanlara sıfırla»ya tıkla.
+[*]Düşük çözünürlükte panel sığmıyor: panel kaydırılabilir — fare tekerleğini kullan.
+[*]Sadece üst veya alt satırı istiyorum: ayarlardan gereksiz olanı kapat.
 [/list]
 
-[h2]◆ Kontroller[/h2]
-[list]
-[*]F10: ayarlar panelini aç / kapat (değiştirilebilir)
-[*]Her satırdaki “Sıfırla”: yalnızca o değeri sıfırlar
-[*]Alttaki “Varsayılanlara sıfırla”: her şeyi sıfırlar
-[/list]
-
-[h2]◆ Yükseltme / Uyumluluk[/h2]
-Eski settings.ini otomatik okunur; eski language klasörü silinebilir. 2.3.30'da test edildi; 1.3.10+ sürümlerinde çalışmalı. UI kaynaklarını değiştirmez ve Harmony kullanmaz.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Özür dilerim…… tam bir yıl boyunca ortadan kayboldum.
-
-Güncellemek istemediğimden değil. Workshop'u her açtığımda birileri hâlâ yorum yazıyor diye görünce yeterince iyi yapamadığımı hissediyordum ve görünmeye korkuyordum…… gerçekten özür dilerim.
-Sonunda 2.0'ı bitirdim. Birçok yerde kesinlikle acemice davrandım. Eğer sizi yine bir yerde hayal kırıklığına uğratırsam, lütfen söyleyin, hemen düzeltirim.
-Hâlâ isterseniz, geri dönün ve bu küçük ilk modun neye dönüştüğünü görün. Sadece bir bakış bile beni çok mutlu eder.
-Ah…… şimdilik bu kadar. Gidip hataları düzeltiyorum.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Desteğiniz için hepinize teşekkürler—bu modu güncellemeye devam etmemin sebebi sizsiniz. Başta sadece sayılar gösteriyorduk, şimdi ayarlar ve birçok dil var, bunu birlikte büyüttük. Sizi seviyorum ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Özür dilerim…… tam bir yıl boyunca ortadan kayboldum.
+
+Güncellemek istemediğimden değil. Workshop'u her açtığımda birileri hâlâ yorum yazıyor diye görünce yeterince iyi yapamadığımı hissediyordum ve görünmeye korkuyordum…… gerçekten özür dilerim.
+Sonunda 2.0'ı bitirdim. Birçok yerde kesinlikle acemice davrandım. Eğer sizi yine bir yerde hayal kırıklığına uğratırsam, lütfen söyleyin, hemen düzeltirim.
+Hâlâ isterseniz, geri dönün ve bu küçük ilk modun neye dönüştüğünü görün. Sadece bir bakış bile beni çok mutlu eder.
+Ah…… şimdilik bu kadar. Gidip hataları düzeltiyorum.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Desteğiniz için hepinize teşekkürler—bu modu güncellemeye devam etmemin sebebi sizsiniz. Başta sadece sayılar gösteriyorduk, şimdi ayarlar ve birçok dil var, bunu birlikte büyüttük. Sizi seviyorum ♥
+
 
 ###越南语|越南语
-TITLE: Hiển thị chỉ số nước và độ no tốt hơn
-DESC:
-[h1]Hiển thị chỉ số nước và độ no tốt hơn v2.0[/h1]
+TITLE: Hiển thị chỉ số nước và độ no tốt hơn
+DESC:
+[h1]Hiển thị chỉ số nước và độ no tốt hơn v2.0[/h1]
+
+[h2]◆ Có gì mới[/h2]
+[list]
+[*]Giá trị dựa trên sự kiện: không còn hỏi liên tục, chi phí hiệu năng gần như bằng không (khoảng 0.3%~0.5% thời gian khung hình)
+[*]Phía trên: còn thiếu bao nhiêu. Phía dưới: hiện tại / tối đa
+[*]Bảng F10 trong game: game tạm dừng, chuột dùng được; chỉnh vị trí / cỡ chữ / định dạng trong khi xem HUD. Thay đổi tự động lưu
+[*]Nút “Đặt lại” riêng cho từng giá trị
+[*]Có thể đổi phím tắt (mặc định F10)
+[*]Tab “Giá trị HUD” kiểu gốc trong cài đặt game (chỉ phím tắt)
+[*]Một DLL cho mọi ngôn ngữ: theo ngôn ngữ của game
+[*]Đã sửa: “0 100/100” ở màn hình tải và lặp input sau khi đóng bảng
+[*]Vẫn không cần mod nền! Không cần ModConfig / ModSetting / HarmonyLib
+[/list]
+
+[h2]◆ Điều khiển[/h2]
+[list]
+[*]F10: mở / đóng bảng cài đặt (có thể đổi phím)
+[*]“Đặt lại” ở mỗi dòng: chỉ đặt lại giá trị đó
+[*]“Đặt lại mặc định” ở dưới: đặt lại tất cả
+[/list]
+
+[h2]◆ Nâng cấp / Tương thích[/h2]
+settings.ini cũ được đọc tự động; có thể xóa thư mục language cũ. Đã thử trên 2.3.30; nên chạy được từ 1.3.10 trở lên. Không sửa tài nguyên UI và không dùng Harmony.
+
 
-[h2]◆ Có gì mới[/h2]
+[h2]◆ Câu hỏi thường gặp[/h2]
 [list]
-[*]Giá trị dựa trên sự kiện: không còn hỏi liên tục, chi phí hiệu năng gần như bằng không (khoảng 0.3%~0.5% thời gian khung hình)
-[*]Phía trên: còn thiếu bao nhiêu. Phía dưới: hiện tại / tối đa
-[*]Bảng F10 trong game: game tạm dừng, chuột dùng được; chỉnh vị trí / cỡ chữ / định dạng trong khi xem HUD. Thay đổi tự động lưu
-[*]Nút “Đặt lại” riêng cho từng giá trị
-[*]Có thể đổi phím tắt (mặc định F10)
-[*]Tab “Giá trị HUD” kiểu gốc trong cài đặt game (chỉ phím tắt)
-[*]Một DLL cho mọi ngôn ngữ: theo ngôn ngữ của game
-[*]Đã sửa: “0 100/100” ở màn hình tải và lặp input sau khi đóng bảng
-[*]Vẫn không cần mod nền! Không cần ModConfig / ModSetting / HarmonyLib
+[*]Phím mặc định để mở bảng là F10. Nếu bị trùng với phím khác, bạn có thể đổi trong «Cài đặt → HUD Values».
+[*]Không thấy số: kiểm tra mod đã bật chưa, vào save, nhấn F10 rồi bấm «Đặt lại mặc định».
+[*]Độ phân giải thấp thì bảng không vừa: bảng cuộn được — dùng con lăn chuột.
+[*]Chỉ muốn dòng trên hoặc dưới: tắt dòng không cần trong cài đặt.
 [/list]
 
-[h2]◆ Điều khiển[/h2]
-[list]
-[*]F10: mở / đóng bảng cài đặt (có thể đổi phím)
-[*]“Đặt lại” ở mỗi dòng: chỉ đặt lại giá trị đó
-[*]“Đặt lại mặc định” ở dưới: đặt lại tất cả
-[/list]
-
-[h2]◆ Nâng cấp / Tương thích[/h2]
-settings.ini cũ được đọc tự động; có thể xóa thư mục language cũ. Đã thử trên 2.3.30; nên chạy được từ 1.3.10 trở lên. Không sửa tài nguyên UI và không dùng Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Xin lỗi…… mình đã biến mất cả một năm.
-
-Không phải vì mình không muốn cập nhật. Mỗi lần mở Workshop và thấy vẫn có bạn bình luận, mình cảm thấy mình làm chưa đủ tốt và không dám lộ mặt…… thật sự xin lỗi.
-Cuối cùng mình cũng viết xong 2.0. Chắc chắn mình đã vụng về ở nhiều chỗ. Nếu lại khiến bạn thất vọng, hãy nói cho mình biết nhé, mình sẽ sửa ngay.
-Nếu bạn vẫn còn muốn, hãy quay lại xem mod nhỏ bé ban đầu này giờ đã thành thế nào. Chỉ cần nhìn qua một chút thôi mình cũng rất vui rồi.
-Hic…… tạm thời như vậy đã. Mình đi sửa bug đây.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
-P.S. Cảm ơn mọi người đã ủng hộ—các bạn là lý do mình tiếp tục cập nhật mod này. Ban đầu chỉ hiển thị con số, giờ đã có cài đặt và nhiều ngôn ngữ, và chúng ta đã cùng nuôi lớn nó. Yêu mọi người ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Xin lỗi…… mình đã biến mất cả một năm.
+
+Không phải vì mình không muốn cập nhật. Mỗi lần mở Workshop và thấy vẫn có bạn bình luận, mình cảm thấy mình làm chưa đủ tốt và không dám lộ mặt…… thật sự xin lỗi.
+Cuối cùng mình cũng viết xong 2.0. Chắc chắn mình đã vụng về ở nhiều chỗ. Nếu lại khiến bạn thất vọng, hãy nói cho mình biết nhé, mình sẽ sửa ngay.
+Nếu bạn vẫn còn muốn, hãy quay lại xem mod nhỏ bé ban đầu này giờ đã thành thế nào. Chỉ cần nhìn qua một chút thôi mình cũng rất vui rồi.
+Hic…… tạm thời như vậy đã. Mình đi sửa bug đây.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Cảm ơn mọi người đã ủng hộ—các bạn là lý do mình tiếp tục cập nhật mod này. Ban đầu chỉ hiển thị con số, giờ đã có cài đặt và nhiều ngôn ngữ, và chúng ta đã cùng nuôi lớn nó. Yêu mọi người ♥
+
 
 ###乌克兰语|乌克兰语
-TITLE: Покращене відображення спраги та голоду
-DESC:
-[h1]Покращене відображення спраги та голоду v2.0[/h1]
+TITLE: Покращене відображення спраги та голоду
+DESC:
+[h1]Покращене відображення спраги та голоду v2.0[/h1]
+
+[h2]◆ Що нового[/h2]
+[list]
+[*]Значення на основі подій: без частого опитування, майже нульові витрати продуктивності (близько 0.3%~0.5% часу кадру)
+[*]Зверху: скільки не вистачає до повного. Знизу: поточне / максимум
+[*]Нова панель F10 у грі: гра ставиться на паузу, миша працює; налаштовуйте позицію / розмір шрифту / формат, дивлячись на HUD. Зміни зберігаються автоматично
+[*]Окрема кнопка «Скинути» для кожного значення
+[*]Гарячу клавішу можна змінити (типово F10)
+[*]Нова вкладка «Значення HUD» у налаштуваннях гри в рідному стилі (лише гарячі клавіші)
+[*]Один DLL для всіх мов: слідує мові гри
+[*]Виправлено: «0 100/100» на екрані завантаження та повторне введення після закриття панелі
+[*]Досі без передумов! ModConfig / ModSetting / HarmonyLib не потрібні
+[/list]
+
+[h2]◆ Керування[/h2]
+[list]
+[*]F10: відкрити / закрити панель налаштувань (можна змінити)
+[*]«Скинути» в кожному рядку: скидає лише це значення
+[*]«Скинути до типових» унизу: скидає все
+[/list]
+
+[h2]◆ Оновлення / Сумісність[/h2]
+Старий settings.ini читається автоматично; стару папку language можна видалити. Перевірено на 2.3.30; має працювати на 1.3.10+. Не змінює ресурси UI та не використовує Harmony.
+
 
-[h2]◆ Що нового[/h2]
+[h2]◆ Поширені запитання[/h2]
 [list]
-[*]Значення на основі подій: без частого опитування, майже нульові витрати продуктивності (близько 0.3%~0.5% часу кадру)
-[*]Зверху: скільки не вистачає до повного. Знизу: поточне / максимум
-[*]Нова панель F10 у грі: гра ставиться на паузу, миша працює; налаштовуйте позицію / розмір шрифту / формат, дивлячись на HUD. Зміни зберігаються автоматично
-[*]Окрема кнопка «Скинути» для кожного значення
-[*]Гарячу клавішу можна змінити (типово F10)
-[*]Нова вкладка «Значення HUD» у налаштуваннях гри в рідному стилі (лише гарячі клавіші)
-[*]Один DLL для всіх мов: слідує мові гри
-[*]Виправлено: «0 100/100» на екрані завантаження та повторне введення після закриття панелі
-[*]Досі без передумов! ModConfig / ModSetting / HarmonyLib не потрібні
+[*]Типова клавіша для відкриття панелі — F10. Якщо вона конфліктує з іншою, її можна змінити в «Налаштування → HUD Values».
+[*]Не бачу чисел: переконайтеся, що мод увімкнено, завантажте збереження, натисніть F10 і клацніть «Скинути до типових».
+[*]Панель не вміщається на низькій роздільності: панель прокручується — скористайтеся коліщатком миші.
+[*]Потрібен лише верхній або нижній рядок: вимкніть непотрібний у налаштуваннях.
 [/list]
 
-[h2]◆ Керування[/h2]
-[list]
-[*]F10: відкрити / закрити панель налаштувань (можна змінити)
-[*]«Скинути» в кожному рядку: скидає лише це значення
-[*]«Скинути до типових» унизу: скидає все
-[/list]
-
-[h2]◆ Оновлення / Сумісність[/h2]
-Старий settings.ini читається автоматично; стару папку language можна видалити. Перевірено на 2.3.30; має працювати на 1.3.10+. Не змінює ресурси UI та не використовує Harmony.
-
-[hr][/hr]
-
-[h2]2026.10[/h2]
-Вибачте…… я зникла на цілий рік.
-
-Не тому, що не хотіла оновлювати. Щоразу, коли я відкривала Workshop і бачила, що хтось досі коментує, мені здавалося, що я зробила недостатньо добре, і я боялася показатися…… справді вибачте.
-Нарешті я дописала 2.0. Напевно, багато де я була незграбною. Якщо я знову вас десь розчарую — будь ласка, скажіть мені, і я одразу виправлю.
-Якщо ви ще не проти, поверніться й подивіться, чим став цей маленький початковий мод. Навіть одного погляду мені буде достатньо, щоб дуже зрадіти.
-Ух…… поки що все. Піду виправляти баги.
-
-[hr][/hr]
-
-[h2]2025.10[/h2]
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Вибачте…… я зникла на цілий рік.
+
+Не тому, що не хотіла оновлювати. Щоразу, коли я відкривала Workshop і бачила, що хтось досі коментує, мені здавалося, що я зробила недостатньо добре, і я боялася показатися…… справді вибачте.
+Нарешті я дописала 2.0. Напевно, багато де я була незграбною. Якщо я знову вас десь розчарую — будь ласка, скажіть мені, і я одразу виправлю.
+Якщо ви ще не проти, поверніться й подивіться, чим став цей маленький початковий мод. Навіть одного погляду мені буде достатньо, щоб дуже зрадіти.
+Ух…… поки що все. Піду виправляти баги.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
 P.S. Дякую всім за підтримку—саме ви причина, чому я продовжую оновлювати цей мод. Спочатку ми показували лише цифри, тепер є налаштування й багато мов, і ми виростили це разом. Люблю вас ♥

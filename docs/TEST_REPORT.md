@@ -73,6 +73,7 @@ verify.ps1
   - mod 内容：BetterHydrationEnergyHUD.dll (89,600 bytes) + info.ini + preview.png，内容大小由 427.957 KB 变为 251.013 KB；
   - 工坊更新日期已刷新，新增 1 条 Change Note：v2.0.0 完全重写说明；
   - 简介已按 **30 种语言**分别保存（语言下拉全部语种；马来语原本为空，本次补全）；文末“心里话”改为时间叠加记录：2026.10 新写段落在上，2025.10 旧版原文原样保留在下。
+- 工坊 FAQ 顶部新增「默认 F10，冲突可到设置 → 标签页改键」说明（30 语种；简中/繁中使用本地化标签名，其他语种 mod 内标签为英文 HUD Values）。
 - **GitHub** DoreiHime/Better-Hydration-Energy-HUD 已推送提交
   8fde89（v2.0.0 源码、文档、构建脚本、30 语种文案）；仓库 About 简介与 topics 已更新。
 - 发布后检查：英语页面标题恢复为 Better Hydration & Energy HUD；中文页面标题为「更好的吃喝数值可视化」；
