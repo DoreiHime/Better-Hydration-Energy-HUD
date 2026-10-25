@@ -1,15 +1,11 @@
-# Steam Workshop 全语种文案（30 种，v2.1.1）
+# Steam Workshop 全语种文案（30 种，v2.1.1，终版排版）
+# 排版：h1/h2 上下无空行；list 内无空行；正文段落间保留 1 空行。
 # 格式：###<key>|<Steam 语言下拉显示名> / TITLE: / DESC:
-# 列表内置顶加粗：快捷键可改 / 10 种游戏语言 / 零前置；文末为 2026.10 与 2025.10 心里话。
-
 ###简化中文|简体中文
 TITLE: 更好的吃喝数值可视化
 DESC:
-
 [h1]更好的吃喝数值可视化 v2.1.1[/h1]
-
 [h2]◆ 这次到底改了什么[/h2]
-
 [list]
 [*][b]快捷键可以改了！F10 和其他 mod 冲突的鸭宝可以换键（默认 F10）[/b]
 [*][b]单 DLL 多语言：跟随游戏语言自动切换，不用再替换 language 文件夹里的 DLL 了[/b]
@@ -22,32 +18,24 @@ DESC:
 [*]修复：进出场景时黑屏出现 “0 100/100” 的问题
 [*]修复：关闭面板后角色会“补开枪 / 补移动”的输入回放问题
 [/list]
-
 [h2]◆ 操作[/h2]
-
 [list]
 [*]F10：打开 / 关闭本 mod 的设置面板（可在设置里改键）
 [*]每个数值右侧的「重置」：只重置这一项
 [*]面板底部「恢复默认」：重置全部
 [/list]
-
 [h2]◆ 从旧版升级[/h2]
-
 [list]
 [*]旧的 settings.ini 会自动读取，位置 / 字号 / 显示开关都不用重新设置
 [*]旧的 language 文件夹可以删掉了，2.0 只需要一个 DLL
 [/list]
-
 [h2]◆ 兼容性[/h2]
-
 [list]
 [*]游戏 2.3.30 实测通过；1.3.10 及以上应该都可以（官方设置页接口从 1.3.10 开始提供）
 [*]不改游戏 UI 资源、不用 Harmony、不 patch 游戏函数
 [*]如果装了完全替换 HUD 的 mod，数值位置可能需要用「位置微调」自己挪一下
 [/list]
-
 [h2]◆ 常见问题[/h2]
-
 [list]
 [*][b]默认呼出面板的按键是 F10；如果和别的键位冲突，可以到「设置 → 吃喝数值」里修改按键。[/b]
 [*]看不到数字：先确认 mod 已启用，进档后按 F10 点一下“恢复默认”试试
@@ -56,9 +44,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]对不起……我消失了整整一年。[/b]
 
 不是不想更新，是每次打开工坊，看到还有鸭宝在留言，就觉得是我没做好，不敢冒头……对不起嘛。
@@ -70,9 +56,7 @@ DESC:
 呜……先说这么多，我去改 bug 了。
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]Ps.感谢大家的支持，你们是我更新的动力，从一开始的简单展示数值到现在的可调设置和多语言是大家和我一起完善了这个mod。我爱你们♥[/b]
 
 ------------------------------------------------------------------------------------------------------
@@ -86,11 +70,8 @@ DESC:
 ###繁体中文|繁体中文
 TITLE: 更好的吃喝數值可視化
 DESC:
-
 [h1]更好的吃喝數值可視化 v2.1.1[/h1]
-
 [h2]◆ 這次到底改了什麼[/h2]
-
 [list]
 [*][b]快捷鍵可以改了！F10 和其他 mod 衝突的鴨寶可以換鍵（預設 F10）[/b]
 [*][b]單 DLL 多語言：跟隨遊戲語言自動切換，不用再替換 language 資料夾裡的 DLL 了[/b]
@@ -103,32 +84,24 @@ DESC:
 [*]修復：進出場景時黑屏出現「0 100/100」的問題
 [*]修復：關閉面板後角色會「補開槍 / 補移動」的輸入回放問題
 [/list]
-
 [h2]◆ 操作[/h2]
-
 [list]
 [*]F10：開啟 / 關閉本 mod 的設定面板（可在設定裡改鍵）
 [*]每個數值右側的「重置」：只重置這一項
 [*]面板底部「恢復預設」：重置全部
 [/list]
-
 [h2]◆ 從舊版升級[/h2]
-
 [list]
 [*]舊的 settings.ini 會自動讀取，位置 / 字級 / 顯示開關都不用重新設定
 [*]舊的 language 資料夾可以刪掉了，2.0 只需要一個 DLL
 [/list]
-
 [h2]◆ 相容性[/h2]
-
 [list]
 [*]遊戲 2.3.30 實測通過；1.3.10 及以上應該都可以（官方設定頁介面從 1.3.10 開始提供）
 [*]不改遊戲 UI 資源、不用 Harmony、不 patch 遊戲函式
 [*]如果裝了完全替換 HUD 的 mod，數值位置可能需要用「位置微調」自己挪一下
 [/list]
-
 [h2]◆ 常見問題[/h2]
-
 [list]
 [*][b]預設呼出面板的按鍵是 F10；如果和其他鍵位衝突，可以到「設定 → 吃喝數值」裡修改按鍵。[/b]
 [*]看不到數字：先確認 mod 已啟用，進檔後按 F10 點一下「恢復預設」試試
@@ -137,9 +110,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]最後，說點心裡話[/h2]
-
 其實一年前剛發布的時候，立項那會兒都沒幾個 mod，沒想到剛寫好就發現已經有大佬發了類似的……當時出於對自己努力的自我安慰，還是厚著臉皮發出來了（「更好」是相對遊戲原版顯示來說的，不是針對那位大佬啊啊）。
 
 後來有些群友說這個 mod 沒用，說實話有點傷心。。。。明明自學了好久，那幾天一直在搞這個的。
@@ -159,9 +130,7 @@ DESC:
 [i]P.S. 這次真的不是詐屍，是認真重寫的！有什麼問題歡迎留言，我會看的（小聲）[/i]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]對不起……我消失了整整一年。[/b]
 
 不是不想更新，是每次打開工作坊，看到還有鴨寶在留言，就覺得是我沒做好，不敢冒頭……對不起嘛。
@@ -173,9 +142,7 @@ DESC:
 嗚……先說這麼多，我去改 bug 了。
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]Ps.感謝大家的支持，你們是我更新的動力，從一開始的簡單展示數值到現在的可調設定和多語言是大家和我一起完善了這個mod。我愛你們♥[/b]
 
 ------------------------------------------------------------------------------------------------------
@@ -189,11 +156,8 @@ DESC:
 ###英语|英语
 TITLE: Better Hydration & Energy HUD
 DESC:
-
 [h1]Better Hydration & Energy HUD v2.1.1[/h1]
-
 [h2]◆ What's new[/h2]
-
 [list]
 [*][b]The hotkey is now rebindable! If F10 conflicts with another mod, just change it (default F10)[/b]
 [*][b]One DLL for all languages: follows the game language. No more replacing the DLL in the language folder[/b]
@@ -206,32 +170,24 @@ DESC:
 [*]Fixed: “0 100/100” appearing on the loading screen when entering/leaving a level
 [*]Fixed: after closing the panel, the character would “replay” clicks / movement (input buffering)
 [/list]
-
 [h2]◆ Controls[/h2]
-
 [list]
 [*]F10: open / close the mod panel (rebindable in the settings)
 [*]“Reset” on each value row: reset only that value
 [*]“Reset to defaults” at the bottom: reset everything
 [/list]
-
 [h2]◆ Upgrading from 1.x[/h2]
-
 [list]
 [*]Your old settings.ini is read automatically — positions, font size and visibility toggles are kept
 [*]The old language folder can be deleted; 2.0 needs only one DLL
 [/list]
-
 [h2]◆ Compatibility[/h2]
-
 [list]
 [*]Tested on game 2.3.30; should work on 1.3.10+ (the official options hook was added in 1.3.10)
 [*]Doesn't modify game UI assets, doesn't use Harmony, doesn't patch game functions
 [*]If another mod fully replaces the HUD, you may need to adjust the position with the offset sliders
 [/list]
-
 [h2]◆ FAQ[/h2]
-
 [list]
 [*][b]The panel opens with F10 by default. If it conflicts with another key, you can change it in Settings → HUD Values.[/b]
 [*]Can't see the numbers: make sure the mod is enabled, then load a save, press F10 and click “Reset to defaults”
@@ -240,9 +196,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]I'm sorry... I disappeared for a whole year.[/b]
 
 It's not that I didn't want to update. Every time I opened the Workshop and saw someone still leaving a comment, I felt like I hadn't done enough and was too scared to show up... I'm really sorry.
@@ -254,19 +208,14 @@ If you're still willing, come back and see what this little original mod has bec
 Ugh... that's all for now. I'm going to fix bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Thanks for all the support—you're the reason I keep improving this mod. From a simple value display to adjustable settings and multilingual support, we've built this together. Love you all ♥[/b]
 
 ###日语|日语
 TITLE: もっと見やすい水分・満腹度表示
 DESC:
-
 [h1]もっと見やすい水分・満腹度表示 v2.1.1[/h1]
-
 [h2]◆ 変わったこと[/h2]
-
 [list]
 [*][b]ホットキーを変更可能に！F10 が他の mod と衝突する場合は変えられます（既定は F10）[/b]
 [*][b]単一 DLL で多言語対応：ゲームの言語に自動追従。language フォルダの DLL 差し替えは不要に[/b]
@@ -279,23 +228,16 @@ DESC:
 [*]修正：レベル出入り時の読み込み画面に「0 100/100」が出る問題
 [*]修正：パネルを閉じた後にキャラクターがクリック / 移動を「再生」してしまう入力バッファ問題
 [/list]
-
 [h2]◆ 操作[/h2]
-
 [list]
 [*]F10：設定パネルの開閉（設定で変更可能）
 [*]各行の「リセット」：その項目だけリセット
 [*]下部の「既定に戻す」：すべてリセット
 [/list]
-
 [h2]◆ 旧版からのアップグレード[/h2]
-
 古い settings.ini は自動で読み込まれます。古い language フォルダは削除して大丈夫です。
-
 [h2]◆ 互換性[/h2]
-
 2.3.30 で動作確認済み。1.3.10 以降なら動くはずです。UI アセットは変更せず、Harmony も使いません。
-
 [h2]◆ よくある質問[/h2]
 [list]
 [*][b]パネルを開く初期キーは F10 です。他のキーと衝突する場合は、「設定 → HUD Values」で変更できます。[/b]
@@ -305,9 +247,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]ごめんなさい……まるまる一年も姿を消してしまいました。[/b]
 
 更新したくないわけじゃなくて、ワークショップを開いてコメントを見るたびに、まだ使ってくれているアヒルがいるのに自分がちゃんとできていない気がして、顔を出せなかったんです……本当にごめんなさい。
@@ -319,19 +259,14 @@ DESC:
 うぅ……まずはここまで。バグを直してきます。
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. いつも応援してくれてありがとう。あなたたちがいるから更新を続けられます。最初はただ数値を表示するだけでしたが、今は設定も多言語もあって、みんなと一緒にここまで育ててきました。大好きです♥[/b]
 
 ###韩语|韩语
 TITLE: 더 나은 수분·포만감 수치 표시
 DESC:
-
 [h1]더 나은 수분·포만감 수치 표시 v2.1.1[/h1]
-
 [h2]◆ 달라진 점[/h2]
-
 [list]
 [*][b]단축키 변경 가능! F10이 다른 모드와 겹치면 바꾸세요(기본 F10)[/b]
 [*][b]단일 DLL 다국어: 게임 언어를 자동으로 따릅니다. language 폴더의 DLL을 교체할 필요 없음[/b]
@@ -344,23 +279,16 @@ DESC:
 [*]수정: 레벨을 드나들 때 검은 화면에 "0 100/100"이 뜨는 문제
 [*]수정: 패널을 닫은 뒤 캐릭터가 클릭 / 이동을 "재생"하던 입력 버퍼 문제
 [/list]
-
 [h2]◆ 조작[/h2]
-
 [list]
 [*]F10: 설정 패널 열기 / 닫기(설정에서 변경 가능)
 [*]각 행의 "초기화": 해당 항목만 초기화
 [*]하단 "기본값으로": 전체 초기화
 [/list]
-
 [h2]◆ 구버전에서 업그레이드[/h2]
-
 기존 settings.ini는 자동으로 읽습니다. 기존 language 폴더는 삭제해도 됩니다.
-
 [h2]◆ 호환성[/h2]
-
 2.3.30에서 테스트 완료. 1.3.10 이상에서 동작해야 합니다. UI 에셋을 바꾸지 않고 Harmony도 사용하지 않습니다.
-
 [h2]◆ 자주 묻는 질문[/h2]
 [list]
 [*][b]패널 기본 단축키는 F10입니다. 다른 키와 겹치면 '설정 → HUD Values'에서 바꿀 수 있습니다.[/b]
@@ -370,9 +298,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]죄송해요……꼬박 1년이나 사라져 버렸어요.[/b]
 
 업데이트하기 싫었던 게 아니라, 창작마당을 열고 댓글을 볼 때마다 아직 써 주는 오리들이 있는데 제가 잘 못하고 있는 것 같아서 얼굴을 못 들었어요…… 정말 죄송해요.
@@ -384,19 +310,14 @@ DESC:
 으…… 우선 여기까지. 버그 고치러 갈게요.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. 늘 응원해 주셔서 감사합니다. 여러분이 있어서 계속 업데이트할 수 있어요. 처음엔 숫자만 보여주는 작은 모드였는데, 이제는 설정도 다국어도 생겼고, 여러분과 함께 여기까지 키워 왔어요. 사랑해요 ♥[/b]
 
 ###俄语|俄语
 TITLE: Улучшенное отображение жажды и голода
 DESC:
-
 [h1]Улучшенное отображение жажды и голода v2.1.1[/h1]
-
 [h2]◆ Что нового[/h2]
-
 [list]
 [*][b]Горячую клавишу можно изменить! Если F10 конфликтует с другим модом, поменяйте её (по умолчанию F10)[/b]
 [*][b]Один DLL для всех языков: следует языку игры. Больше не нужно заменять DLL в папке language[/b]
@@ -409,23 +330,16 @@ DESC:
 [*]Исправлено: «0 100/100» на экране загрузки при входе/выходе с уровня
 [*]Исправлено: после закрытия панели персонаж «повторял» клики / движение (буферизация ввода)
 [/list]
-
 [h2]◆ Управление[/h2]
-
 [list]
 [*]F10: открыть / закрыть панель настроек (переназначается)
 [*]«Сброс» в каждой строке: сбросить только это значение
 [*]«Сбросить всё» внизу: сбросить все настройки
 [/list]
-
 [h2]◆ Обновление с 1.x[/h2]
-
 Старый settings.ini читается автоматически. Старую папку language можно удалить.
-
 [h2]◆ Совместимость[/h2]
-
 Проверено на 2.3.30; должно работать на 1.3.10+. Не изменяет ресурсы UI и не использует Harmony.
-
 [h2]◆ Частые вопросы[/h2]
 [list]
 [*][b]По умолчанию панель открывается на F10. Если клавиша конфликтует с другой, её можно изменить в «Настройки → HUD Values».[/b]
@@ -435,9 +349,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Простите…… я исчезла на целый год.[/b]
 
 Дело не в том, что мне не хотелось обновлять. Каждый раз, когда я открывала Мастерскую и видела комментарии, мне казалось, что я всё делаю недостаточно хорошо, и я боялась показаться…… правда простите.
@@ -449,19 +361,14 @@ DESC:
 Ух…… на этом пока всё. Пойду чинить баги.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Спасибо всем за поддержку — именно вы причина, по которой я продолжаю обновлять мод. Сначала это было просто отображение цифр, теперь появились настройки и несколько языков, и мы вырастили это вместе. Люблю вас ♥[/b]
 
 ###泰语|泰语
 TITLE: แสดงค่าน้ำและความอิ่มได้ชัดขึ้น
 DESC:
-
 [h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.1.1[/h1]
-
 [h2]◆ มีอะไรใหม่[/h2]
-
 [list]
 [*]ค่าตัวเลขขับเคลื่อนด้วยอีเวนต์ ไม่มีการpollบ่อย ๆ อีกต่อไป ต้นทุนประสิทธิภาพเกือบเป็นศูนย์ (ประมาณ 0.3%~0.5% ของเวลเฟรม)
 [*]ด้านบน: อีกเท่าไรถึงเต็ม ด้านล่าง: ค่าปัจจุบัน / ค่าสูงสุด
@@ -473,19 +380,14 @@ DESC:
 [*]แก้ปัญหา “0 100/100” ตอนโหลด และการเล่นอินพุตซ้ำหลังปิดแผง
 [*]ไม่ต้องใช้มอดพื้นฐาน (ไม่ต้องมี ModConfig / ModSetting / HarmonyLib)
 [/list]
-
 [h2]◆ การใช้งาน[/h2]
-
 [list]
 [*]F10: เปิด / ปิดแผงตั้งค่า (เปลี่ยนปุ่มได้)
 [*]ปุ่มรีเซ็ตแต่ละแถว: รีเซ็ตเฉพาะค่านั้น
 [*]ปุ่มล่างสุด: รีเซ็ตทั้งหมด
 [/list]
-
 [h2]◆ อัปเกรด / ความเข้ากันได้[/h2]
-
 settings.ini เดิมจะถูกอ่านอัตโนมัติ ลบโฟลเดอร์ language เดิมได้ ทดสอบบน 2.3.30 แล้ว ควรใช้ได้กับ 1.3.10+ ไม่แก้ไขทรัพยากร UI และไม่ใช้ Harmony
-
 [h2]◆ คำถามที่พบบ่อย[/h2]
 [list]
 [*]ปุ่มเริ่มต้นสำหรับเปิดแผงคือ F10 ถ้าชนกับปุ่มอื่น เปลี่ยนได้ที่ 'การตั้งค่า → HUD Values'
@@ -495,9 +397,7 @@ settings.ini เดิมจะถูกอ่านอัตโนมัติ 
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]ขอโทษนะ…… ฉันหายไปทั้งปีเลย[/b]
 
 ไม่ใช่ไม่อยากอัปเดต แต่ทุกครั้งที่เปิด Workshop แล้วเห็นยังมีลูกเป็ดคอมเมนต์อยู่ ฉันรู้สึกว่าตัวเองทำได้ไม่ดีพอเลยไม่กล้าโผล่หน้า…… ขอโทษจริง ๆ
@@ -509,19 +409,14 @@ settings.ini เดิมจะถูกอ่านอัตโนมัติ 
 อือ…… พอแค่นี้ก่อนนะ ฉันไปแก้บั๊กก่อน
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. ขอบคุณทุกคนที่สนับสนุนกันเสมอมานะ พวกคุณคือเหตุผลที่ฉันอัปเดตต่อ จากตอนแรกที่มีแค่ตัวเลข มาตอนนี้มีตั้งค่าและหลายภาษา แล้วเราก็ช่วยกันเติบโตมาถึงตรงนี้ด้วยกัน รักทุกคนเลย ♥[/b]
 
 ###印度尼西亚语|印度尼西亚语
 TITLE: Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
-
 [h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.1.1[/h1]
-
 [h2]◆ Apa yang baru[/h2]
-
 [list]
 [*]Nilai berbasis event: tidak ada polling frekuensi tinggi lagi, biaya performa hampir nol (sekitar 0.3%~0.5% waktu frame)
 [*]Atas: berapa lagi untuk penuh. Bawah: saat ini / maksimum
@@ -533,19 +428,14 @@ DESC:
 [*]Memperbaiki “0 100/100” di layar memuat dan input yang terulang setelah panel ditutup
 [*]Tanpa prasyarat! Tidak perlu ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Kontrol[/h2]
-
 [list]
 [*]F10: buka / tutup panel pengaturan (bisa diganti)
 [*]“Reset” di tiap baris: reset nilai itu saja
 [*]“Kembalikan ke default” di bawah: reset semua
 [/list]
-
 [h2]◆ Upgrade / Kompatibilitas[/h2]
-
 settings.ini lama dibaca otomatis; folder language lama boleh dihapus. Diuji di 2.3.30; seharusnya berfungsi di 1.3.10+. Tidak mengubah aset UI dan tidak memakai Harmony.
-
 [h2]◆ Pertanyaan umum[/h2]
 [list]
 [*][b]Tombol default untuk membuka panel adalah F10. Kalau bentrok dengan tombol lain, ubah di 'Pengaturan → HUD Values'.[/b]
@@ -555,9 +445,7 @@ settings.ini lama dibaca otomatis; folder language lama boleh dihapus. Diuji di 
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Maaf ya…… aku menghilang setahun penuh.[/b]
 
 Bukan karena tidak mau update. Setiap kali aku buka Workshop dan lihat masih ada anak bebek yang berkomentar, aku merasa belum melakukan yang terbaik dan jadi takut muncul…… maafkan aku ya.
@@ -569,19 +457,14 @@ Kalau kamu masih mau, coba kembali dan lihat mod kecil pertama ini sekarang jadi
 Huh…… segitu dulu ya. Aku mau memperbaiki bug.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Terima kasih atas dukungannya selama ini—kalian alasan aku terus memperbarui mod ini. Awalnya cuma menampilkan angka, sekarang ada pengaturan dan banyak bahasa, dan kita tumbuh bersama. Aku sayang kalian ♥[/b]
 
 ###马来语|马来语
 TITLE: Paparan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
-
 [h1]Paparan Nilai Hidrasi & Kenyang v2.1.1[/h1]
-
 [h2]◆ Apa yang baharu[/h2]
-
 [list]
 [*]Nilai dipacu peristiwa — kos prestasi hampir sifar (sekitar 0.3%~0.5% masa bingkai)
 [*]Atas: berapa lagi untuk penuh. Bawah: semasa / maksimum
@@ -593,23 +476,16 @@ DESC:
 [*]Membaiki paparan "0 100/100" pada skrin pemuatan dan input berulang selepas panel ditutup
 [*]Tiada prasyarat — tidak perlu ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Kawalan[/h2]
-
 [list]
 [*]F10: buka / tutup panel tetapan (boleh ditukar)
 [*]Butang set semula setiap baris: set semula nilai itu sahaja
 [*]Butang bawah: set semula semua
 [/list]
-
 [h2]◆ Naik taraf dari 1.x[/h2]
-
 settings.ini lama dibaca secara automatik; folder language lama boleh dipadam.
-
 [h2]◆ Keserasian[/h2]
-
 Diuji pada 2.3.30; sepatutnya berfungsi pada 1.3.10+. Tidak mengubah aset UI, tidak menggunakan Harmony.
-
 [h2]◆ Soalan lazim[/h2]
 [list]
 [*][b]Butang lalai untuk membuka panel ialah F10. Kalau bertembung dengan butang lain, tukar di 'Tetapan → HUD Values'.[/b]
@@ -619,9 +495,7 @@ Diuji pada 2.3.30; sepatutnya berfungsi pada 1.3.10+. Tidak mengubah aset UI, ti
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Maaf ya…… saya hilang selama setahun.[/b]
 
 Bukan kerana tak mahu mengemas kini. Setiap kali saya buka Workshop dan nampak masih ada anak itik yang komen, saya rasa saya belum buat dengan cukup baik, jadi saya tak berani muncul…… maafkan saya.
@@ -633,19 +507,14 @@ Kalau awak masih sudi, cuba balik dan lihat mod kecil pertama ini sekarang jadi 
 Huh…… setakat ini dulu ya. Saya pergi betulkan bug.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Terima kasih atas sokongan semua—kamu sebab saya terus mengemas kini mod ini. Dulu cuma tunjuk angka, sekarang ada tetapan dan banyak bahasa, dan kita membesarkannya bersama. Saya sayang kamu semua ♥[/b]
 
 ###保加利亚语|保加利亚语
 TITLE: По-добро показване на хидратация и ситост
 DESC:
-
 [h1]По-добро показване на хидратация и ситост v2.1.1[/h1]
-
 [h2]◆ Какво е ново[/h2]
-
 [list]
 [*]Стойности, задвижвани от събития: без често запитване, почти нулева цена за производителност (около 0.3%~0.5% от времето за кадър)
 [*]Отгоре: колко липсва до пълно. Отдолу: текущо / максимум
@@ -657,19 +526,14 @@ DESC:
 [*]Поправено: „0 100/100“ на екрана за зареждане и повтарящ се вход след затваряне на панела
 [*]Без предварителни изисквания! Няма нужда от ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Управление[/h2]
-
 [list]
 [*]F10: отваряне / затваряне на панела с настройки (може да се смени)
 [*]„Нулиране“ на всеки ред: нулира само тази стойност
 [*]„Връщане към стандартните“ отдолу: нулира всичко
 [/list]
-
 [h2]◆ Надграждане / Съвместимост[/h2]
-
 Старият settings.ini се чете автоматично; старата папка language може да се изтрие. Тествано на 2.3.30; трябва да работи на 1.3.10+. Не променя UI ресурси и не използва Harmony.
-
 [h2]◆ Често задавани въпроси[/h2]
 [list]
 [*][b]По подразбиране панелът се отваря с F10. Ако клавишата се сблъсква с друга, можете да я смените в „Настройки → HUD Values“.[/b]
@@ -679,9 +543,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Извинете…… изчезнах за цяла година.[/b]
 
 Не че не исках да обновя. Всеки път, когато отворя Workshop и видя, че някой още оставя коментар, усещам, че не съм се справила достатъчно добре, и ме е страх да се покажа…… наистина съжалявам.
@@ -693,19 +555,14 @@ DESC:
 Ъх…… това е засега. Отивам да поправям бъгове.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Благодаря на всички за подкрепата—вие сте причината да продължавам да обновявам мода. В началото показвахме само числа, сега има настройки и много езици, и го израснахме заедно. Обичам ви ♥[/b]
 
 ###捷克语|捷克语
 TITLE: Lepší zobrazení hydratace a sytosti
 DESC:
-
 [h1]Lepší zobrazení hydratace a sytosti v2.1.1[/h1]
-
 [h2]◆ Co je nového[/h2]
-
 [list]
 [*]Hodnoty řízené událostmi: žádné časté dotazování, téměř nulová zátěž (asi 0.3%~0.5% času snímku)
 [*]Nahoře: kolik chybí do plna. Dole: aktuální / maximum
@@ -717,19 +574,14 @@ DESC:
 [*]Opraveno: „0 100/100“ na načítací obrazovce a opakovaný vstup po zavření panelu
 [*]Bez předpokladů! Není potřeba ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Ovládání[/h2]
-
 [list]
 [*]F10: otevřít / zavřít panel nastavení (lze změnit)
 [*]„Obnovit“ u každého řádku: obnoví jen tuto hodnotu
 [*]„Obnovit výchozí“ dole: obnoví vše
 [/list]
-
 [h2]◆ Aktualizace / Kompatibilita[/h2]
-
 Starý settings.ini se načte automaticky; starou složku language lze smazat. Testováno na 2.3.30; mělo by fungovat na 1.3.10+. Nemění UI assety a nepoužívá Harmony.
-
 [h2]◆ Časté dotazy[/h2]
 [list]
 [*][b]Panel se ve výchozím nastavení otevírá klávesou F10. Pokud se kryje s jinou klávesou, můžete ji změnit v „Nastavení → HUD Values“.[/b]
@@ -739,9 +591,7 @@ Starý settings.ini se načte automaticky; starou složku language lze smazat. T
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Promiň…… zmizela jsem na celý rok.[/b]
 
 Ne že bych nechtěla aktualizovat. Pokaždé, když otevřu Workshop a vidím, že někdo pořád komentuje, cítím, že jsem to neudělala dost dobře, a bojím se ukázat…… opravdu se omlouvám.
@@ -753,19 +603,14 @@ Jestli ještě chcete, vraťte se a podívejte se, čím se tenhle malý původn
 Uf…… to je zatím vše. Jdu opravovat bugy.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Díky všem za podporu—vy jste důvod, proč mod dál aktualizuji. Ze začátku jsme jen ukazovali čísla, teď má nastavení i mnoho jazyků, a vyrostli jsme to spolu. Mám vás rád ♥[/b]
 
 ###丹麦语|丹麦语
 TITLE: Bedre visning af hydrering og mæthed
 DESC:
-
 [h1]Bedre visning af hydrering og mæthed v2.1.1[/h1]
-
 [h2]◆ Hvad er nyt[/h2]
-
 [list]
 [*]Værdier styret af hændelser: ingen hyppig polling, næsten nul ydeevneomkostning (ca. 0.3%~0.5% af frame-tiden)
 [*]Øverst: hvor meget der mangler. Nederst: nuværende / maksimum
@@ -777,19 +622,14 @@ DESC:
 [*]Rettet: “0 100/100” på indlæsningsskærmen og gentaget input efter lukning af panelet
 [*]Ingen forudsætninger! ModConfig / ModSetting / HarmonyLib er ikke nødvendige
 [/list]
-
 [h2]◆ Betjening[/h2]
-
 [list]
 [*]F10: åbn / luk indstillingspanelet (kan ændres)
 [*]“Nulstil” på hver række: nulstil kun den værdi
 [*]“Nulstil til standard” nederst: nulstil alt
 [/list]
-
 [h2]◆ Opgradering / Kompatibilitet[/h2]
-
 Gammel settings.ini læses automatisk; den gamle language-mappe kan slettes. Testet på 2.3.30; bør virke på 1.3.10+. Ændrer ikke UI-assets og bruger ikke Harmony.
-
 [h2]◆ Ofte stillede spørgsmål[/h2]
 [list]
 [*][b]Panelet åbnes som standard med F10. Hvis tasten støder sammen med en anden, kan du ændre den i »Indstillinger → HUD Values«.[/b]
@@ -799,9 +639,7 @@ Gammel settings.ini læses automatisk; den gamle language-mappe kan slettes. Tes
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Undskyld…… jeg forsvandt i et helt år.[/b]
 
 Ikke fordi jeg ikke ville opdatere. Hver gang jeg åbner Workshop og ser, at nogen stadig skriver en kommentar, føler jeg, at jeg ikke har gjort det godt nok, og jeg tør ikke vise mig…… undskyld virkelig.
@@ -813,19 +651,14 @@ Hvis I stadig vil, så kom tilbage og se, hvad dette lille oprindelige mod er bl
 Øh…… det er alt for nu. Jeg går ud og retter bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Tak til alle for støtten—I er grunden til, at jeg bliver ved med at opdatere moddet. I starten viste vi bare tal, nu er der indstillinger og mange sprog, og vi har bygget det sammen. Jeg elsker jer ♥[/b]
 
 ###德语|德语
 TITLE: Bessere Anzeige von Hydration & Sättigung
 DESC:
-
 [h1]Bessere Anzeige von Hydration & Sättigung v2.1.1[/h1]
-
 [h2]◆ Was ist neu[/h2]
-
 [list]
 [*]Eventgesteuerte Werte: kein häufiges Polling mehr, fast keine Performancekosten (ca. 0.3%~0.5% der Frame-Zeit)
 [*]Oben: wie viel bis zum Vollstand fehlt. Unten: aktuell / Maximum
@@ -837,19 +670,14 @@ DESC:
 [*]Behoben: „0 100/100“ auf dem Ladebildschirm und wiederholte Eingaben nach dem Schließen des Panels
 [*]Weiterhin ohne Voraussetzungen! Kein ModConfig / ModSetting / HarmonyLib nötig
 [/list]
-
 [h2]◆ Steuerung[/h2]
-
 [list]
 [*]F10: Einstellungs-Panel öffnen / schließen (änderbar)
 [*]„Zurücksetzen“ in jeder Zeile: nur diesen Wert zurücksetzen
 [*]„Auf Standard zurücksetzen“ unten: alles zurücksetzen
 [/list]
-
 [h2]◆ Upgrade / Kompatibilität[/h2]
-
 Die alte settings.ini wird automatisch gelesen; der alte language-Ordner kann gelöscht werden. Getestet auf 2.3.30; sollte ab 1.3.10 funktionieren. Ändert keine UI-Assets, nutzt kein Harmony.
-
 [h2]◆ Häufige Fragen[/h2]
 [list]
 [*][b]Das Panel öffnet sich standardmäßig mit F10. Wenn die Taste mit einer anderen kollidiert, kannst du sie unter „Einstellungen → HUD Values“ ändern.[/b]
@@ -859,9 +687,7 @@ Die alte settings.ini wird automatisch gelesen; der alte language-Ordner kann ge
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Entschuldigung…… ich bin ein ganzes Jahr verschwunden.[/b]
 
 Nicht, weil ich nicht updaten wollte. Jedes Mal, wenn ich den Workshop öffne und sehe, dass noch jemand kommentiert, habe ich das Gefühl, es nicht gut genug gemacht zu haben, und traue mich nicht hervor…… es tut mir wirklich leid.
@@ -873,19 +699,14 @@ Wenn ihr noch mögt, kommt zurück und schaut, was aus diesem kleinen ursprüngl
 Uff…… erst mal so viel. Ich gehe Bugs fixen.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Danke euch allen für die Unterstützung—ihr seid der Grund, warum ich den Mod weiter aktualisiere. Am Anfang gab es nur Zahlen, jetzt gibt es Einstellungen und viele Sprachen, und wir haben das zusammen wachsen lassen. Hab euch lieb ♥[/b]
 
 ###西班牙语-西班牙|西班牙语 - 西班牙
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
-
 [h1]Mejor visualización de hidratación y saciedad v2.1.1[/h1]
-
 [h2]◆ Novedades[/h2]
-
 [list]
 [*]Valores basados en eventos: sin sondeos frecuentes, coste de rendimiento casi nulo (unos 0.3%~0.5% del tiempo de fotograma)
 [*]Arriba: cuánto falta para llenar. Abajo: actual / máximo
@@ -897,19 +718,14 @@ DESC:
 [*]Corregido: «0 100/100» en la pantalla de carga y la repetición de entradas tras cerrar el panel
 [*]¡Sin requisitos previos! No hace falta ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Controles[/h2]
-
 [list]
 [*]F10: abrir / cerrar el panel de ajustes (se puede cambiar)
 [*]«Restablecer» en cada fila: restablece solo ese valor
 [*]«Restablecer valores predeterminados» abajo: restablece todo
 [/list]
-
 [h2]◆ Actualización / Compatibilidad[/h2]
-
 El settings.ini antiguo se lee automáticamente; la carpeta language antigua se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
-
 [h2]◆ Preguntas frecuentes[/h2]
 [list]
 [*][b]La tecla predeterminada para abrir el panel es F10. Si choca con otra tecla, puedes cambiarla en «Ajustes → HUD Values».[/b]
@@ -919,9 +735,7 @@ El settings.ini antiguo se lee automáticamente; la carpeta language antigua se 
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Perdón…… he desaparecido un año entero.[/b]
 
 No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo bastante bien y me daba miedo aparecer…… perdón de verdad.
@@ -933,19 +747,14 @@ Si todavía quieres, vuelve y mira en qué se ha convertido este pequeño mod or
 Uf…… eso es todo por ahora. Me voy a arreglar bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Gracias a todos por el apoyo—vosotros sois la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hemos hecho crecer juntos. Os quiero ♥[/b]
 
 ###西班牙语-拉丁美洲|西班牙语 - 拉丁美洲
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
-
 [h1]Mejor visualización de hidratación y saciedad v2.1.1[/h1]
-
 [h2]◆ Novedades[/h2]
-
 [list]
 [*]Valores basados en eventos: sin sondeos frecuentes, costo de rendimiento casi nulo (aprox. 0.3%~0.5% del tiempo de cuadro)
 [*]Arriba: cuánto falta para llenar. Abajo: actual / máximo
@@ -957,19 +766,14 @@ DESC:
 [*]Corregido: «0 100/100» en la pantalla de carga y la repetición de entradas al cerrar el panel
 [*]¡Sin requisitos previos! No necesitás ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Controles[/h2]
-
 [list]
 [*]F10: abrir / cerrar el panel de configuración (se puede cambiar)
 [*]«Restablecer» en cada fila: restablece solo ese valor
 [*]«Restablecer valores predeterminados» abajo: restablece todo
 [/list]
-
 [h2]◆ Actualización / Compatibilidad[/h2]
-
 El settings.ini viejo se lee automáticamente; la carpeta language vieja se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
-
 [h2]◆ Preguntas frecuentes[/h2]
 [list]
 [*][b]La tecla predeterminada para abrir el panel es F10. Si choca con otra tecla, podés cambiarla en «Ajustes → HUD Values».[/b]
@@ -979,9 +783,7 @@ El settings.ini viejo se lee automáticamente; la carpeta language vieja se pued
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Perdón…… desaparezcí un año entero.[/b]
 
 No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo suficientemente bien y me daba miedo aparecer…… perdón de verdad.
@@ -993,19 +795,14 @@ Si todavía querés, volvé y mirá en qué se convirtió este pequeño mod orig
 Uf…… eso es todo por ahora. Me voy a arreglar bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Gracias a todos por el apoyo—ustedes son la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hicimos crecer juntos. Los quiero ♥[/b]
 
 ###希腊语|希腊语
 TITLE: Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού
 DESC:
-
 [h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.1.1[/h1]
-
 [h2]◆ Τι νέο υπάρχει[/h2]
-
 [list]
 [*]Τιμές που οδηγούνται από συμβάντα: χωρίς συχνά polls, σχεδόν μηδενικό κόστος απόδοσης (περίπου 0.3%~0.5% του χρόνου καρέ)
 [*]Πάνω: πόσο λείπει για να γεμίσει. Κάτω: τρέχον / μέγιστο
@@ -1017,19 +814,14 @@ DESC:
 [*]Διορθώθηκε: «0 100/100» στην οθόνη φόρτωσης και επανάληψη εισόδου μετά το κλείσιμο του πάνελ
 [*]Χωρίς προαπαιτούμενα! Δεν χρειάζεται ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Χειριστήρια[/h2]
-
 [list]
 [*]F10: άνοιγμα / κλείσιμο του πάνελ ρυθμίσεων (αλλάζει)
 [*]«Επαναφορά» σε κάθε σειρά: επαναφέρει μόνο αυτή την τιμή
 [*]«Επαναφορά προεπιλογών» κάτω: επαναφέρει τα πάντα
 [/list]
-
 [h2]◆ Αναβάθμιση / Συμβατότητα[/h2]
-
 Το παλιό settings.ini διαβάζεται αυτόματα· ο παλιός φάκελος language μπορεί να διαγραφεί. Δοκιμασμένο στο 2.3.30· πρέπει να δουλεύει από 1.3.10+. Δεν αλλάζει πόρους UI και δεν χρησιμοποιεί Harmony.
-
 [h2]◆ Συχνές ερωτήσεις[/h2]
 [list]
 [*][b]Το προεπιλεγμένο κουμπί για το πάνελ είναι το F10. Αν συγκρούεται με άλλο κουμπί, μπορείτε να το αλλάξετε στις «Ρυθμίσεις → HUD Values».[/b]
@@ -1039,9 +831,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Συγγνώμη…… εξαφανίστηκα για έναν ολόκληρο χρόνο.[/b]
 
 Δεν είναι ότι δεν ήθελα να ενημερώσω. Κάθε φορά που άνοιγα το Workshop και έβλεπα ότι κάποιος ακόμα σχολιάζει, ένιωθα ότι δεν το είχα κάνει αρκετά καλά και φοβόμουν να εμφανιστώ…… πραγματικά συγγνώμη.
@@ -1053,19 +843,14 @@ DESC:
 Ωχ…… αυτά για τώρα. Πάω να διορθώσω bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Ευχαριστώ όλους για την υποστήριξη—εσείς είστε ο λόγος που συνεχίζω να ενημερώνω το mod. Στην αρχή δείχναμε μόνο αριθμούς, τώρα υπάρχουν ρυθμίσεις και πολλές γλώσσες, και το μεγαλώσαμε μαζί. Σας αγαπώ ♥[/b]
 
 ###法语|法语
 TITLE: Meilleur affichage de l'hydratation et de la satiété
 DESC:
-
 [h1]Meilleur affichage de l'hydratation et de la satiété v2.1.1[/h1]
-
 [h2]◆ Quoi de neuf[/h2]
-
 [list]
 [*]Valeurs pilotées par événements : plus d'interrogation fréquente, coût de performance quasi nul (environ 0.3%~0.5% du temps de frame)
 [*]En haut : combien il manque pour remplir. En bas : actuel / maximum
@@ -1077,19 +862,14 @@ DESC:
 [*]Corrigé : « 0 100/100 » sur l'écran de chargement et les entrées rejouées après la fermeture du panneau
 [*]Toujours sans prérequis ! Pas besoin de ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Commandes[/h2]
-
 [list]
 [*]F10 : ouvrir / fermer le panneau de réglages (modifiable)
 [*]« Réinitialiser » sur chaque ligne : réinitialise seulement cette valeur
 [*]« Rétablir les valeurs par défaut » en bas : tout réinitialiser
 [/list]
-
 [h2]◆ Mise à niveau / Compatibilité[/h2]
-
 L'ancien settings.ini est lu automatiquement ; l'ancien dossier language peut être supprimé. Testé sur 2.3.30 ; devrait fonctionner à partir de 1.3.10. Ne modifie pas les ressources UI et n'utilise pas Harmony.
-
 [h2]◆ Questions fréquentes[/h2]
 [list]
 [*]La touche par défaut pour ouvrir le panneau est F10. Si elle entre en conflit avec une autre touche, tu peux la modifier dans « Paramètres → HUD Values ».
@@ -1099,9 +879,7 @@ L'ancien settings.ini est lu automatiquement ; l'ancien dossier language peut ê
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Pardon…… j'ai disparu pendant une année entière.[/b]
 
 Ce n'est pas que je ne voulais pas mettre à jour. Chaque fois que j'ouvrais le Workshop et que je voyais quelqu'un commenter encore, je sentais que je n'avais pas fait assez bien et je n'osais pas me montrer…… je suis vraiment désolée.
@@ -1113,19 +891,14 @@ Si tu veux bien, reviens voir ce que ce petit mod d'origine est devenu. Même un
 Euh…… c'est tout pour l'instant. Je vais corriger des bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Merci à tous pour votre soutien—c'est vous la raison pour laquelle je continue à mettre à jour ce mod. Au début, on n'affichait que des chiffres, maintenant il y a des réglages et plein de langues, et on l'a fait grandir ensemble. Je vous aime ♥[/b]
 
 ###意大利语|意大利语
 TITLE: Visualizzazione migliore di idratazione e sazietà
 DESC:
-
 [h1]Visualizzazione migliore di idratazione e sazietà v2.1.1[/h1]
-
 [h2]◆ Novità[/h2]
-
 [list]
 [*]Valori basati su eventi: niente polling frequente, costo prestazioni quasi nullo (circa 0.3%~0.5% del tempo di frame)
 [*]Sopra: quanto manca per riempire. Sotto: attuale / massimo
@@ -1137,19 +910,14 @@ DESC:
 [*]Corretto: «0 100/100» nella schermata di caricamento e input ripetuti dopo la chiusura del pannello
 [*]Sempre senza prerequisiti! Non servono ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Comandi[/h2]
-
 [list]
 [*]F10: apri / chiudi il pannello delle impostazioni (modificabile)
 [*]«Reimposta» su ogni riga: reimposta solo quel valore
 [*]«Ripristina i valori predefiniti» in basso: reimposta tutto
 [/list]
-
 [h2]◆ Aggiornamento / Compatibilità[/h2]
-
 Il vecchio settings.ini viene letto automaticamente; la vecchia cartella language può essere eliminata. Testato su 2.3.30; dovrebbe funzionare da 1.3.10 in su. Non modifica risorse UI e non usa Harmony.
-
 [h2]◆ Domande frequenti[/h2]
 [list]
 [*][b]Il tasto predefinito per aprire il pannello è F10. Se entra in conflitto con un altro tasto, puoi cambiarlo in «Impostazioni → HUD Values».[/b]
@@ -1159,9 +927,7 @@ Il vecchio settings.ini viene letto automaticamente; la vecchia cartella languag
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Scusate…… sono sparita per un anno intero.[/b]
 
 Non è che non volessi aggiornare. Ogni volta che aprivo il Workshop e vedevo che qualcuno commentava ancora, sentivo di non aver fatto abbastanza bene e non osavo farmi vedere…… scusate davvero.
@@ -1173,19 +939,14 @@ Se ancora volete, tornate a vedere in cosa si è trasformata questa piccola mod 
 Uff…… per ora è tutto. Vado a sistemare i bug.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Grazie a tutti per il supporto—siete il motivo per cui continuo ad aggiornare questa mod. All'inizio mostravamo solo numeri, ora ci sono impostazioni e tante lingue, e l'abbiamo fatto crescere insieme. Vi voglio bene ♥[/b]
 
 ###匈牙利语|匈牙利语
 TITLE: Jobb hidratáció- és jóllakottság-kijelző
 DESC:
-
 [h1]Jobb hidratáció- és jóllakottság-kijelző v2.1.1[/h1]
-
 [h2]◆ Mi új?[/h2]
-
 [list]
 [*]Eseményvezérelt értékek: nincs gyakori lekérdezés, szinte nulla teljesítményköltség (kb. 0.3%~0.5% képkockaidő)
 [*]Felül: mennyi hiányzik a teljes feltöltéshez. Alul: aktuális / maximum
@@ -1197,19 +958,14 @@ DESC:
 [*]Javítva: „0 100/100” a betöltőképernyőn és az ismétlődő bemenet a panel bezárása után
 [*]Továbbra is előfeltételek nélkül! Nem kell ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Irányítás[/h2]
-
 [list]
 [*]F10: a beállításpanel megnyitása / bezárása (módosítható)
 [*]„Visszaállítás” minden sorban: csak azt az értéket állítja vissza
 [*]„Alapértelmezések visszaállítása” alul: mindent visszaállít
 [/list]
-
 [h2]◆ Frissítés / Kompatibilitás[/h2]
-
 A régi settings.ini automatikusan betöltődik; a régi language mappa törölhető. Tesztelve 2.3.30-on; 1.3.10-től működnie kell. Nem módosít UI-erőforrásokat, és nem használ Harmony-t.
-
 [h2]◆ Gyakran ismételt kérdések[/h2]
 [list]
 [*][b]A panel alapértelmezett nyitógombja az F10. Ha ütközik egy másik gombbal, a „Beállítások → HUD Values” menüben módosíthatod.[/b]
@@ -1219,9 +975,7 @@ A régi settings.ini automatikusan betöltődik; a régi language mappa törölh
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Bocsánat…… egy egész évre eltűntem.[/b]
 
 Nem azért, mert nem akartam frissíteni. Valahányszor megnyitottam a Workshopot és láttam, hogy valaki még mindig kommentel, úgy éreztem, nem csináltam elég jól, és féltem előjönni…… tényleg nagyon sajnálom.
@@ -1233,19 +987,14 @@ Ha még van kedved, gyere vissza és nézd meg, mivé lett ez a kis eredeti mod.
 Hú…… egyelőre ennyi. Megyek javítani a bugokat.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Köszönöm mindenkinek a támogatást—ti vagytok az ok, amiért tovább frissítem ezt a modot. Az elején csak számokat mutattunk, most már beállítások és sok nyelv is van, és együtt növesztettük. Szeretlek titeket ♥[/b]
 
 ###荷兰语|荷兰语
 TITLE: Betere weergave van hydratatie en verzadiging
 DESC:
-
 [h1]Betere weergave van hydratatie en verzadiging v2.1.1[/h1]
-
 [h2]◆ Wat is er nieuw[/h2]
-
 [list]
 [*]Waarden op basis van events: geen frequente polling meer, bijna geen prestatiekosten (ongeveer 0.3%~0.5% van de frametijd)
 [*]Boven: hoeveel er nog ontbreekt. Onder: huidig / maximaal
@@ -1257,19 +1006,14 @@ DESC:
 [*]Opgelost: “0 100/100” op het laadscherm en herhaalde invoer na het sluiten van het paneel
 [*]Nog steeds zonder vereisten! Geen ModConfig / ModSetting / HarmonyLib nodig
 [/list]
-
 [h2]◆ Besturing[/h2]
-
 [list]
 [*]F10: instellingenpaneel openen / sluiten (aanpasbaar)
 [*]“Reset” op elke rij: alleen die waarde resetten
 [*]“Standaardwaarden herstellen” onderaan: alles resetten
 [/list]
-
 [h2]◆ Upgraden / Compatibiliteit[/h2]
-
 De oude settings.ini wordt automatisch gelezen; de oude language-map kan worden verwijderd. Getest op 2.3.30; zou moeten werken vanaf 1.3.10. Wijzigt geen UI-assets en gebruikt geen Harmony.
-
 [h2]◆ Veelgestelde vragen[/h2]
 [list]
 [*][b]De standaardtoets om het paneel te openen is F10. Als die botst met een andere toets, kun je hem wijzigen in 'Instellingen → HUD Values'.[/b]
@@ -1279,9 +1023,7 @@ De oude settings.ini wordt automatisch gelezen; de oude language-map kan worden 
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Sorry…… ik ben een heel jaar verdwenen.[/b]
 
 Niet omdat ik niet wilde updaten. Elke keer als ik de Workshop opende en zag dat er nog iemand reageerde, voelde ik dat ik het niet goed genoeg had gedaan en durfde ik me niet te laten zien…… het spijt me echt.
@@ -1293,19 +1035,14 @@ Als je nog wilt, kom terug en kijk wat dit kleine originele mod is geworden. All
 Eh…… dat is het voor nu. Ik ga bugs fixen.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Dank jullie allemaal voor de steun—jullie zijn de reden dat ik deze mod blijf updaten. In het begin lieten we alleen cijfers zien, nu zijn er instellingen en veel talen, en we hebben het samen laten groeien. Ik hou van jullie ♥[/b]
 
 ###挪威语|挪威语
 TITLE: Bedre visning av hydrering og metthet
 DESC:
-
 [h1]Bedre visning av hydrering og metthet v2.1.1[/h1]
-
 [h2]◆ Hva er nytt[/h2]
-
 [list]
 [*]Hendelsesdrevne verdier: ingen hyppig polling, nesten null ytelseskostnad (ca. 0.3%~0.5% av bildetiden)
 [*]Øverst: hvor mye som mangler. Nederst: nåværende / maksimum
@@ -1317,19 +1054,14 @@ DESC:
 [*]Rettet: «0 100/100» på lasteskjermen og gjentatt input etter at panelet lukkes
 [*]Fortatt uten forutsetninger! ModConfig / ModSetting / HarmonyLib er ikke nødvendig
 [/list]
-
 [h2]◆ Kontroller[/h2]
-
 [list]
 [*]F10: åpne / lukke innstillingspanelet (kan endres)
 [*]«Tilbakestill» på hver rad: tilbakestill bare den verdien
 [*]«Tilbakestill til standard» nederst: tilbakestill alt
 [/list]
-
 [h2]◆ Oppgradering / Kompatibilitet[/h2]
-
 Gammel settings.ini leses automatisk; den gamle language-mappen kan slettes. Testet på 2.3.30; bør fungere på 1.3.10+. Endrer ikke UI-ressurser og bruker ikke Harmony.
-
 [h2]◆ Ofte stilte spørsmål[/h2]
 [list]
 [*][b]Standardtasten for å åpne panelet er F10. Hvis den kolliderer med en annen tast, kan du endre den i «Innstillinger → HUD Values».[/b]
@@ -1339,9 +1071,7 @@ Gammel settings.ini leses automatisk; den gamle language-mappen kan slettes. Tes
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Beklager…… jeg forsvant i et helt år.[/b]
 
 Ikke fordi jeg ikke ville oppdatere. Hver gang jeg åpnet Workshop og så at noen fortsatt kommenterte, følte jeg at jeg ikke hadde gjort det godt nok, og jeg turte ikke vise meg…… jeg er virkelig lei meg.
@@ -1353,19 +1083,14 @@ Hvis dere fortsatt vil, kom tilbake og se hva denne lille opprinnelige modden ha
 Æh…… det er alt for nå. Jeg går og fikser bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Takk til alle for støtten—dere er grunnen til at jeg fortsetter å oppdatere denne modden. I starten viste vi bare tall, nå er det innstillinger og mange språk, og vi har bygget det sammen. Jeg elsker dere ♥[/b]
 
 ###波兰语|波兰语
 TITLE: Lepsze wyświetlanie nawodnienia i sytości
 DESC:
-
 [h1]Lepsze wyświetlanie nawodnienia i sytości v2.1.1[/h1]
-
 [h2]◆ Co nowego[/h2]
-
 [list]
 [*]Wartości oparte na zdarzeniach: bez częstego odpytywania, niemal zerowy koszt wydajności (około 0.3%~0.5% czasu klatki)
 [*]Góra: ile brakuje do pełna. Dół: aktualne / maksimum
@@ -1377,19 +1102,14 @@ DESC:
 [*]Naprawiono: „0 100/100” na ekranie ładowania i powtarzanie wejścia po zamknięciu panelu
 [*]Nadal bez wymagań! Nie trzeba ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Sterowanie[/h2]
-
 [list]
 [*]F10: otwórz / zamknij panel ustawień (można zmienić)
 [*]„Resetuj” w każdym wierszu: resetuje tylko tę wartość
 [*]„Przywróć domyślne” na dole: resetuje wszystko
 [/list]
-
 [h2]◆ Aktualizacja / Kompatybilność[/h2]
-
 Stary settings.ini jest czytany automatycznie; stary folder language można usunąć. Przetestowano na 2.3.30; powinno działać od 1.3.10. Nie zmienia zasobów UI i nie używa Harmony.
-
 [h2]◆ Najczęstsze pytania[/h2]
 [list]
 [*][b]Domyślnym klawiszem otwierania panelu jest F10. Jeśli koliduje z innym klawiszem, możesz go zmienić w „Ustawienia → HUD Values”.[/b]
@@ -1399,9 +1119,7 @@ Stary settings.ini jest czytany automatycznie; stary folder language można usun
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Przepraszam…… zniknęłam na cały rok.[/b]
 
 Nie dlatego, że nie chciałam aktualizować. Za każdym razem, gdy otwierałam Workshop i widziałam, że ktoś wciąż komentuje, czułam, że nie zrobiłam tego wystarczająco dobrze, i bałam się pokazać…… naprawdę przepraszam.
@@ -1413,19 +1131,14 @@ Jeśli nadal chcecie, wróćcie i zobaczcie, w co zmienił się ten mały pierwo
 Uch…… to na razie tyle. Idę naprawiać bugi.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Dziękuję wszystkim za wsparcie—to wy jesteście powodem, dla którego wciąż aktualizuję tego moda. Na początku pokazywaliśmy tylko liczby, teraz są ustawienia i wiele języków, i wspólnie to rozwinęliśmy. Kocham was ♥[/b]
 
 ###葡萄牙语-葡萄牙|葡萄牙语 - 葡萄牙
 TITLE: Melhor visualização de hidratação e saciedade
 DESC:
-
 [h1]Melhor visualização de hidratação e saciedade v2.1.1[/h1]
-
 [h2]◆ O que há de novo[/h2]
-
 [list]
 [*]Valores baseados em eventos: sem sondagens frequentes, custo de desempenho quase nulo (cerca de 0.3%~0.5% do tempo de frame)
 [*]Em cima: quanto falta para encher. Em baixo: atual / máximo
@@ -1437,19 +1150,14 @@ DESC:
 [*]Corrigido: «0 100/100» no ecrã de carregamento e repetição de input após fechar o painel
 [*]Continua sem pré-requisitos! Não precisa de ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Controlos[/h2]
-
 [list]
 [*]F10: abrir / fechar o painel de definições (alterável)
 [*]«Repor» em cada linha: repõe apenas esse valor
 [*]«Repor predefinições» em baixo: repõe tudo
 [/list]
-
 [h2]◆ Atualização / Compatibilidade[/h2]
-
 O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado em 2.3.30; deve funcionar a partir de 1.3.10. Não altera recursos de UI nem usa Harmony.
-
 [h2]◆ Perguntas frequentes[/h2]
 [list]
 [*][b]A tecla predefinida para abrir o painel é F10. Se entrar em conflito com outra tecla, podes alterá-la em «Definições → HUD Values».[/b]
@@ -1459,9 +1167,7 @@ O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser 
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Desculpem…… desapareci um ano inteiro.[/b]
 
 Não é que não quisesse atualizar. Sempre que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpem mesmo.
@@ -1473,19 +1179,14 @@ Se ainda quiserem, voltem e vejam no que se tornou este pequeno mod original. S�
 Uh…… é tudo por agora. Vou arranjar bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo a atualizar este mod. No início só mostrávamos números, agora há definições e muitas línguas, e fizemo-lo crescer juntos. Amo-vos ♥[/b]
 
 ###葡萄牙语-巴西|葡萄牙语 - 巴西
 TITLE: Melhor exibição de hidratação e saciedade
 DESC:
-
 [h1]Melhor exibição de hidratação e saciedade v2.1.1[/h1]
-
 [h2]◆ O que há de novo[/h2]
-
 [list]
 [*]Valores baseados em eventos: sem polling frequente, custo de desempenho quase zero (cerca de 0.3%~0.5% do tempo de frame)
 [*]Em cima: quanto falta para encher. Embaixo: atual / máximo
@@ -1497,19 +1198,14 @@ DESC:
 [*]Corrigido: “0 100/100” na tela de carregamento e repetição de input após fechar o painel
 [*]Continua sem pré-requisitos! Não precisa de ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Controles[/h2]
-
 [list]
 [*]F10: abrir / fechar o painel de configurações (alterável)
 [*]“Redefinir” em cada linha: redefine apenas esse valor
 [*]“Redefinir padrões” embaixo: redefine tudo
 [/list]
-
 [h2]◆ Atualização / Compatibilidade[/h2]
-
 O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado no 2.3.30; deve funcionar a partir do 1.3.10. Não altera recursos de UI nem usa Harmony.
-
 [h2]◆ Perguntas frequentes[/h2]
 [list]
 [*][b]A tecla padrão para abrir o painel é F10. Se entrar em conflito com outra tecla, você pode alterá-la em «Configurações → HUD Values».[/b]
@@ -1519,9 +1215,7 @@ O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser 
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Desculpa…… eu desapareci por um ano inteiro.[/b]
 
 Não é que eu não quisesse atualizar. Toda vez que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpa de verdade.
@@ -1533,19 +1227,14 @@ Se você ainda quiser, volte e veja no que este pequeno mod original se transfor
 Uf…… é tudo por agora. Vou consertar bugs.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo atualizando este mod. No começo só mostrávamos números, agora há configurações e muitos idiomas, e fizemos isso crescer juntos. Amo vocês ♥[/b]
 
 ###罗马尼亚语|罗马尼亚语
 TITLE: Afișare mai bună a hidratării și sațietății
 DESC:
-
 [h1]Afișare mai bună a hidratării și sațietății v2.1.1[/h1]
-
 [h2]◆ Ce este nou[/h2]
-
 [list]
 [*]Valori bazate pe evenimente: fără interogări frecvente, cost de performanță aproape zero (aproximativ 0.3%~0.5% din timpul cadrului)
 [*]Sus: cât lipsește până la plin. Jos: curent / maxim
@@ -1557,19 +1246,14 @@ DESC:
 [*]Rezolvat: „0 100/100” pe ecranul de încărcare și input repetat după închiderea panoului
 [*]Fără cerințe preliminare! Nu este nevoie de ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Comenzi[/h2]
-
 [list]
 [*]F10: deschide / închide panoul de setări (poate fi schimbat)
 [*]„Resetează” pe fiecare rând: resetează doar acea valoare
 [*]„Resetează la valorile implicite” jos: resetează tot
 [/list]
-
 [h2]◆ Actualizare / Compatibilitate[/h2]
-
 Vechiul settings.ini este citit automat; vechiul folder language poate fi șters. Testat pe 2.3.30; ar trebui să funcționeze de la 1.3.10. Nu modifică resurse UI și nu folosește Harmony.
-
 [h2]◆ Întrebări frecvente[/h2]
 [list]
 [*][b]Tasta implicită pentru deschiderea panoului este F10. Dacă intră în conflict cu altă tastă, o poți schimba în „Setări → HUD Values”.[/b]
@@ -1579,9 +1263,7 @@ Vechiul settings.ini este citit automat; vechiul folder language poate fi șters
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Îmi pare rău…… am dispărut un an întreg.[/b]
 
 Nu pentru că nu voiam să actualizez. De fiecare dată când deschideam Workshop-ul și vedeam că cineva încă mai comentează, simțeam că nu am făcut destul de bine și nu îndrăzneam să apar…… chiar îmi pare rău.
@@ -1593,19 +1275,14 @@ Dacă mai vreți, întoarceți-vă să vedeți în ce a devenit acest mic mod or
 Of…… asta e tot deocamdată. Mă duc să repar bug-uri.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Mulțumesc tuturor pentru sprijin—voi sunteți motivul pentru care continui să actualizez acest mod. La început arătam doar numere, acum sunt setări și multe limbi, și l-am crescut împreună. Vă iubesc ♥[/b]
 
 ###芬兰语|芬兰语
 TITLE: Parempi nesteytyksen ja kylläisyyden näyttö
 DESC:
-
 [h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.1.1[/h1]
-
 [h2]◆ Mitä uutta[/h2]
-
 [list]
 [*]Tapahtumapohjaiset arvot: ei tiheää kyselyä, lähes nolla suorituskykykustannus (noin 0.3%~0.5% kuvakehyksen ajasta)
 [*]Ylhäällä: paljonko puuttuu täyteen. Alhaalla: nykyinen / maksimi
@@ -1617,19 +1294,14 @@ DESC:
 [*]Korjattu: „0 100/100” latausruudulla ja toistuva syöte paneelin sulkemisen jälkeen
 [*]Edelleen ilman edellytyksiä! ModConfig / ModSetting / HarmonyLib ei tarvita
 [/list]
-
 [h2]◆ Ohjaus[/h2]
-
 [list]
 [*]F10: avaa / sulje asetuspaneeli (vaihdettavissa)
 [*]„Nollaa” jokaisella rivillä: nollaa vain kyseinen arvo
 [*]„Palauta oletukset” alhaalla: nollaa kaikki
 [/list]
-
 [h2]◆ Päivitys / Yhteensopivuus[/h2]
-
 Vanha settings.ini luetaan automaattisesti; vanhan language-kansion voi poistaa. Testattu versiolla 2.3.30; pitäisi toimia 1.3.10+. Ei muuta UI-resursseja eikä käytä Harmonya.
-
 [h2]◆ Usein kysytyt kysymykset[/h2]
 [list]
 [*][b]Paneelin oletusavausnäppäin on F10. Jos se on ristiriidassa toisen näppäimen kanssa, voit vaihtaa sen kohdassa »Asetukset → HUD Values».[/b]
@@ -1639,9 +1311,7 @@ Vanha settings.ini luetaan automaattisesti; vanhan language-kansion voi poistaa.
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Anteeksi…… katosin kokonaiseksi vuodeksi.[/b]
 
 Ei siksi, ettenkö olisi halunnut päivittää. Aina kun avasin Workshopin ja näin jonkun vielä kommentoivan, tunsin etten ollut tehnyt tarpeeksi hyvin, enkä uskaltanut näyttäytyä…… olen todella pahoillani.
@@ -1653,19 +1323,14 @@ Jos vielä haluat, tule takaisin katsomaan, miksi tämä pieni alkuperäinen mod
 Huh…… siinä kaikki tältä erää. Menen korjaamaan bugeja.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Kiitos kaikille tuesta—te olette syy, miksi jatkan tämän modin päivittämistä. Alussa näytimme vain numeroita, nyt on asetuksia ja monta kieltä, ja kasvatimme tämän yhdessä. Rakastan teitä ♥[/b]
 
 ###瑞典语|瑞典语
 TITLE: Bättre visning av hydrering och mättnad
 DESC:
-
 [h1]Bättre visning av hydrering och mättnad v2.1.1[/h1]
-
 [h2]◆ Vad är nytt[/h2]
-
 [list]
 [*]Händelsestyrda värden: ingen frekvent polling, nästan noll prestandakostnad (cirka 0.3%~0.5% av bildtiden)
 [*]Överst: hur mycket som saknas. Nederst: nuvarande / max
@@ -1677,19 +1342,14 @@ DESC:
 [*]Rättat: ”0 100/100” på laddningsskärmen och upprepat input efter att panelen stängts
 [*]Fortfarande utan förutsättningar! ModConfig / ModSetting / HarmonyLib behövs inte
 [/list]
-
 [h2]◆ Kontroller[/h2]
-
 [list]
 [*]F10: öppna / stäng inställningspanelen (kan ändras)
 [*]”Återställ” på varje rad: återställ bara det värdet
 [*]”Återställ till standard” längst ner: återställ allt
 [/list]
-
 [h2]◆ Uppgradering / Kompatibilitet[/h2]
-
 Gammal settings.ini läses automatiskt; den gamla language-mappen kan tas bort. Testad på 2.3.30; bör fungera från 1.3.10. Ändrar inte UI-resurser och använder inte Harmony.
-
 [h2]◆ Vanliga frågor[/h2]
 [list]
 [*]Standardtangenten för att öppna panelen är F10. Om den krockar med en annan tangent kan du ändra den i ”Inställningar → HUD Values”.
@@ -1699,9 +1359,7 @@ Gammal settings.ini läses automatiskt; den gamla language-mappen kan tas bort. 
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Förlåt…… jag försvann i ett helt år.[/b]
 
 Inte för att jag inte ville uppdatera. Varje gång jag öppnade Workshop och såg att någon fortfarande kommenterade kände jag att jag inte hade gjort det tillräckligt bra, och jag vågade inte visa mig…… jag är verkligen ledsen.
@@ -1713,19 +1371,14 @@ Om ni fortfarande vill, kom tillbaka och se vad den här lilla ursprungliga modd
 Öh…… det var allt för nu. Jag ska fixa buggar.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Tack alla för stödet—ni är anledningen till att jag fortsätter uppdatera den här modden. I början visade vi bara siffror, nu finns inställningar och många språk, och vi har byggt det tillsammans. Jag älskar er ♥[/b]
 
 ###土耳其语|土耳其语
 TITLE: Daha iyi sıvı ve tokluk göstergesi
 DESC:
-
 [h1]Daha iyi sıvı ve tokluk göstergesi v2.1.1[/h1]
-
 [h2]◆ Neler yeni[/h2]
-
 [list]
 [*]Olay tabanlı değerler: sık sorgulama yok, performans maliyeti neredeyse sıfır (kare süresinin yaklaşık %0.3~%0.5'i)
 [*]Üstte: dolması için ne kadar kaldığı. Altta: mevcut / maksimum
@@ -1737,19 +1390,14 @@ DESC:
 [*]Düzeltildi: yükleme ekranındaki “0 100/100” ve panel kapandıktan sonra tekrarlanan giriş
 [*]Hâlâ ön koşul yok! ModConfig / ModSetting / HarmonyLib gerekmez
 [/list]
-
 [h2]◆ Kontroller[/h2]
-
 [list]
 [*]F10: ayarlar panelini aç / kapat (değiştirilebilir)
 [*]Her satırdaki “Sıfırla”: yalnızca o değeri sıfırlar
 [*]Alttaki “Varsayılanlara sıfırla”: her şeyi sıfırlar
 [/list]
-
 [h2]◆ Yükseltme / Uyumluluk[/h2]
-
 Eski settings.ini otomatik okunur; eski language klasörü silinebilir. 2.3.30'da test edildi; 1.3.10+ sürümlerinde çalışmalı. UI kaynaklarını değiştirmez ve Harmony kullanmaz.
-
 [h2]◆ Sıkça sorulan sorular[/h2]
 [list]
 [*][b]Paneli açmak için varsayılan tuş F10'dur. Başka bir tuşla çakışıyorsa «Ayarlar → HUD Values» bölümünden değiştirebilirsin.[/b]
@@ -1759,9 +1407,7 @@ Eski settings.ini otomatik okunur; eski language klasörü silinebilir. 2.3.30'd
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Özür dilerim…… tam bir yıl boyunca ortadan kayboldum.[/b]
 
 Güncellemek istemediğimden değil. Workshop'u her açtığımda birileri hâlâ yorum yazıyor diye görünce yeterince iyi yapamadığımı hissediyordum ve görünmeye korkuyordum…… gerçekten özür dilerim.
@@ -1773,19 +1419,14 @@ Hâlâ isterseniz, geri dönün ve bu küçük ilk modun neye dönüştüğünü
 Ah…… şimdilik bu kadar. Gidip hataları düzeltiyorum.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Desteğiniz için hepinize teşekkürler—bu modu güncellemeye devam etmemin sebebi sizsiniz. Başta sadece sayılar gösteriyorduk, şimdi ayarlar ve birçok dil var, bunu birlikte büyüttük. Sizi seviyorum ♥[/b]
 
 ###越南语|越南语
 TITLE: Hiển thị chỉ số nước và độ no tốt hơn
 DESC:
-
 [h1]Hiển thị chỉ số nước và độ no tốt hơn v2.1.1[/h1]
-
 [h2]◆ Có gì mới[/h2]
-
 [list]
 [*]Giá trị dựa trên sự kiện: không còn hỏi liên tục, chi phí hiệu năng gần như bằng không (khoảng 0.3%~0.5% thời gian khung hình)
 [*]Phía trên: còn thiếu bao nhiêu. Phía dưới: hiện tại / tối đa
@@ -1797,19 +1438,14 @@ DESC:
 [*]Đã sửa: “0 100/100” ở màn hình tải và lặp input sau khi đóng bảng
 [*]Vẫn không cần mod nền! Không cần ModConfig / ModSetting / HarmonyLib
 [/list]
-
 [h2]◆ Điều khiển[/h2]
-
 [list]
 [*]F10: mở / đóng bảng cài đặt (có thể đổi phím)
 [*]“Đặt lại” ở mỗi dòng: chỉ đặt lại giá trị đó
 [*]“Đặt lại mặc định” ở dưới: đặt lại tất cả
 [/list]
-
 [h2]◆ Nâng cấp / Tương thích[/h2]
-
 settings.ini cũ được đọc tự động; có thể xóa thư mục language cũ. Đã thử trên 2.3.30; nên chạy được từ 1.3.10 trở lên. Không sửa tài nguyên UI và không dùng Harmony.
-
 [h2]◆ Câu hỏi thường gặp[/h2]
 [list]
 [*][b]Phím mặc định để mở bảng là F10. Nếu bị trùng với phím khác, bạn có thể đổi trong «Cài đặt → HUD Values».[/b]
@@ -1819,9 +1455,7 @@ settings.ini cũ được đọc tự động; có thể xóa thư mục languag
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Xin lỗi…… mình đã biến mất cả một năm.[/b]
 
 Không phải vì mình không muốn cập nhật. Mỗi lần mở Workshop và thấy vẫn có bạn bình luận, mình cảm thấy mình làm chưa đủ tốt và không dám lộ mặt…… thật sự xin lỗi.
@@ -1833,19 +1467,14 @@ Nếu bạn vẫn còn muốn, hãy quay lại xem mod nhỏ bé ban đầu này
 Hic…… tạm thời như vậy đã. Mình đi sửa bug đây.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Cảm ơn mọi người đã ủng hộ—các bạn là lý do mình tiếp tục cập nhật mod này. Ban đầu chỉ hiển thị con số, giờ đã có cài đặt và nhiều ngôn ngữ, và chúng ta đã cùng nuôi lớn nó. Yêu mọi người ♥[/b]
 
 ###乌克兰语|乌克兰语
 TITLE: Покращене відображення спраги та голоду
 DESC:
-
 [h1]Покращене відображення спраги та голоду v2.1.1[/h1]
-
 [h2]◆ Що нового[/h2]
-
 [list]
 [*]Значення на основі подій: без частого опитування, майже нульові витрати продуктивності (близько 0.3%~0.5% часу кадру)
 [*]Зверху: скільки не вистачає до повного. Знизу: поточне / максимум
@@ -1857,19 +1486,14 @@ DESC:
 [*]Виправлено: «0 100/100» на екрані завантаження та повторне введення після закриття панелі
 [*]Досі без передумов! ModConfig / ModSetting / HarmonyLib не потрібні
 [/list]
-
 [h2]◆ Керування[/h2]
-
 [list]
 [*]F10: відкрити / закрити панель налаштувань (можна змінити)
 [*]«Скинути» в кожному рядку: скидає лише це значення
 [*]«Скинути до типових» унизу: скидає все
 [/list]
-
 [h2]◆ Оновлення / Сумісність[/h2]
-
 Старий settings.ini читається автоматично; стару папку language можна видалити. Перевірено на 2.3.30; має працювати на 1.3.10+. Не змінює ресурси UI та не використовує Harmony.
-
 [h2]◆ Поширені запитання[/h2]
 [list]
 [*][b]Типова клавіша для відкриття панелі — F10. Якщо вона конфліктує з іншою, її можна змінити в «Налаштування → HUD Values».[/b]
@@ -1879,9 +1503,7 @@ DESC:
 [/list]
 
 [hr][/hr]
-
 [h2]2026.10[/h2]
-
 [b]Вибачте…… я зникла на цілий рік.[/b]
 
 Не тому, що не хотіла оновлювати. Щоразу, коли я відкривала Workshop і бачила, що хтось досі коментує, мені здавалося, що я зробила недостатньо добре, і я боялася показатися…… справді вибачте.
@@ -1893,7 +1515,5 @@ DESC:
 Ух…… поки що все. Піду виправляти баги.
 
 [hr][/hr]
-
 [h2]2025.10[/h2]
-
 [b]P.S. Дякую всім за підтримку—саме ви причина, чому я продовжую оновлювати цей мод. Спочатку ми показували лише цифри, тепер є налаштування й багато мов, і ми виростили це разом. Люблю вас ♥[/b]
