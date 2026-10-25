@@ -54,6 +54,10 @@ namespace BetterHydrationEnergyHUD.UI
         private RectTransform _content;
         private ScrollRect _scroll;
         private TextMeshProUGUI _statusText;
+        private TextMeshProUGUI _titleText;
+        private TextMeshProUGUI _versionText;
+        private Button _footerReset;
+        private Button _footerDone;
         private GameObject _toastGo;
         private TextMeshProUGUI _toastText;
         private float _toastUntil;
@@ -158,6 +162,7 @@ namespace BetterHydrationEnergyHUD.UI
             _rebuildFrame = Time.frameCount;
             try
             {
+                RefreshStaticTexts();
                 ClearContent();
                 _refreshers.Clear();
                 BuildContent();
@@ -166,6 +171,42 @@ namespace BetterHydrationEnergyHUD.UI
             {
                 Log.Error("SettingsPanel.Rebuild failed", e);
             }
+        }
+
+        /// <summary>
+        /// Header title / version line / footer buttons are built once, so they must be re-translated
+        /// here when the game language changes while the panel is alive (Rebuild only refreshes the
+        /// scroll content otherwise).
+        /// </summary>
+        private void RefreshStaticTexts()
+        {
+            try
+            {
+                if (_titleText != null) _titleText.text = L10n.Title;
+                if (_versionText != null)
+                {
+                    _versionText.text = "v" + ModRuntime.ModVersion + "  ·  " + L10n.Subtitle;
+                }
+                if (_statusText != null) _statusText.text = L10n.HintAutosave;
+                SetButtonLabel(_footerReset, L10n.ButtonReset);
+                SetButtonLabel(_footerDone, L10n.ButtonClose);
+                if (_toastText != null) _toastText.text = L10n.Saved;
+            }
+            catch (Exception e)
+            {
+                Log.Warn("SettingsPanel.RefreshStaticTexts failed: " + e.Message);
+            }
+        }
+
+        private static void SetButtonLabel(Button button, string text)
+        {
+            if (button == null || string.IsNullOrEmpty(text)) return;
+            try
+            {
+                TextMeshProUGUI label = button.GetComponentInChildren<TextMeshProUGUI>(true);
+                if (label != null) label.text = text;
+            }
+            catch { }
         }
 
         public void ShowSavedToast()
@@ -191,6 +232,7 @@ namespace BetterHydrationEnergyHUD.UI
                     Stretch(_toastText.rectTransform, 6f, 6f, 2f, 2f);
                 }
                 _toastGo.SetActive(true);
+                if (_toastText != null) _toastText.text = L10n.Saved;
                 _toastUntil = Time.unscaledTime + 1.2f;
             }
             catch (Exception e)
@@ -435,6 +477,7 @@ namespace BetterHydrationEnergyHUD.UI
 
             TextMeshProUGUI title = NewText(rt, "Title", L10n.Title, 24f, TextColor,
                 TextAlignmentOptions.Left, FontStyles.Bold);
+            _titleText = title;
             RectTransform titleRt = title.rectTransform;
             titleRt.anchorMin = new Vector2(0f, 0.5f);
             titleRt.anchorMax = new Vector2(1f, 0.5f);
@@ -444,6 +487,7 @@ namespace BetterHydrationEnergyHUD.UI
 
             TextMeshProUGUI version = NewText(rt, "Version", "v" + ModRuntime.ModVersion + "  ·  " + L10n.Subtitle,
                 13f, SubTextColor, TextAlignmentOptions.Left);
+            _versionText = version;
             RectTransform versionRt = version.rectTransform;
             versionRt.anchorMin = new Vector2(0f, 0.5f);
             versionRt.anchorMax = new Vector2(1f, 0.5f);
@@ -540,6 +584,7 @@ namespace BetterHydrationEnergyHUD.UI
                     Log.Warn("Reset failed: " + e.Message);
                 }
             });
+            _footerReset = reset;
             RectTransform resetRt = (RectTransform)reset.transform;
             resetRt.anchorMin = new Vector2(0f, 0.5f);
             resetRt.anchorMax = new Vector2(0f, 0.5f);
@@ -557,6 +602,7 @@ namespace BetterHydrationEnergyHUD.UI
             statusRt.anchoredPosition = Vector2.zero;
 
             Button done = NewButton(rt, "Done", L10n.ButtonClose, true, Hide);
+            _footerDone = done;
             RectTransform doneRt = (RectTransform)done.transform;
             doneRt.anchorMin = new Vector2(1f, 0.5f);
             doneRt.anchorMax = new Vector2(1f, 0.5f);

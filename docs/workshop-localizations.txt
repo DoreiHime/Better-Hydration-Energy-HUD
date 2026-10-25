@@ -1,4 +1,4 @@
-# Steam Workshop 全语种文案（30 种，v2.1.0）
+# Steam Workshop 全语种文案（30 种，v2.1.1）
 # 格式：###<key>|<Steam 语言下拉显示名> / TITLE: / DESC:
 # 列表内置顶加粗：快捷键可改 / 10 种游戏语言 / 零前置；文末为 2026.10 与 2025.10 心里话。
 
@@ -6,7 +6,7 @@
 TITLE: 更好的吃喝数值可视化
 DESC:
 
-[h1]更好的吃喝数值可视化 v2.1.0[/h1]
+[h1]更好的吃喝数值可视化 v2.1.1[/h1]
 
 [h2]◆ 这次到底改了什么[/h2]
 
@@ -87,7 +87,7 @@ DESC:
 TITLE: 更好的吃喝數值可視化
 DESC:
 
-[h1]更好的吃喝數值可視化 v2.1.0[/h1]
+[h1]更好的吃喝數值可視化 v2.1.1[/h1]
 
 [h2]◆ 這次到底改了什麼[/h2]
 
@@ -190,7 +190,7 @@ DESC:
 TITLE: Better Hydration & Energy HUD
 DESC:
 
-[h1]Better Hydration & Energy HUD v2.1.0[/h1]
+[h1]Better Hydration & Energy HUD v2.1.1[/h1]
 
 [h2]◆ What's new[/h2]
 
@@ -263,7 +263,7 @@ Ugh... that's all for now. I'm going to fix bugs.
 TITLE: もっと見やすい水分・満腹度表示
 DESC:
 
-[h1]もっと見やすい水分・満腹度表示 v2.1.0[/h1]
+[h1]もっと見やすい水分・満腹度表示 v2.1.1[/h1]
 
 [h2]◆ 変わったこと[/h2]
 
@@ -328,7 +328,7 @@ DESC:
 TITLE: 더 나은 수분·포만감 수치 표시
 DESC:
 
-[h1]더 나은 수분·포만감 수치 표시 v2.1.0[/h1]
+[h1]더 나은 수분·포만감 수치 표시 v2.1.1[/h1]
 
 [h2]◆ 달라진 점[/h2]
 
@@ -393,7 +393,7 @@ DESC:
 TITLE: Улучшенное отображение жажды и голода
 DESC:
 
-[h1]Улучшенное отображение жажды и голода v2.1.0[/h1]
+[h1]Улучшенное отображение жажды и голода v2.1.1[/h1]
 
 [h2]◆ Что нового[/h2]
 
@@ -458,7 +458,7 @@ DESC:
 TITLE: แสดงค่าน้ำและความอิ่มได้ชัดขึ้น
 DESC:
 
-[h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.1.0[/h1]
+[h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.1.1[/h1]
 
 [h2]◆ มีอะไรใหม่[/h2]
 
@@ -518,7 +518,7 @@ settings.ini เดิมจะถูกอ่านอัตโนมัติ 
 TITLE: Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
 
-[h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.1.0[/h1]
+[h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.1.1[/h1]
 
 [h2]◆ Apa yang baru[/h2]
 
@@ -578,7 +578,7 @@ Huh…… segitu dulu ya. Aku mau memperbaiki bug.
 TITLE: Paparan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
 
-[h1]Paparan Nilai Hidrasi & Kenyang v2.1.0[/h1]
+[h1]Paparan Nilai Hidrasi & Kenyang v2.1.1[/h1]
 
 [h2]◆ Apa yang baharu[/h2]
 
@@ -642,7 +642,7 @@ Huh…… setakat ini dulu ya. Saya pergi betulkan bug.
 TITLE: По-добро показване на хидратация и ситост
 DESC:
 
-[h1]По-добро показване на хидратация и ситост v2.1.0[/h1]
+[h1]По-добро показване на хидратация и ситост v2.1.1[/h1]
 
 [h2]◆ Какво е ново[/h2]
 
@@ -702,7 +702,7 @@ DESC:
 TITLE: Lepší zobrazení hydratace a sytosti
 DESC:
 
-[h1]Lepší zobrazení hydratace a sytosti v2.1.0[/h1]
+[h1]Lepší zobrazení hydratace a sytosti v2.1.1[/h1]
 
 [h2]◆ Co je nového[/h2]
 
@@ -762,7 +762,7 @@ Uf…… to je zatím vše. Jdu opravovat bugy.
 TITLE: Bedre visning af hydrering og mæthed
 DESC:
 
-[h1]Bedre visning af hydrering og mæthed v2.1.0[/h1]
+[h1]Bedre visning af hydrering og mæthed v2.1.1[/h1]
 
 [h2]◆ Hvad er nyt[/h2]
 
@@ -822,7 +822,7 @@ Hvis I stadig vil, så kom tilbage og se, hvad dette lille oprindelige mod er bl
 TITLE: Bessere Anzeige von Hydration & Sättigung
 DESC:
 
-[h1]Bessere Anzeige von Hydration & Sättigung v2.1.0[/h1]
+[h1]Bessere Anzeige von Hydration & Sättigung v2.1.1[/h1]
 
 [h2]◆ Was ist neu[/h2]
 
@@ -882,7 +882,7 @@ Uff…… erst mal so viel. Ich gehe Bugs fixen.
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
 
-[h1]Mejor visualización de hidratación y saciedad v2.1.0[/h1]
+[h1]Mejor visualización de hidratación y saciedad v2.1.1[/h1]
 
 [h2]◆ Novedades[/h2]
 
@@ -942,7 +942,7 @@ Uf…… eso es todo por ahora. Me voy a arreglar bugs.
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
 
-[h1]Mejor visualización de hidratación y saciedad v2.1.0[/h1]
+[h1]Mejor visualización de hidratación y saciedad v2.1.1[/h1]
 
 [h2]◆ Novedades[/h2]
 
@@ -1002,7 +1002,7 @@ Uf…… eso es todo por ahora. Me voy a arreglar bugs.
 TITLE: Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού
 DESC:
 
-[h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.1.0[/h1]
+[h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.1.1[/h1]
 
 [h2]◆ Τι νέο υπάρχει[/h2]
 
@@ -1062,7 +1062,7 @@ DESC:
 TITLE: Meilleur affichage de l'hydratation et de la satiété
 DESC:
 
-[h1]Meilleur affichage de l'hydratation et de la satiété v2.1.0[/h1]
+[h1]Meilleur affichage de l'hydratation et de la satiété v2.1.1[/h1]
 
 [h2]◆ Quoi de neuf[/h2]
 
@@ -1122,7 +1122,7 @@ Euh…… c'est tout pour l'instant. Je vais corriger des bugs.
 TITLE: Visualizzazione migliore di idratazione e sazietà
 DESC:
 
-[h1]Visualizzazione migliore di idratazione e sazietà v2.1.0[/h1]
+[h1]Visualizzazione migliore di idratazione e sazietà v2.1.1[/h1]
 
 [h2]◆ Novità[/h2]
 
@@ -1182,7 +1182,7 @@ Uff…… per ora è tutto. Vado a sistemare i bug.
 TITLE: Jobb hidratáció- és jóllakottság-kijelző
 DESC:
 
-[h1]Jobb hidratáció- és jóllakottság-kijelző v2.1.0[/h1]
+[h1]Jobb hidratáció- és jóllakottság-kijelző v2.1.1[/h1]
 
 [h2]◆ Mi új?[/h2]
 
@@ -1242,7 +1242,7 @@ Hú…… egyelőre ennyi. Megyek javítani a bugokat.
 TITLE: Betere weergave van hydratatie en verzadiging
 DESC:
 
-[h1]Betere weergave van hydratatie en verzadiging v2.1.0[/h1]
+[h1]Betere weergave van hydratatie en verzadiging v2.1.1[/h1]
 
 [h2]◆ Wat is er nieuw[/h2]
 
@@ -1302,7 +1302,7 @@ Eh…… dat is het voor nu. Ik ga bugs fixen.
 TITLE: Bedre visning av hydrering og metthet
 DESC:
 
-[h1]Bedre visning av hydrering og metthet v2.1.0[/h1]
+[h1]Bedre visning av hydrering og metthet v2.1.1[/h1]
 
 [h2]◆ Hva er nytt[/h2]
 
@@ -1362,7 +1362,7 @@ Hvis dere fortsatt vil, kom tilbake og se hva denne lille opprinnelige modden ha
 TITLE: Lepsze wyświetlanie nawodnienia i sytości
 DESC:
 
-[h1]Lepsze wyświetlanie nawodnienia i sytości v2.1.0[/h1]
+[h1]Lepsze wyświetlanie nawodnienia i sytości v2.1.1[/h1]
 
 [h2]◆ Co nowego[/h2]
 
@@ -1422,7 +1422,7 @@ Uch…… to na razie tyle. Idę naprawiać bugi.
 TITLE: Melhor visualização de hidratação e saciedade
 DESC:
 
-[h1]Melhor visualização de hidratação e saciedade v2.1.0[/h1]
+[h1]Melhor visualização de hidratação e saciedade v2.1.1[/h1]
 
 [h2]◆ O que há de novo[/h2]
 
@@ -1482,7 +1482,7 @@ Uh…… é tudo por agora. Vou arranjar bugs.
 TITLE: Melhor exibição de hidratação e saciedade
 DESC:
 
-[h1]Melhor exibição de hidratação e saciedade v2.1.0[/h1]
+[h1]Melhor exibição de hidratação e saciedade v2.1.1[/h1]
 
 [h2]◆ O que há de novo[/h2]
 
@@ -1542,7 +1542,7 @@ Uf…… é tudo por agora. Vou consertar bugs.
 TITLE: Afișare mai bună a hidratării și sațietății
 DESC:
 
-[h1]Afișare mai bună a hidratării și sațietății v2.1.0[/h1]
+[h1]Afișare mai bună a hidratării și sațietății v2.1.1[/h1]
 
 [h2]◆ Ce este nou[/h2]
 
@@ -1602,7 +1602,7 @@ Of…… asta e tot deocamdată. Mă duc să repar bug-uri.
 TITLE: Parempi nesteytyksen ja kylläisyyden näyttö
 DESC:
 
-[h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.1.0[/h1]
+[h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.1.1[/h1]
 
 [h2]◆ Mitä uutta[/h2]
 
@@ -1662,7 +1662,7 @@ Huh…… siinä kaikki tältä erää. Menen korjaamaan bugeja.
 TITLE: Bättre visning av hydrering och mättnad
 DESC:
 
-[h1]Bättre visning av hydrering och mättnad v2.1.0[/h1]
+[h1]Bättre visning av hydrering och mättnad v2.1.1[/h1]
 
 [h2]◆ Vad är nytt[/h2]
 
@@ -1722,7 +1722,7 @@ Om ni fortfarande vill, kom tillbaka och se vad den här lilla ursprungliga modd
 TITLE: Daha iyi sıvı ve tokluk göstergesi
 DESC:
 
-[h1]Daha iyi sıvı ve tokluk göstergesi v2.1.0[/h1]
+[h1]Daha iyi sıvı ve tokluk göstergesi v2.1.1[/h1]
 
 [h2]◆ Neler yeni[/h2]
 
@@ -1782,7 +1782,7 @@ Ah…… şimdilik bu kadar. Gidip hataları düzeltiyorum.
 TITLE: Hiển thị chỉ số nước và độ no tốt hơn
 DESC:
 
-[h1]Hiển thị chỉ số nước và độ no tốt hơn v2.1.0[/h1]
+[h1]Hiển thị chỉ số nước và độ no tốt hơn v2.1.1[/h1]
 
 [h2]◆ Có gì mới[/h2]
 
@@ -1842,7 +1842,7 @@ Hic…… tạm thời như vậy đã. Mình đi sửa bug đây.
 TITLE: Покращене відображення спраги та голоду
 DESC:
 
-[h1]Покращене відображення спраги та голоду v2.1.0[/h1]
+[h1]Покращене відображення спраги та голоду v2.1.1[/h1]
 
 [h2]◆ Що нового[/h2]
 

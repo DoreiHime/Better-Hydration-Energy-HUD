@@ -4,7 +4,7 @@
 
 Mod HUD pour **Escape from Duckov** : affiche la quantité manquante et la valeur **actuelle / max** à côté des anneaux d'hydratation et de satiété.
 
-> **v2.1.0** — un seul DLL, **10 langues du jeu**, **raccourci F10 modifiable**, **aucun prérequis**.
+> **v2.1.1** — un seul DLL, **10 langues du jeu**, **raccourci F10 modifiable**, **aucun prérequis**.
 
 ## Points clés
 

@@ -17,9 +17,9 @@
     <LangVersion>9.0</LangVersion>
     <AssemblyName>BetterHydrationEnergyHUD</AssemblyName>
     <RootNamespace>BetterHydrationEnergyHUD</RootNamespace>
-    <Version>2.1.0</Version>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <FileVersion>2.1.0.0</FileVersion>
+    <Version>2.1.1</Version>
+    <AssemblyVersion>2.1.1.0</AssemblyVersion>
+    <FileVersion>2.1.1.0</FileVersion>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
     <NoWarn>CS0436;CS1701;CS1702;CS0618;CS0649;CS0169</NoWarn>
