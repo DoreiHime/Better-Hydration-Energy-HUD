@@ -570,6 +570,14 @@ namespace BetterHydrationEnergyHUD.UI
         {
             if (_content == null) return;
 
+            // Hotkeys first: this is the most requested feature (F10 conflicts), keep it visible.
+            AddSectionTitle(L10n.SectionHotkeys);
+            AddKeyRow(L10n.KeyOpenPanel, "open", () => ModConfig.OpenPanelKey,
+                () => ModConfig.OpenPanelKey = ModConfig.Defaults.OpenPanelKey);
+            AddKeyRow(L10n.KeyToggleHud, "toggle", () => ModConfig.ToggleHudKey,
+                () => ModConfig.ToggleHudKey = ModConfig.Defaults.ToggleHudKey);
+            AddInfo(L10n.T("options_note_f10"), 12f, MutedTextColor);
+
             AddSectionTitle(L10n.SectionDisplay);
             AddToggleRow(L10n.ShowWaterTop, ModConfig.ShowWaterTop,
                 v => { ModConfig.ShowWaterTop = v; ModConfig.NotifyChanged(); },
@@ -632,13 +640,6 @@ namespace BetterHydrationEnergyHUD.UI
             AddToggleRow(L10n.TextShadow, ModConfig.TextShadow,
                 v => { ModConfig.TextShadow = v; ModConfig.NotifyChanged(); },
                 () => ModConfig.TextShadow = ModConfig.Defaults.TextShadow);
-
-            AddSectionTitle(L10n.SectionHotkeys);
-            AddKeyRow(L10n.KeyOpenPanel, "open", () => ModConfig.OpenPanelKey,
-                () => ModConfig.OpenPanelKey = ModConfig.Defaults.OpenPanelKey);
-            AddKeyRow(L10n.KeyToggleHud, "toggle", () => ModConfig.ToggleHudKey,
-                () => ModConfig.ToggleHudKey = ModConfig.Defaults.ToggleHudKey);
-            AddInfo(L10n.T("options_note_f10"), 12f, MutedTextColor);
 
             AddSectionTitle(L10n.SectionAbout);
             AddInfo(L10n.Format("about_format", L10n.Title, ModRuntime.ModVersion, ModRuntime.Author), 14f, SubTextColor);
