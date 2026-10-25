@@ -1,0 +1,43 @@
+# Release Notes
+
+## v2.0.0 — 2026-10-26（重写版 / Rewrite）
+
+面向《逃离鸭科夫》2.3.30 的完全重写。旧版 1.x 的 settings.ini 布局配置可无缝沿用。
+
+### 重写 / Rewrite
+- **HUD 改为事件驱动**：订阅 `CustomData.OnSetData`（水分 / 饱腹）与 `Stat.OnSetDirty`（上限），
+  删除旧版 0.05 s 协程轮询、10 Hz 位置跟随、0.2 s 强制 Layout 重建。
+- **标签改为游戏 HUD 的子节点**：直接挂到 Water / Energy 圆环下，克隆 `HealthHUD` 的 TMP 数字
+  （7segment SDF 字体），随 HUD 自动缩放、淡出、隐藏；下方数值改为三段式（当前值右对齐、
+  斜杠居中、上限左对齐），不依赖字体空格宽度。
+- **不再自建 Canvas（旧版 sortingOrder 9999 嵌套 Canvas 会盖住加载幕布）**：
+  同时用 `LevelManager.LevelInited && AfterInit && !SceneLoader.IsSceneLoading` 门控，
+  修复进出关卡时黑屏出现 `0 100/100` 的问题。
+- **单 DLL 多语言**：跟随游戏语言（简中 / 繁中 / English），删除 1.x 的 `language/` 目录。
+- **零前置**：不依赖 ModConfig / ModSetting / HarmonyLib（`verify.ps1` 强制校验程序集引用白名单）。
+
+### 设置界面 / Settings
+- **官方设置页新增独立标签页**：通过 `CustomOptionsPanel.OnPanelEnabled` 拿到 `OptionsPanel` 后，
+  在「键位设置」后面追加一个「吃喝数值」标签页；页内 **克隆游戏原生设置行**（原生底图 / 字体 /
+  布局），只把右侧下拉框改造成点击改键的快捷键设置。标签页只包含两个快捷键，其余设置都在
+  游戏内 F10 面板中。
+- **游戏内面板（F10）重写为稳健实现**：Unity 原生 Slider / Button、显式锚点布局、游戏原生
+  TMP 字体（ResourceHanRoundedCN-Medium SDF）、滚动 + 淡入滑入动画。
+- **打开面板时接管鼠标**：解锁并显示光标（每帧 LateUpdate 覆盖），冻结游戏时间，
+  解决“游戏进行中鼠标被锁、无法操作面板”的问题。
+- **接入游戏官方输入拦截**：`InputManager.DisableInput(panel)` / `ActiveInput(panel)`，
+  面板期间的点击/按键不会被角色输入系统记录，关闭面板后不会“补开枪 / 补移动”。
+- **每个数值都有独立「重置」按钮**（不再只能全部重置）；底部保留「恢复默认」。
+- **快捷键可重绑**：打开面板键（默认 F10）、显示/隐藏数值键（默认未绑定），解决 F10 冲突。
+- 新增：小数位数、百分比、满值隐藏差值、低值阈值变色、粗体、文字阴影。
+
+### 兼容 / Compatibility
+- 适配游戏 **2.3.30**（实测：进档 HUD、F10 面板、原生设置标签页、改键、输入拦截均正常）。
+- 旧 settings.ini 的 13 个键保持兼容；新增键有安全默认值。
+- 停用 mod 时清理标签、取消订阅、销毁面板与注入的标签页。
+
+### 验证 / Verification
+- 构建：`dotnet build` 0 error / 0 warning；`verify.ps1` 通过（入口类型、继承关系、程序集白名单）。
+- 实机：HUD 数值/位置正常；F10 面板可鼠标操作且时停；输入不再回放；官方设置标签页不卡死、
+  可改键；ModPerformanceMonitor 实测本 mod 帧耗时约 0.3%~0.5%。
+- 详细记录见 [TEST_REPORT.md](TEST_REPORT.md)。

@@ -1,0 +1,15 @@
+# Better Hydration & Energy HUD - build artifacts
+bin/
+obj/
+dist/
+*.user
+*.suo
+.vs/
+.idea/
+
+# decompiled / research scratch (never ship game code)
+work/
+tools/toolchain-test/
+
+# local machine config
+Local.props

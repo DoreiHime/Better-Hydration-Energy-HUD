@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Better Hydration & Energy HUD - build project
+    =============================================
+    Requires an installed copy of "Escape from Duckov" (Steam, appid 3167020).
+    The game Managed folder can be supplied through:
+      * -p:GameManagedDir=<path>
+      * environment variable DUCKOV_MANAGED
+      * the default Steam path below
+    Optional deploy target:
+      * -p:DeployDir=<path>   copies the built dll + info.ini into <path>
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>BetterHydrationEnergyHUD</AssemblyName>
+    <RootNamespace>BetterHydrationEnergyHUD</RootNamespace>
+    <Version>2.0.0</Version>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+    <NoWarn>CS0436;CS1701;CS1702;CS0618;CS0649;CS0169</NoWarn>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DebugType>portable</DebugType>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <_DefaultSteamManaged>C:\Program Files (x86)\Steam\steamapps\common\Escape from Duckov\Duckov_Data\Managed</_DefaultSteamManaged>
+    <GameManagedDir Condition="'$(GameManagedDir)' == '' and '$(DUCKOV_MANAGED)' != ''">$(DUCKOV_MANAGED)</GameManagedDir>
+    <GameManagedDir Condition="'$(GameManagedDir)' == '' and Exists('$(_DefaultSteamManaged)')">$(_DefaultSteamManaged)</GameManagedDir>
+  </PropertyGroup>
+
+  <Target Name="CheckGameAssemblies" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(GameManagedDir)' == ''"
+           Text="GameManagedDir is not set. Install Escape from Duckov or pass -p:GameManagedDir=&quot;...\Duckov_Data\Managed&quot;." />
+    <Error Condition="!Exists('$(GameManagedDir)\TeamSoda.Duckov.Core.dll')"
+           Text="TeamSoda.Duckov.Core.dll was not found in '$(GameManagedDir)'. Check GameManagedDir." />
+  </Target>
+
+  <ItemGroup>
+    <!-- Unity / game runtime assemblies (never copied to the output) -->
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(GameManagedDir)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UIModule"><HintPath>$(GameManagedDir)\UnityEngine.UIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.UI"><HintPath>$(GameManagedDir)\UnityEngine.UI.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>$(GameManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule"><HintPath>$(GameManagedDir)\UnityEngine.TextCoreTextEngineModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule"><HintPath>$(GameManagedDir)\UnityEngine.TextCoreFontEngineModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>$(GameManagedDir)\UnityEngine.IMGUIModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.InputLegacyModule"><HintPath>$(GameManagedDir)\UnityEngine.InputLegacyModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.ImageConversionModule"><HintPath>$(GameManagedDir)\UnityEngine.ImageConversionModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.AnimationModule"><HintPath>$(GameManagedDir)\UnityEngine.AnimationModule.dll</HintPath><Private>false</Private></Reference>
+
+    <!-- TextMeshPro + new Input System (both shipped by the game) -->
+    <Reference Include="Unity.TextMeshPro"><HintPath>$(GameManagedDir)\Unity.TextMeshPro.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Unity.InputSystem"><HintPath>$(GameManagedDir)\Unity.InputSystem.dll</HintPath><Private>false</Private></Reference>
+
+    <!-- Game assemblies -->
+    <Reference Include="TeamSoda.Duckov.Core"><HintPath>$(GameManagedDir)\TeamSoda.Duckov.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TeamSoda.Duckov.Utilities"><HintPath>$(GameManagedDir)\TeamSoda.Duckov.Utilities.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ItemStatsSystem"><HintPath>$(GameManagedDir)\ItemStatsSystem.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="SodaLocalization"><HintPath>$(GameManagedDir)\SodaLocalization.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="TeamSoda.MiniLocalizor"><HintPath>$(GameManagedDir)\TeamSoda.MiniLocalizor.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Plugins"><HintPath>$(GameManagedDir)\Plugins.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+  <Target Name="DeployMod" AfterTargets="Build" Condition="'$(DeployDir)' != ''">
+    <MakeDir Directories="$(DeployDir)" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(DeployDir)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildThisFileDirectory)info.ini" DestinationFolder="$(DeployDir)" SkipUnchangedFiles="true" Condition="Exists('$(MSBuildThisFileDirectory)info.ini')" />
+    <Message Importance="high" Text="Deployed $(TargetFileName) -> $(DeployDir)" />
+  </Target>
+
+</Project>
