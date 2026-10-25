@@ -29,8 +29,8 @@ powershell -ExecutionPolicy Bypass -File .\deploy.ps1 -Mode Local
    ```
 3. 启动游戏 → Mods 列表找到 `BetterHydrationEnergyHUD` → 点右侧「上传」按钮（作者账号才会显示）。
 4. ⚠️ **上传器会用 `info.ini` 的 `displayName` 覆盖工坊的默认（英语）标题。**
-   当前 `info.ini` 的 `displayName` 是中文标题；上传后请到工坊页面把英语标题改回
-   `Better Hydration & Energy HUD`（见第三节），否则英语页面会显示中文标题。
+   工坊默认标题应为 `Better Hydration & Energy HUD`；每次上传后请到工坊页面把它改回来
+   （中文 / 其他语种标题不受影响，见第三节），否则英语页面会显示 `info.ini` 里的名称。
 
 ### 方式 B：Steamworks 独立上传脚本（本机内部工具，可选）
 
