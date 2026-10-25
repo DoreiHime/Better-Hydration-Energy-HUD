@@ -1,19 +1,11 @@
-# Steam Workshop 全语种文案（30 种，v2.0）
+# Steam Workshop 全语种文案（30 种，v2.0，含按时间叠加的心里话）
 # 格式：###<key>|<Steam 语言下拉显示名> / TITLE: / DESC:
-# 将本文案通过 Steam「编辑标题与描述」页面按语种逐个保存。
+# 功能部分为 v2.0 最新内容；文末 2026.10 为新心里话，2025.10 为旧版原文保留。
 
 ###简化中文|简体中文
 TITLE: 更好的吃喝数值可视化
 DESC:
 [h1]更好的吃喝数值可视化 v2.0[/h1]
-[b]一年了，我回来了。[/b]
-
-距离上次更新，居然已经整整一年了……
-说实话，这一年里我时不时会打开工坊看看评论，看到还有鸭宝在用这个 mod，心里真的挺暖的。
-也有人问“作者还更不更新了”……更的！这不就来了嘛！
-
-这次是 2.0，不是什么小修小补，而是从头到尾重写了一遍，游戏本体也适配到了最新的 2.3.30。
-所以，鸭宝们，回来看看这个最初的 mod 现在变成什么样了吧！(๑•̀ㅂ•́)و✧
 
 [h2]◆ 这次到底改了什么[/h2]
 [list]
@@ -58,31 +50,29 @@ DESC:
 
 [hr][/hr]
 
-[h2]最后，说点心里话[/h2]
-其实一年前刚发布的时候，立项那会儿都没几个 mod，没想到刚写好就发现已经有大佬发了类似的……当时出于对自己努力的自我安慰，还是厚着脸皮发出来了（“更好”是相对游戏原版显示来说的，不是针对那位大佬啊啊）。
-后来有些群友说这个 mod 没用，说实话有点伤心。。。。明明自学了好久，那几天一直在搞这个的。
-一年过去了，游戏更新了好多，mod 也越来越多，我也从“只会显示两个数字”慢慢学着做设置面板、做多语言、做性能优化……
-这次的 2.0 算是我交给自己的一份答卷吧。
+[h2]2026.10[/h2]
+对不起……我消失了整整一年。
 
-虽然不知道还有多少鸭宝记得这个 mod，但如果你回来了，就试试看吧——这个最初的小东西，现在应该能帮上一点忙了。
-感谢大家一直以来的支持，你们是我更新的动力。我爱你们 ♥
-—— Dorei Hime  2026.10
+不是不想更新，是每次打开工坊，看到还有鸭宝在留言，就觉得是我没做好，不敢冒头……对不起嘛。
+这次终于把 2.0 写完了。可能还是有很多地方笨手笨脚的，如果哪里又让你失望了，请一定告诉我，我马上改。
+如果还愿意的话，回来看看这个最初的小 mod 现在变成什么样了吧。哪怕只是看一眼，我也会很开心的。
+呜……先说这么多，我去改 bug 了。
 
 [hr][/hr]
-[i]P.S. 这次真的不是诈尸，是认真重写的！有什么问题欢迎留言，我会看的（小声）[/i]
+
+[h2]2025.10[/h2]
+Ps.感谢大家的支持，你们是我更新的动力，从一开始的简单展示数值到现在的可调设置和多语言是大家和我一起完善了这个mod。我爱你们♥
+
+------------------------------------------------------------------------------------------------------
+
+立项的时候都没几个mod，，没想到刚刚写好就发现已经有大佬发了一个显示的，主要是这游戏买回来我就开始写了。。。。出于对自己努力的自我安慰还是发布出来了（更好是针对游戏原版显示来说的，不是针对先前发布的大佬啊啊）
+有些群友说这mod没用，有点伤心。。。。明明自学了好久这几天一直在搞这个的
+好吧现实点又不是小孩子了，欸
 
 ###繁体中文|繁体中文
 TITLE: 更好的吃喝數值可視化
 DESC:
 [h1]更好的吃喝數值可視化 v2.0[/h1]
-[b]一年了，我回來了。[/b]
-
-距離上次更新，居然已經整整一年了……
-說實話，這一年裡我時不時會打開工作坊看看留言，看到還有鴨寶在用這個 mod，心裡真的挺暖的。
-也有人問「作者還更不更新了」……更的！這不就來了嘛！
-
-這次是 2.0，不是什麼小修小補，而是從頭到尾重寫了一遍，遊戲本體也適配到了最新的 2.3.30。
-所以，鴨寶們，回來看看這個最初的 mod 現在變成什麼樣了吧！(๑•̀ㅂ•́)و✧
 
 [h2]◆ 這次到底改了什麼[/h2]
 [list]
@@ -140,18 +130,31 @@ DESC:
 [hr][/hr]
 [i]P.S. 這次真的不是詐屍，是認真重寫的！有什麼問題歡迎留言，我會看的（小聲）[/i]
 
+[hr][/hr]
+
+[h2]2026.10[/h2]
+對不起……我消失了整整一年。
+
+不是不想更新，是每次打開工作坊，看到還有鴨寶在留言，就覺得是我沒做好，不敢冒頭……對不起嘛。
+這次終於把 2.0 寫完了。可能還是有很多地方笨手笨腳的，如果哪裡又讓你失望了，請一定要告訴我，我馬上改。
+如果還願意的話，回來看看這個最初的小 mod 現在變成什麼樣了吧。哪怕只是看一眼，我也會很開心的。
+嗚……先說這麼多，我去改 bug 了。
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+Ps.感謝大家的支持，你們是我更新的動力，從一開始的簡單展示數值到現在的可調設定和多語言是大家和我一起完善了這個mod。我愛你們♥
+
+------------------------------------------------------------------------------------------------------
+
+立項的時候都沒幾個mod，，沒想到剛剛寫好就發現已經有大佬發了一個顯示的，主要是這遊戲買回來我就開始寫了。。。。出於對自己努力的自我安慰還是發布出來了（更好是針對遊戲原版顯示來說的，不是針對先前發布的大佬啊啊）
+有些群友說這mod沒用，有點傷心。。。。明明自學了好久這幾天一直在搞這個的
+好吧現實點又不是小孩子了，欸
+
 ###英语|英语
 TITLE: Better Hydration & Energy HUD
 DESC:
 [h1]Better Hydration & Energy HUD v2.0[/h1]
-[b]One year later, I'm back.[/b]
-
-It's been a whole year since the last update...
-Honestly, I kept opening the Workshop page and reading the comments now and then. Seeing that some ducklings still use this mod really warmed my heart.
-Some of you asked “is the author still updating?” — yes! Here I am!
-
-This is 2.0, a full rewrite from the ground up for the latest game build (2.3.30), not just a small patch.
-So, ducklings, come back and see what this little original mod has become! (๑•̀ㅂ•́)و✧
 
 [h2]◆ What's new[/h2]
 [list]
@@ -196,31 +199,23 @@ So, ducklings, come back and see what this little original mod has become! (๑�
 
 [hr][/hr]
 
-[h2]A little note from me[/h2]
-When I first released this a year ago, there were barely any mods around. Right after I finished it, I found out someone else had already posted something similar... out of self-comfort for my own effort, I still posted it anyway (the “better” is compared to the vanilla numbers, not against that person, ahhh).
-Later some people said this mod was useless, and honestly it hurt a bit.... I had taught myself for so long and spent days on it.
-A year has passed, the game got many updates, more mods appeared, and I slowly learned to build settings panels, localization and performance improvements from “I can only show two numbers”...
-This 2.0 is kind of my answer to myself.
+[h2]2026.10[/h2]
+I'm sorry... I disappeared for a whole year.
 
-I don't know how many ducklings still remember this mod, but if you're back — give it a try. This little thing from the beginning should be able to help a bit now.
-Thank you all for the support. You are the reason I keep updating. Love you all ♥
-— Dorei Hime, October 2026
+It's not that I didn't want to update. Every time I opened the Workshop and saw someone still leaving a comment, I felt like I hadn't done enough and was too scared to show up... I'm really sorry.
+I finally finished 2.0. I'm sure I was clumsy in places — if I let you down again somewhere, please tell me and I'll fix it right away.
+If you're still willing, come back and see what this little original mod has become. Even just a quick look would make me happy.
+Ugh... that's all for now. I'm going to fix bugs.
 
 [hr][/hr]
-[i]P.S. I'm not ghosting you, this is a real rewrite! If anything is wrong, leave a comment — I'll read it (quietly)[/i]
+
+[h2]2025.10[/h2]
+P.S. Thanks for all the support—you're the reason I keep improving this mod. From a simple value display to adjustable settings and multilingual support, we've built this together. Love you all ♥
 
 ###日语|日语
 TITLE: もっと見やすい水分・満腹度表示
 DESC:
 [h1]もっと見やすい水分・満腹度表示 v2.0[/h1]
-[b]一年ぶりに戻ってきました。[/b]
-
-前回の更新から、なんと丸一年が経っていました……
-正直、この一年もときどきワークショップのコメントを見ていて、「まだ使ってくれているアヒルたちがいるんだ」と思うと、すごく嬉しかったです。
-「作者さん、まだ更新するの？」という声もありましたが……します！ほら、来ましたよ！
-
-今回は 2.0 で、小さな修正ではなく最初から全部作り直しました。ゲーム本体も最新の 2.3.30 に対応しています。
-アヒルたち、この最初の小さな mod が今どうなったか、見に来てください！(๑•̀ㅂ•́)و✧
 
 [h2]◆ 変わったこと[/h2]
 [list]
@@ -249,20 +244,25 @@ DESC:
 [h2]◆ 互換性[/h2]
 2.3.30 で動作確認済み。1.3.10 以降なら動くはずです。UI アセットは変更せず、Harmony も使いません。
 
-PS. いつも応援してくれてありがとう！最初の二つの数字から、ここまで調整できるようになったのは、みんなと一緒に作ってきたからです。大好きです ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+ごめんなさい……まるまる一年も姿を消してしまいました。
+
+更新したくないわけじゃなくて、ワークショップを開いてコメントを見るたびに、まだ使ってくれているアヒルがいるのに自分がちゃんとできていない気がして、顔を出せなかったんです……本当にごめんなさい。
+やっと 2.0 を書き終えました。まだ不器用なところがたくさんあると思います。もしまたガッカリさせてしまったら、ぜひ教えてください。すぐ直します。
+もしよければ、この最初の小さな mod が今どうなったか、見に来てくれませんか。ちらっと見るだけでも、すごく嬉しいです。
+うぅ……まずはここまで。バグを直してきます。
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. いつも応援してくれてありがとう。あなたたちがいるから更新を続けられます。最初はただ数値を表示するだけでしたが、今は設定も多言語もあって、みんなと一緒にここまで育ててきました。大好きです♥
 
 ###韩语|韩语
 TITLE: 더 나은 수분·포만감 수치 표시
 DESC:
 [h1]더 나은 수분·포만감 수치 표시 v2.0[/h1]
-[b]1년 만에 돌아왔습니다.[/b]
-
-마지막 업데이트에서 벌써 꼬박 1년이 지났네요……
-솔직히 이 1년 동안 가끔 창작마당 댓글을 보러 왔는데, 아직 이 모드를 쓰는 오리들이 있다는 걸 보면 정말 따뜻해졌습니다.
-"작가님 아직 업데이트하나요?"라는 질문도 있었는데…… 합니다! 이렇게 왔잖아요!
-
-이번엔 2.0입니다. 자잘한 수정이 아니라 처음부터 다시 만든 버전이고, 최신 게임 본체 2.3.30에 맞췄습니다.
-오리 여러분, 이 처음의 작은 모드가 지금 어떻게 변했는지 보러 와 주세요! (๑•̀ㅂ•́)و✧
 
 [h2]◆ 달라진 점[/h2]
 [list]
@@ -291,20 +291,25 @@ DESC:
 [h2]◆ 호환성[/h2]
 2.3.30에서 테스트 완료. 1.3.10 이상에서 동작해야 합니다. UI 에셋을 바꾸지 않고 Harmony도 사용하지 않습니다.
 
-PS. 늘 응원해 주셔서 감사합니다! 두 개의 숫자에서 시작해 여기까지 함께 만들어 온 거예요. 사랑해요 ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+죄송해요……꼬박 1년이나 사라져 버렸어요.
+
+업데이트하기 싫었던 게 아니라, 창작마당을 열고 댓글을 볼 때마다 아직 써 주는 오리들이 있는데 제가 잘 못하고 있는 것 같아서 얼굴을 못 들었어요…… 정말 죄송해요.
+이제야 2.0을 다 썼어요. 아직 서툰 곳이 많을 거예요. 또 실망시켰다면 꼭 알려 주세요. 바로 고칠게요.
+괜찮다면, 이 처음의 작은 모드가 지금 어떻게 변했는지 보러 와 주시겠어요? 잠깐만 봐 주셔도 정말 기쁠 거예요.
+으…… 우선 여기까지. 버그 고치러 갈게요.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. 늘 응원해 주셔서 감사합니다. 여러분이 있어서 계속 업데이트할 수 있어요. 처음엔 숫자만 보여주는 작은 모드였는데, 이제는 설정도 다국어도 생겼고, 여러분과 함께 여기까지 키워 왔어요. 사랑해요 ♥
 
 ###俄语|俄语
 TITLE: Улучшенное отображение жажды и голода
 DESC:
 [h1]Улучшенное отображение жажды и голода v2.0[/h1]
-[b]Спустя год я вернулся.[/b]
-
-С прошлого обновления прошёл ровно год……
-Честно говоря, я время от времени заглядывал в Мастерскую и читал комментарии. Видеть, что модом всё ещё пользуются утята, было очень тепло.
-Кто-то спрашивал: «Автор ещё обновляет?» — Да! Вот он я!
-
-Это 2.0 — не мелкая правка, а полная переработка под последнюю версию игры (2.3.30).
-Так что, утята, возвращайтесь и посмотрите, во что превратился этот маленький мод! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Что нового[/h2]
 [list]
@@ -333,20 +338,25 @@ DESC:
 [h2]◆ Совместимость[/h2]
 Проверено на 2.3.30; должно работать на 1.3.10+. Не изменяет ресурсы UI и не использует Harmony.
 
-PS. Спасибо всем за поддержку! От двух простых чисел до полностью настраиваемого мода — мы сделали это вместе. Люблю вас ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Простите…… я исчезла на целый год.
+
+Дело не в том, что мне не хотелось обновлять. Каждый раз, когда я открывала Мастерскую и видела комментарии, мне казалось, что я всё делаю недостаточно хорошо, и я боялась показаться…… правда простите.
+Наконец-то я дописала 2.0. Наверное, многое у меня получилось неуклюже. Если я снова вас где-то подвела — пожалуйста, скажите, и я сразу всё исправлю.
+Если вы всё ещё не против, загляните посмотреть, во что превратился этот маленький мод. Мне будет очень приятно, даже если вы просто бросите взгляд.
+Ух…… на этом пока всё. Пойду чинить баги.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Спасибо всем за поддержку — именно вы причина, по которой я продолжаю обновлять мод. Сначала это было просто отображение цифр, теперь появились настройки и несколько языков, и мы вырастили это вместе. Люблю вас ♥
 
 ###泰语|泰语
 TITLE: แสดงค่าน้ำและความอิ่มได้ชัดขึ้น
 DESC:
 [h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.0[/h1]
-[b]ผ่านไปหนึ่งปี ผมกลับมาแล้ว[/b]
-
-ห่างจากการอัปเดตครั้งล่าสุดไปหนึ่งปีเต็ม ๆ……
-จริง ๆ แล้วผมแวะมาดูคอมเมนต์ใน Workshop เป็นระยะ เห็นยังมีลูกเป็ดใช้มอดนี้อยู่ก็รู้สึกอบอุ่นมาก
-มีคนถามว่า “คนเขียนยังอัปเดตอยู่ไหม”…… อัปเดตครับ! มาแล้วไง!
-
-ครั้งนี้คือ 2.0 ไม่ใช่การแก้เล็ก ๆ แต่เขียนใหม่ทั้งหมด และรองรับเกมเวอร์ชันล่าสุด 2.3.30
-ลูกเป็ดทุกคน กลับมาดูสิว่ามอดแรกของผมตอนนี้เป็นอย่างไรแล้ว! (๑•̀ㅂ•́)و✧
 
 [h2]◆ มีอะไรใหม่[/h2]
 [list]
@@ -371,20 +381,25 @@ DESC:
 [h2]◆ อัปเกรด / ความเข้ากันได้[/h2]
 settings.ini เดิมจะถูกอ่านอัตโนมัติ ลบโฟลเดอร์ language เดิมได้ ทดสอบบน 2.3.30 แล้ว ควรใช้ได้กับ 1.3.10+ ไม่แก้ไขทรัพยากร UI และไม่ใช้ Harmony
 
-PS. ขอบคุณทุกคนที่สนับสนุนเสมอมานะครับ พวกคุณคือแรงผลักดันให้ผมอัปเดต รักทุกคนเลย ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+ขอโทษนะ…… ฉันหายไปทั้งปีเลย
+
+ไม่ใช่ไม่อยากอัปเดต แต่ทุกครั้งที่เปิด Workshop แล้วเห็นยังมีลูกเป็ดคอมเมนต์อยู่ ฉันรู้สึกว่าตัวเองทำได้ไม่ดีพอเลยไม่กล้าโผล่หน้า…… ขอโทษจริง ๆ
+ในที่สุดก็เขียน 2.0 เสร็จแล้ว อาจจะยังมีหลายจุดที่ทำได้เงอะงะ ถ้าฉันทำให้ผิดหวังอีก บอกฉันได้เลยนะ ฉันจะรีบแก้ทันที
+ถ้ายังไม่รังเกียจ กลับมาดูสิว่ามอดเล็ก ๆ ตัวแรกนี้ตอนนี้เป็นยังไง แค่มองแวบเดียวฉันก็ดีใจมากแล้ว
+อือ…… พอแค่นี้ก่อนนะ ฉันไปแก้บั๊กก่อน
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. ขอบคุณทุกคนที่สนับสนุนกันเสมอมานะ พวกคุณคือเหตุผลที่ฉันอัปเดตต่อ จากตอนแรกที่มีแค่ตัวเลข มาตอนนี้มีตั้งค่าและหลายภาษา แล้วเราก็ช่วยกันเติบโตมาถึงตรงนี้ด้วยกัน รักทุกคนเลย ♥
 
 ###印度尼西亚语|印度尼西亚语
 TITLE: Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
 [h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.0[/h1]
-[b]Setahun berlalu, aku kembali.[/b]
-
-Sudah genap setahun sejak pembaruan terakhir……
-Jujur, aku sering membuka halaman Workshop dan membaca komentar. Melihat masih ada anak bebek yang memakai mod ini benar-benar menghangatkan hati.
-Ada yang bertanya “penulisnya masih update nggak?”…… Masih! Ini aku datang!
-
-Kali ini 2.0, bukan tambalan kecil, tapi ditulis ulang dari awal untuk versi game terbaru (2.3.30).
-Jadi, anak-anak bebek, kembali dan lihat mod kecil pertama ini sekarang jadi seperti apa! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Apa yang baru[/h2]
 [list]
@@ -409,17 +424,25 @@ Jadi, anak-anak bebek, kembali dan lihat mod kecil pertama ini sekarang jadi sep
 [h2]◆ Upgrade / Kompatibilitas[/h2]
 settings.ini lama dibaca otomatis; folder language lama boleh dihapus. Diuji di 2.3.30; seharusnya berfungsi di 1.3.10+. Tidak mengubah aset UI dan tidak memakai Harmony.
 
-PS. Terima kasih atas dukungannya selama ini! Kalian alasan aku terus memperbarui. Aku sayang kalian ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Maaf ya…… aku menghilang setahun penuh.
+
+Bukan karena tidak mau update. Setiap kali aku buka Workshop dan lihat masih ada anak bebek yang berkomentar, aku merasa belum melakukan yang terbaik dan jadi takut muncul…… maafkan aku ya.
+Akhirnya 2.0 selesai juga. Pasti masih banyak bagian yang aku buat dengan canggung. Kalau aku mengecewakanmu lagi, tolong bilang ya, aku langsung perbaiki.
+Kalau kamu masih mau, coba kembali dan lihat mod kecil pertama ini sekarang jadi seperti apa. Cuma melihat sebentar pun aku sudah sangat senang.
+Huh…… segitu dulu ya. Aku mau memperbaiki bug.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Terima kasih atas dukungannya selama ini—kalian alasan aku terus memperbarui mod ini. Awalnya cuma menampilkan angka, sekarang ada pengaturan dan banyak bahasa, dan kita tumbuh bersama. Aku sayang kalian ♥
 
 ###马来语|马来语
 TITLE: Paparan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
 [h1]Paparan Nilai Hidrasi & Kenyang v2.0[/h1]
-[b]Setahun berlalu, saya kembali![/b]
-
-Sudah genap setahun sejak kemas kini terakhir... Terima kasih kepada semua anak itik yang masih menggunakan mod ini. Maaf kerana lama menyepi — kali ini saya datang dengan versi 2.0 yang ditulis semula sepenuhnya untuk game 2.3.30.
-
-Jom cuba semula mod asal ini dan lihat apa yang telah berubah! ♥
 
 [h2]◆ Apa yang baharu[/h2]
 [list]
@@ -447,20 +470,25 @@ settings.ini lama dibaca secara automatik; folder language lama boleh dipadam.
 [h2]◆ Keserasian[/h2]
 Diuji pada 2.3.30; sepatutnya berfungsi pada 1.3.10+. Tidak mengubah aset UI, tidak menggunakan Harmony.
 
-PS. Terima kasih atas sokongan semua! Daripada dua nombor mudah sehingga boleh dilaraskan sepenuhnya — kita bina bersama. Saya sayang kamu semua ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Maaf ya…… saya hilang selama setahun.
+
+Bukan kerana tak mahu mengemas kini. Setiap kali saya buka Workshop dan nampak masih ada anak itik yang komen, saya rasa saya belum buat dengan cukup baik, jadi saya tak berani muncul…… maafkan saya.
+Akhirnya 2.0 siap juga. Mesti masih banyak bahagian yang saya buat dengan kekok. Kalau saya mengecewakan awak lagi, beritahu saya ya, saya betulkan segera.
+Kalau awak masih sudi, cuba balik dan lihat mod kecil pertama ini sekarang jadi macam mana. Walaupun sekadar tengok sekejap, saya dah sangat gembira.
+Huh…… setakat ini dulu ya. Saya pergi betulkan bug.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Terima kasih atas sokongan semua—kamu sebab saya terus mengemas kini mod ini. Dulu cuma tunjuk angka, sekarang ada tetapan dan banyak bahasa, dan kita membesarkannya bersama. Saya sayang kamu semua ♥
 
 ###保加利亚语|保加利亚语
 TITLE: По-добро показване на хидратация и ситост
 DESC:
 [h1]По-добро показване на хидратация и ситост v2.0[/h1]
-[b]Година по-късно се завърнах.[/b]
-
-Измина цяла година от последната актуализация……
-Честно казано, от време на време отварях Workshop и четях коментарите. Да видя, че все още има патенца, които използват този мод, наистина ме стопли.
-Някои питаха „авторът още ли обновява?“…… Да! Ето ме!
-
-Това е 2.0 — не дребна поправка, а пълно пренаписване за най-новата версия на играта (2.3.30).
-Така че, патенца, върнете се и вижте в какво се превърна този малък оригинален мод! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Какво е ново[/h2]
 [list]
@@ -485,20 +513,25 @@ DESC:
 [h2]◆ Надграждане / Съвместимост[/h2]
 Старият settings.ini се чете автоматично; старата папка language може да се изтрие. Тествано на 2.3.30; трябва да работи на 1.3.10+. Не променя UI ресурси и не използва Harmony.
 
-PS. Благодаря на всички за подкрепата! От две прости числа до напълно настройваем мод — създадохме го заедно. Обичам ви ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Извинете…… изчезнах за цяла година.
+
+Не че не исках да обновя. Всеки път, когато отворя Workshop и видя, че някой още оставя коментар, усещам, че не съм се справила достатъчно добре, и ме е страх да се покажа…… наистина съжалявам.
+Най-накрая завърших 2.0. Сигурно на много места съм била непохватна. Ако отново ви разочаровам някъде, моля, кажете ми и аз веднага ще поправя.
+Ако все още желаете, върнете се и вижте в какво се превърна това малко първоначално модче. Дори само един поглед ще ме зарадва много.
+Ъх…… това е засега. Отивам да поправям бъгове.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Благодаря на всички за подкрепата—вие сте причината да продължавам да обновявам мода. В началото показвахме само числа, сега има настройки и много езици, и го израснахме заедно. Обичам ви ♥
 
 ###捷克语|捷克语
 TITLE: Lepší zobrazení hydratace a sytosti
 DESC:
 [h1]Lepší zobrazení hydratace a sytosti v2.0[/h1]
-[b]Po roce jsem zpět.[/b]
-
-Od poslední aktualizace uběhl celý rok……
-Upřímně, občas jsem otevřel Workshop a četl komentáře. Vidět, že mod stále používáte, mě opravdu zahřálo u srdce.
-Někdo se ptal „autor ještě aktualizuje?“…… Ano! Tady jsem!
-
-Tohle je 2.0 — ne malá záplata, ale kompletní přepis pro nejnovější verzi hry (2.3.30).
-Takže, káčátka, vraťte se a podívejte se, čím se tento malý původní mod stal! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Co je nového[/h2]
 [list]
@@ -523,20 +556,25 @@ Takže, káčátka, vraťte se a podívejte se, čím se tento malý původní m
 [h2]◆ Aktualizace / Kompatibilita[/h2]
 Starý settings.ini se načte automaticky; starou složku language lze smazat. Testováno na 2.3.30; mělo by fungovat na 1.3.10+. Nemění UI assety a nepoužívá Harmony.
 
-PS. Děkuji všem za podporu! Od dvou čísel k plně nastavitelnému modu — postavili jsme to spolu. Mám vás rád ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Promiň…… zmizela jsem na celý rok.
+
+Ne že bych nechtěla aktualizovat. Pokaždé, když otevřu Workshop a vidím, že někdo pořád komentuje, cítím, že jsem to neudělala dost dobře, a bojím se ukázat…… opravdu se omlouvám.
+Konečně jsem dokončila 2.0. Určitě jsem na mnoha místech byla neohrabaná. Jestli vás zase někde zklamu, prosím řekněte mi to a já to hned opravím.
+Jestli ještě chcete, vraťte se a podívejte se, čím se tenhle malý původní mod stal. I jen krátký pohled mě moc potěší.
+Uf…… to je zatím vše. Jdu opravovat bugy.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Díky všem za podporu—vy jste důvod, proč mod dál aktualizuji. Ze začátku jsme jen ukazovali čísla, teď má nastavení i mnoho jazyků, a vyrostli jsme to spolu. Mám vás rád ♥
 
 ###丹麦语|丹麦语
 TITLE: Bedre visning af hydrering og mæthed
 DESC:
 [h1]Bedre visning af hydrering og mæthed v2.0[/h1]
-[b]Et år senere er jeg tilbage.[/b]
-
-Der er gået et helt år siden sidste opdatering……
-Ærligt talt åbnede jeg af og til Workshop og læste kommentarerne. At se, at der stadig er ællinger, der bruger moddet, varmede virkelig.
-Nogle spurgte “opdaterer forfatteren stadig?”…… Ja! Her er jeg!
-
-Dette er 2.0 — ikke en lille rettelse, men en fuld omskrivning til den nyeste spilversion (2.3.30).
-Så, ællinger, kom tilbage og se, hvad dette lille originale mod er blevet til! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Hvad er nyt[/h2]
 [list]
@@ -561,20 +599,25 @@ Så, ællinger, kom tilbage og se, hvad dette lille originale mod er blevet til!
 [h2]◆ Opgradering / Kompatibilitet[/h2]
 Gammel settings.ini læses automatisk; den gamle language-mappe kan slettes. Testet på 2.3.30; bør virke på 1.3.10+. Ændrer ikke UI-assets og bruger ikke Harmony.
 
-PS. Tak til alle for støtten! Fra to tal til et fuldt justerbart mod — vi byggede det sammen. Jeg elsker jer ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Undskyld…… jeg forsvandt i et helt år.
+
+Ikke fordi jeg ikke ville opdatere. Hver gang jeg åbner Workshop og ser, at nogen stadig skriver en kommentar, føler jeg, at jeg ikke har gjort det godt nok, og jeg tør ikke vise mig…… undskyld virkelig.
+Nu er 2.0 endelig færdig. Jeg har sikkert været klodset flere steder. Hvis jeg skuffer jer igen, så sig endelig til, så retter jeg det med det samme.
+Hvis I stadig vil, så kom tilbage og se, hvad dette lille oprindelige mod er blevet til. Bare et hurtigt kig vil gøre mig rigtig glad.
+Øh…… det er alt for nu. Jeg går ud og retter bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Tak til alle for støtten—I er grunden til, at jeg bliver ved med at opdatere moddet. I starten viste vi bare tal, nu er der indstillinger og mange sprog, og vi har bygget det sammen. Jeg elsker jer ♥
 
 ###德语|德语
 TITLE: Bessere Anzeige von Hydration & Sättigung
 DESC:
 [h1]Bessere Anzeige von Hydration & Sättigung v2.0[/h1]
-[b]Ein Jahr später bin ich zurück.[/b]
-
-Seit dem letzten Update ist ein ganzes Jahr vergangen……
-Ehrlich gesagt habe ich ab und zu die Workshop-Seite geöffnet und die Kommentare gelesen. Zu sehen, dass das Mod noch von Entlein benutzt wird, hat mir wirklich warm ums Herz gemacht.
-Manche fragten „aktualisiert der Autor noch?“…… Ja! Hier bin ich!
-
-Das ist 2.0 — kein kleines Update, sondern eine komplette Neufassung für die neueste Spielversion (2.3.30).
-Also, Entlein, kommt zurück und seht, was aus diesem kleinen ursprünglichen Mod geworden ist! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Was ist neu[/h2]
 [list]
@@ -599,20 +642,25 @@ Also, Entlein, kommt zurück und seht, was aus diesem kleinen ursprünglichen Mo
 [h2]◆ Upgrade / Kompatibilität[/h2]
 Die alte settings.ini wird automatisch gelesen; der alte language-Ordner kann gelöscht werden. Getestet auf 2.3.30; sollte ab 1.3.10 funktionieren. Ändert keine UI-Assets, nutzt kein Harmony.
 
-PS. Danke euch allen für die Unterstützung! Von zwei Zahlen bis zum voll einstellbaren Mod — wir haben das zusammen gebaut. Hab euch lieb ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Entschuldigung…… ich bin ein ganzes Jahr verschwunden.
+
+Nicht, weil ich nicht updaten wollte. Jedes Mal, wenn ich den Workshop öffne und sehe, dass noch jemand kommentiert, habe ich das Gefühl, es nicht gut genug gemacht zu haben, und traue mich nicht hervor…… es tut mir wirklich leid.
+Jetzt ist 2.0 endlich fertig. Ich war bestimmt an vielen Stellen ungeschickt. Wenn ich euch wieder irgendwo enttäusche, sagt es mir bitte, und ich repariere es sofort.
+Wenn ihr noch mögt, kommt zurück und schaut, was aus diesem kleinen ursprünglichen Mod geworden ist. Schon ein kurzer Blick würde mich sehr freuen.
+Uff…… erst mal so viel. Ich gehe Bugs fixen.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Danke euch allen für die Unterstützung—ihr seid der Grund, warum ich den Mod weiter aktualisiere. Am Anfang gab es nur Zahlen, jetzt gibt es Einstellungen und viele Sprachen, und wir haben das zusammen wachsen lassen. Hab euch lieb ♥
 
 ###西班牙语-西班牙|西班牙语 - 西班牙
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
 [h1]Mejor visualización de hidratación y saciedad v2.0[/h1]
-[b]Un año después, he vuelto.[/b]
-
-Ha pasado un año entero desde la última actualización……
-Sinceramente, de vez en cuando abría el Workshop y leía los comentarios. Ver que todavía hay patitos usando este mod me llegó al corazón.
-Algunos preguntaban «¿el autor sigue actualizando?»…… ¡Sí! ¡Aquí estoy!
-
-Esto es 2.0: no un parche pequeño, sino una reescritura completa para la última versión del juego (2.3.30).
-Así que, patitos, ¡volved y mirad en qué se ha convertido este pequeño mod original! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Novedades[/h2]
 [list]
@@ -637,20 +685,25 @@ Así que, patitos, ¡volved y mirad en qué se ha convertido este pequeño mod o
 [h2]◆ Actualización / Compatibilidad[/h2]
 El settings.ini antiguo se lee automáticamente; la carpeta language antigua se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
 
-PS. ¡Gracias a todos por el apoyo! De dos números a un mod totalmente ajustable: lo construimos juntos. Os quiero ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Perdón…… he desaparecido un año entero.
+
+No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo bastante bien y me daba miedo aparecer…… perdón de verdad.
+Por fin he terminado la 2.0. Seguro que en muchas cosas he sido torpe. Si vuelvo a decepcionarte en algo, dímelo, por favor, y lo arreglo enseguida.
+Si todavía quieres, vuelve y mira en qué se ha convertido este pequeño mod original. Con que le eches un vistazo, ya me hará muy feliz.
+Uf…… eso es todo por ahora. Me voy a arreglar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Gracias a todos por el apoyo—vosotros sois la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hemos hecho crecer juntos. Os quiero ♥
 
 ###西班牙语-拉丁美洲|西班牙语 - 拉丁美洲
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
 [h1]Mejor visualización de hidratación y saciedad v2.0[/h1]
-[b]Un año después, volví.[/b]
-
-Pasó un año entero desde la última actualización……
-La verdad, de vez en cuando abría el Workshop y leía los comentarios. Ver que todavía hay patitos usando este mod me llegó mucho.
-Algunos preguntaban «¿el autor sigue actualizando?»…… ¡Sí! ¡Aquí estoy!
-
-Esto es 2.0: no un parche chico, sino una reescritura completa para la última versión del juego (2.3.30).
-Así que, patitos, ¡vuelvan y vean en qué se convirtió este pequeño mod original! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Novedades[/h2]
 [list]
@@ -675,20 +728,25 @@ Así que, patitos, ¡vuelvan y vean en qué se convirtió este pequeño mod orig
 [h2]◆ Actualización / Compatibilidad[/h2]
 El settings.ini viejo se lee automáticamente; la carpeta language vieja se puede borrar. Probado en 2.3.30; debería funcionar en 1.3.10+. No modifica recursos de UI ni usa Harmony.
 
-PS. ¡Gracias a todos por el apoyo! De dos números a un mod totalmente ajustable: lo construimos juntos. Los quiero ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Perdón…… desaparezcí un año entero.
+
+No es que no quisiera actualizar. Cada vez que abría el Workshop y veía que alguien seguía comentando, sentía que no lo había hecho lo suficientemente bien y me daba miedo aparecer…… perdón de verdad.
+Por fin terminé la 2.0. Seguro que en muchas cosas fui torpe. Si vuelvo a decepcionarte en algo, decime, por favor, y lo arreglo enseguida.
+Si todavía querés, volvé y mirá en qué se convirtió este pequeño mod original. Con que le eches un vistazo, ya me hará muy feliz.
+Uf…… eso es todo por ahora. Me voy a arreglar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Gracias a todos por el apoyo—ustedes son la razón por la que sigo actualizando este mod. Al principio solo mostrábamos números, ahora hay ajustes y muchos idiomas, y lo hicimos crecer juntos. Los quiero ♥
 
 ###希腊语|希腊语
 TITLE: Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού
 DESC:
 [h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.0[/h1]
-[b]Ένα χρόνο μετά, επέστρεψα.[/b]
-
-Πέρασε ένας ολόκληρος χρόνος από την τελευταία ενημέρωση……
-Ειλικρινά, κάθε τόσο άνοιγα το Workshop και διάβαζα τα σχόλια. Το να βλέπω ότι υπάρχουν ακόμα παπάκια που χρησιμοποιούν το mod με ζέσταινε πραγματικά.
-Κάποιοι ρωτούσαν «ο δημιουργός ενημερώνει ακόμα;»…… Ναι! Εδώ είμαι!
-
-Αυτό είναι το 2.0 — όχι ένα μικρό patch, αλλά πλήρης επανεγγραφή για την τελευταία έκδοση του παιχνιδιού (2.3.30).
-Λοιπόν, παπάκια, γυρίστε και δείτε σε τι εξελίχθηκε αυτό το μικρό αρχικό mod! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Τι νέο υπάρχει[/h2]
 [list]
@@ -713,20 +771,25 @@ DESC:
 [h2]◆ Αναβάθμιση / Συμβατότητα[/h2]
 Το παλιό settings.ini διαβάζεται αυτόματα· ο παλιός φάκελος language μπορεί να διαγραφεί. Δοκιμασμένο στο 2.3.30· πρέπει να δουλεύει από 1.3.10+. Δεν αλλάζει πόρους UI και δεν χρησιμοποιεί Harmony.
 
-PS. Ευχαριστώ όλους για την υποστήριξη! Από δύο αριθμούς σε ένα πλήρως ρυθμιζόμενο mod — το χτίσαμε μαζί. Σας αγαπώ ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Συγγνώμη…… εξαφανίστηκα για έναν ολόκληρο χρόνο.
+
+Δεν είναι ότι δεν ήθελα να ενημερώσω. Κάθε φορά που άνοιγα το Workshop και έβλεπα ότι κάποιος ακόμα σχολιάζει, ένιωθα ότι δεν το είχα κάνει αρκετά καλά και φοβόμουν να εμφανιστώ…… πραγματικά συγγνώμη.
+Επιτέλους τελείωσα το 2.0. Σίγουρα σε πολλά σημεία ήμουν αδεξια. Αν σε απογοητεύσω ξανά κάπου, πες μου, σε παρακαλώ, και θα το διορθώσω αμέσως.
+Αν ακόμα θέλεις, γύρνα και δες σε τι έγινε αυτό το μικρό αρχικό mod. Ακόμα και μια ματιά θα με κάνει πολύ χαρούμενη.
+Ωχ…… αυτά για τώρα. Πάω να διορθώσω bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Ευχαριστώ όλους για την υποστήριξη—εσείς είστε ο λόγος που συνεχίζω να ενημερώνω το mod. Στην αρχή δείχναμε μόνο αριθμούς, τώρα υπάρχουν ρυθμίσεις και πολλές γλώσσες, και το μεγαλώσαμε μαζί. Σας αγαπώ ♥
 
 ###法语|法语
 TITLE: Meilleur affichage de l'hydratation et de la satiété
 DESC:
 [h1]Meilleur affichage de l'hydratation et de la satiété v2.0[/h1]
-[b]Un an plus tard, je suis de retour.[/b]
-
-Une année entière s'est écoulée depuis la dernière mise à jour……
-Honnêtement, j'ouvrais de temps en temps le Workshop pour lire les commentaires. Voir que des canetons utilisent encore ce mod m'a vraiment fait chaud au cœur.
-Certains demandaient « l'auteur met-il encore à jour ? »…… Oui ! Me voilà !
-
-C'est la 2.0 — pas un petit correctif, mais une réécriture complète pour la dernière version du jeu (2.3.30).
-Alors, les canetons, revenez voir ce que ce petit mod d'origine est devenu ! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Quoi de neuf[/h2]
 [list]
@@ -751,20 +814,25 @@ Alors, les canetons, revenez voir ce que ce petit mod d'origine est devenu ! (�
 [h2]◆ Mise à niveau / Compatibilité[/h2]
 L'ancien settings.ini est lu automatiquement ; l'ancien dossier language peut être supprimé. Testé sur 2.3.30 ; devrait fonctionner à partir de 1.3.10. Ne modifie pas les ressources UI et n'utilise pas Harmony.
 
-PS. Merci à tous pour le soutien ! De deux nombres à un mod entièrement réglable — on l'a construit ensemble. Je vous aime ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Pardon…… j'ai disparu pendant une année entière.
+
+Ce n'est pas que je ne voulais pas mettre à jour. Chaque fois que j'ouvrais le Workshop et que je voyais quelqu'un commenter encore, je sentais que je n'avais pas fait assez bien et je n'osais pas me montrer…… je suis vraiment désolée.
+J'ai enfin terminé la 2.0. J'ai sûrement été maladroite à plein d'endroits. Si je te déçois encore quelque part, dis-le-moi, s'il te plaît, et je corrige tout de suite.
+Si tu veux bien, reviens voir ce que ce petit mod d'origine est devenu. Même un simple coup d'œil me ferait très plaisir.
+Euh…… c'est tout pour l'instant. Je vais corriger des bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Merci à tous pour votre soutien—c'est vous la raison pour laquelle je continue à mettre à jour ce mod. Au début, on n'affichait que des chiffres, maintenant il y a des réglages et plein de langues, et on l'a fait grandir ensemble. Je vous aime ♥
 
 ###意大利语|意大利语
 TITLE: Visualizzazione migliore di idratazione e sazietà
 DESC:
 [h1]Visualizzazione migliore di idratazione e sazietà v2.0[/h1]
-[b]Un anno dopo, sono tornato.[/b]
-
-È passato un anno intero dall'ultimo aggiornamento……
-Sinceramente, ogni tanto aprivo il Workshop e leggevo i commenti. Vedere che ci sono ancora anatroccoli che usano questa mod mi ha scaldato il cuore.
-Alcuni chiedevano «l'autore aggiorna ancora?»…… Sì! Eccomi!
-
-Questa è la 2.0: non una piccola patch, ma una riscrittura completa per l'ultima versione del gioco (2.3.30).
-Quindi, anatroccoli, tornate a vedere in cosa si è trasformata questa piccola mod originale! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Novità[/h2]
 [list]
@@ -789,20 +857,25 @@ Quindi, anatroccoli, tornate a vedere in cosa si è trasformata questa piccola m
 [h2]◆ Aggiornamento / Compatibilità[/h2]
 Il vecchio settings.ini viene letto automaticamente; la vecchia cartella language può essere eliminata. Testato su 2.3.30; dovrebbe funzionare da 1.3.10 in su. Non modifica risorse UI e non usa Harmony.
 
-PS. Grazie a tutti per il supporto! Da due numeri a una mod completamente regolabile: l'abbiamo costruita insieme. Vi voglio bene ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Scusate…… sono sparita per un anno intero.
+
+Non è che non volessi aggiornare. Ogni volta che aprivo il Workshop e vedevo che qualcuno commentava ancora, sentivo di non aver fatto abbastanza bene e non osavo farmi vedere…… scusate davvero.
+Finalmente ho finito la 2.0. Sicuramente in tanti punti sono stata goffa. Se vi deludo di nuovo da qualche parte, ditelo, per favore, e lo sistemo subito.
+Se ancora volete, tornate a vedere in cosa si è trasformata questa piccola mod originale. Anche solo uno sguardo mi renderebbe molto felice.
+Uff…… per ora è tutto. Vado a sistemare i bug.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Grazie a tutti per il supporto—siete il motivo per cui continuo ad aggiornare questa mod. All'inizio mostravamo solo numeri, ora ci sono impostazioni e tante lingue, e l'abbiamo fatto crescere insieme. Vi voglio bene ♥
 
 ###匈牙利语|匈牙利语
 TITLE: Jobb hidratáció- és jóllakottság-kijelző
 DESC:
 [h1]Jobb hidratáció- és jóllakottság-kijelző v2.0[/h1]
-[b]Egy év után visszatértem.[/b]
-
-Egy egész év telt el az utolsó frissítés óta……
-Őszintén szólva időnként megnyitottam a Workshopot és elolvastam a hozzászólásokat. Jó érzés volt látni, hogy még mindig használják a modot a kiskacsák.
-Volt, aki azt kérdezte: „a szerző még frissít?”…… Igen! Itt vagyok!
-
-Ez a 2.0 — nem egy kis foltozás, hanem teljes újraírás a legújabb játékverzióhoz (2.3.30).
-Szóval, kiskacsák, gyertek vissza, és nézzétek meg, mivé vált ez a kis eredeti mod! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Mi új?[/h2]
 [list]
@@ -827,20 +900,25 @@ Szóval, kiskacsák, gyertek vissza, és nézzétek meg, mivé vált ez a kis er
 [h2]◆ Frissítés / Kompatibilitás[/h2]
 A régi settings.ini automatikusan betöltődik; a régi language mappa törölhető. Tesztelve 2.3.30-on; 1.3.10-től működnie kell. Nem módosít UI-erőforrásokat, és nem használ Harmony-t.
 
-PS. Köszönöm mindenkinek a támogatást! Két számtól egy teljesen állítható modig — együtt építettük. Szeretlek titeket ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Bocsánat…… egy egész évre eltűntem.
+
+Nem azért, mert nem akartam frissíteni. Valahányszor megnyitottam a Workshopot és láttam, hogy valaki még mindig kommentel, úgy éreztem, nem csináltam elég jól, és féltem előjönni…… tényleg nagyon sajnálom.
+Végre elkészült a 2.0. Biztos sok helyen ügyetlen voltam. Ha valahol megint csalódást okozok, kérlek mondd el, és azonnal kijavítom.
+Ha még van kedved, gyere vissza és nézd meg, mivé lett ez a kis eredeti mod. Már egy pillantás is nagyon boldoggá tenne.
+Hú…… egyelőre ennyi. Megyek javítani a bugokat.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Köszönöm mindenkinek a támogatást—ti vagytok az ok, amiért tovább frissítem ezt a modot. Az elején csak számokat mutattunk, most már beállítások és sok nyelv is van, és együtt növesztettük. Szeretlek titeket ♥
 
 ###荷兰语|荷兰语
 TITLE: Betere weergave van hydratatie en verzadiging
 DESC:
 [h1]Betere weergave van hydratatie en verzadiging v2.0[/h1]
-[b]Een jaar later ben ik terug.[/b]
-
-Het is een heel jaar geleden sinds de laatste update……
-Eerlijk gezegd opende ik af en toe de Workshop om de reacties te lezen. Zien dat er nog eendjes zijn die deze mod gebruiken, deed me echt goed.
-Sommigen vroegen: “update de maker nog?”…… Ja! Hier ben ik!
-
-Dit is 2.0 — geen kleine patch, maar een volledige herschrijving voor de nieuwste gameversie (2.3.30).
-Dus, eendjes, kom terug en zie wat dit kleine originele mod is geworden! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Wat is er nieuw[/h2]
 [list]
@@ -865,20 +943,25 @@ Dus, eendjes, kom terug en zie wat dit kleine originele mod is geworden! (๑•
 [h2]◆ Upgraden / Compatibiliteit[/h2]
 De oude settings.ini wordt automatisch gelezen; de oude language-map kan worden verwijderd. Getest op 2.3.30; zou moeten werken vanaf 1.3.10. Wijzigt geen UI-assets en gebruikt geen Harmony.
 
-PS. Bedankt allemaal voor de steun! Van twee getallen naar een volledig aanpasbare mod — we hebben het samen gebouwd. Ik hou van jullie ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Sorry…… ik ben een heel jaar verdwenen.
+
+Niet omdat ik niet wilde updaten. Elke keer als ik de Workshop opende en zag dat er nog iemand reageerde, voelde ik dat ik het niet goed genoeg had gedaan en durfde ik me niet te laten zien…… het spijt me echt.
+Nu is 2.0 eindelijk klaar. Ik ben vast op veel plekken onhandig geweest. Als ik jullie weer ergens teleurstel, zeg het alsjeblieft en ik maak het meteen goed.
+Als je nog wilt, kom terug en kijk wat dit kleine originele mod is geworden. Alleen al een snelle blik zou me heel blij maken.
+Eh…… dat is het voor nu. Ik ga bugs fixen.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Dank jullie allemaal voor de steun—jullie zijn de reden dat ik deze mod blijf updaten. In het begin lieten we alleen cijfers zien, nu zijn er instellingen en veel talen, en we hebben het samen laten groeien. Ik hou van jullie ♥
 
 ###挪威语|挪威语
 TITLE: Bedre visning av hydrering og metthet
 DESC:
 [h1]Bedre visning av hydrering og metthet v2.0[/h1]
-[b]Et år senere er jeg tilbake.[/b]
-
-Det har gått et helt år siden forrige oppdatering……
-Ærlig talt åpnet jeg av og til Workshop og leste kommentarene. Å se at det fortsatt er andunger som bruker moden, varmet virkelig.
-Noen spurte «oppdaterer forfatteren fortsatt?»…… Ja! Her er jeg!
-
-Dette er 2.0 — ikke en liten lapp, men en full omskriving for den nyeste spillversjonen (2.3.30).
-Så, andunger, kom tilbake og se hva denne lille originale moden har blitt! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Hva er nytt[/h2]
 [list]
@@ -903,20 +986,25 @@ Så, andunger, kom tilbake og se hva denne lille originale moden har blitt! (๑
 [h2]◆ Oppgradering / Kompatibilitet[/h2]
 Gammel settings.ini leses automatisk; den gamle language-mappen kan slettes. Testet på 2.3.30; bør fungere på 1.3.10+. Endrer ikke UI-ressurser og bruker ikke Harmony.
 
-PS. Takk til alle for støtten! Fra to tall til en fullt justerbar mod — vi bygde det sammen. Jeg elsker dere ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Beklager…… jeg forsvant i et helt år.
+
+Ikke fordi jeg ikke ville oppdatere. Hver gang jeg åpnet Workshop og så at noen fortsatt kommenterte, følte jeg at jeg ikke hadde gjort det godt nok, og jeg turte ikke vise meg…… jeg er virkelig lei meg.
+Nå er 2.0 endelig ferdig. Jeg har sikkert vært klønete mange steder. Hvis jeg skuffer dere igjen, si det, og jeg fikser det med en gang.
+Hvis dere fortsatt vil, kom tilbake og se hva denne lille opprinnelige modden har blitt. Bare et raskt blikk ville gjort meg veldig glad.
+Æh…… det er alt for nå. Jeg går og fikser bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Takk til alle for støtten—dere er grunnen til at jeg fortsetter å oppdatere denne modden. I starten viste vi bare tall, nå er det innstillinger og mange språk, og vi har bygget det sammen. Jeg elsker dere ♥
 
 ###波兰语|波兰语
 TITLE: Lepsze wyświetlanie nawodnienia i sytości
 DESC:
 [h1]Lepsze wyświetlanie nawodnienia i sytości v2.0[/h1]
-[b]Rok później wróciłem.[/b]
-
-Minął cały rok od ostatniej aktualizacji……
-Szczerze mówiąc, od czasu do czasu otwierałem Workshop i czytałem komentarze. Widok kaczątek wciąż używających tego moda naprawdę mnie rozgrzewał.
-Niektórzy pytali „czy autor jeszcze aktualizuje?”…… Tak! Oto jestem!
-
-To jest 2.0 — nie mała łatka, lecz pełne przepisanie pod najnowszą wersję gry (2.3.30).
-Więc, kaczątka, wróćcie i zobaczcie, w co zmienił się ten mały pierwotny mod! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Co nowego[/h2]
 [list]
@@ -941,20 +1029,25 @@ Więc, kaczątka, wróćcie i zobaczcie, w co zmienił się ten mały pierwotny 
 [h2]◆ Aktualizacja / Kompatybilność[/h2]
 Stary settings.ini jest czytany automatycznie; stary folder language można usunąć. Przetestowano na 2.3.30; powinno działać od 1.3.10. Nie zmienia zasobów UI i nie używa Harmony.
 
-PS. Dziękuję wszystkim za wsparcie! Od dwóch liczb do w pełni konfigurowalnego moda — zbudowaliśmy to razem. Kocham was ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Przepraszam…… zniknęłam na cały rok.
+
+Nie dlatego, że nie chciałam aktualizować. Za każdym razem, gdy otwierałam Workshop i widziałam, że ktoś wciąż komentuje, czułam, że nie zrobiłam tego wystarczająco dobrze, i bałam się pokazać…… naprawdę przepraszam.
+W końcu skończyłam 2.0. Na pewno w wielu miejscach byłam niezdarna. Jeśli znowu gdzieś was zawiodę, proszę, powiedzcie mi, a od razu naprawię.
+Jeśli nadal chcecie, wróćcie i zobaczcie, w co zmienił się ten mały pierwotny mod. Nawet krótkie spojrzenie bardzo mnie ucieszy.
+Uch…… to na razie tyle. Idę naprawiać bugi.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Dziękuję wszystkim za wsparcie—to wy jesteście powodem, dla którego wciąż aktualizuję tego moda. Na początku pokazywaliśmy tylko liczby, teraz są ustawienia i wiele języków, i wspólnie to rozwinęliśmy. Kocham was ♥
 
 ###葡萄牙语-葡萄牙|葡萄牙语 - 葡萄牙
 TITLE: Melhor visualização de hidratação e saciedade
 DESC:
 [h1]Melhor visualização de hidratação e saciedade v2.0[/h1]
-[b]Um ano depois, estou de volta.[/b]
-
-Passou um ano inteiro desde a última atualização……
-Sinceramente, de vez em quando abria o Workshop e lia os comentários. Ver que ainda há patinhos a usar este mod aqueceu-me o coração.
-Alguns perguntavam «o autor ainda atualiza?»…… Sim! Aqui estou!
-
-Isto é a 2.0 — não um pequeno patch, mas uma reescrita completa para a versão mais recente do jogo (2.3.30).
-Então, patinhos, voltem e vejam no que se tornou este pequeno mod original! (๑•̀ㅂ•́)و✧
 
 [h2]◆ O que há de novo[/h2]
 [list]
@@ -979,20 +1072,25 @@ Então, patinhos, voltem e vejam no que se tornou este pequeno mod original! (�
 [h2]◆ Atualização / Compatibilidade[/h2]
 O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado em 2.3.30; deve funcionar a partir de 1.3.10. Não altera recursos de UI nem usa Harmony.
 
-PS. Obrigado a todos pelo apoio! De dois números a um mod totalmente ajustável — construímos isto juntos. Amo-vos ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Desculpem…… desapareci um ano inteiro.
+
+Não é que não quisesse atualizar. Sempre que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpem mesmo.
+Finalmente terminei a 2.0. De certeza que fui desajeitada em muitos sítios. Se vos desiludir outra vez, digam, por favor, e eu corrijo logo.
+Se ainda quiserem, voltem e vejam no que se tornou este pequeno mod original. Só um olhar rápido já me deixaria muito feliz.
+Uh…… é tudo por agora. Vou arranjar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo a atualizar este mod. No início só mostrávamos números, agora há definições e muitas línguas, e fizemo-lo crescer juntos. Amo-vos ♥
 
 ###葡萄牙语-巴西|葡萄牙语 - 巴西
 TITLE: Melhor exibição de hidratação e saciedade
 DESC:
 [h1]Melhor exibição de hidratação e saciedade v2.0[/h1]
-[b]Um ano depois, estou de volta.[/b]
-
-Passou um ano inteiro desde a última atualização……
-Sinceramente, de vez em quando eu abria o Workshop e lia os comentários. Ver que ainda tem patinhos usando este mod me deixou muito feliz.
-Alguns perguntavam “o autor ainda atualiza?”…… Sim! Aqui estou!
-
-Esta é a 2.0 — não um patch pequeno, mas uma reescrita completa para a versão mais recente do jogo (2.3.30).
-Então, patinhos, voltem e vejam no que este pequeno mod original se transformou! (๑•̀ㅂ•́)و✧
 
 [h2]◆ O que há de novo[/h2]
 [list]
@@ -1017,20 +1115,25 @@ Então, patinhos, voltem e vejam no que este pequeno mod original se transformou
 [h2]◆ Atualização / Compatibilidade[/h2]
 O antigo settings.ini é lido automaticamente; a antiga pasta language pode ser apagada. Testado no 2.3.30; deve funcionar a partir do 1.3.10. Não altera recursos de UI nem usa Harmony.
 
-PS. Obrigado a todos pelo apoio! De dois números a um mod totalmente ajustável — construímos isso juntos. Amo vocês ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Desculpa…… eu desapareci por um ano inteiro.
+
+Não é que eu não quisesse atualizar. Toda vez que abria o Workshop e via que alguém ainda comentava, sentia que não tinha feito o suficiente e não tinha coragem de aparecer…… desculpa de verdade.
+Finalmente terminei a 2.0. Com certeza fui desastrada em muitos lugares. Se eu te decepcionar de novo em algo, por favor me avise, e eu corrijo na hora.
+Se você ainda quiser, volte e veja no que este pequeno mod original se transformou. Só um olhar rápido já me deixaria muito feliz.
+Uf…… é tudo por agora. Vou consertar bugs.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Obrigada a todos pelo apoio—vocês são a razão pela qual continuo atualizando este mod. No começo só mostrávamos números, agora há configurações e muitos idiomas, e fizemos isso crescer juntos. Amo vocês ♥
 
 ###罗马尼亚语|罗马尼亚语
 TITLE: Afișare mai bună a hidratării și sațietății
 DESC:
 [h1]Afișare mai bună a hidratării și sațietății v2.0[/h1]
-[b]Un an mai târziu, m-am întors.[/b]
-
-A trecut un an întreg de la ultima actualizare……
-Sincer, mai deschideam Workshop-ul și citeam comentariile. Să văd că încă sunt rățuște care folosesc acest mod m-a încălzit la suflet.
-Unii întrebau „mai actualizează autorul?”…… Da! Iată-mă!
-
-Acesta este 2.0 — nu un patch mic, ci o rescriere completă pentru cea mai nouă versiune a jocului (2.3.30).
-Așa că, rățuștelor, întoarceți-vă și vedeți în ce a devenit acest mic mod original! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Ce este nou[/h2]
 [list]
@@ -1055,20 +1158,25 @@ Așa că, rățuștelor, întoarceți-vă și vedeți în ce a devenit acest mic
 [h2]◆ Actualizare / Compatibilitate[/h2]
 Vechiul settings.ini este citit automat; vechiul folder language poate fi șters. Testat pe 2.3.30; ar trebui să funcționeze de la 1.3.10. Nu modifică resurse UI și nu folosește Harmony.
 
-PS. Mulțumesc tuturor pentru sprijin! De la două numere la un mod complet reglabil — l-am construit împreună. Vă iubesc ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Îmi pare rău…… am dispărut un an întreg.
+
+Nu pentru că nu voiam să actualizez. De fiecare dată când deschideam Workshop-ul și vedeam că cineva încă mai comentează, simțeam că nu am făcut destul de bine și nu îndrăzneam să apar…… chiar îmi pare rău.
+Am terminat în sfârșit 2.0. Sigur am fost stângace în multe locuri. Dacă vă dezamăgesc din nou undeva, vă rog să-mi spuneți și repar imediat.
+Dacă mai vreți, întoarceți-vă să vedeți în ce a devenit acest mic mod original. Chiar și o simplă privire m-ar face foarte fericită.
+Of…… asta e tot deocamdată. Mă duc să repar bug-uri.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Mulțumesc tuturor pentru sprijin—voi sunteți motivul pentru care continui să actualizez acest mod. La început arătam doar numere, acum sunt setări și multe limbi, și l-am crescut împreună. Vă iubesc ♥
 
 ###芬兰语|芬兰语
 TITLE: Parempi nesteytyksen ja kylläisyyden näyttö
 DESC:
 [h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.0[/h1]
-[b]Vuosi myöhemmin olen palannut.[/b]
-
-Edellisestä päivityksestä on kulunut kokonainen vuosi……
-Rehellisesti sanottuna avasin ajoittain Workshopin ja luin kommentteja. Nähdä, että modia käyttää yhä ankkalapsia, lämmitti sydäntäni.
-Jotkut kysyivät: „päivittääkö tekijä vielä?”…… Kyllä! Tässä minä olen!
-
-Tämä on 2.0 — ei pieni korjaus, vaan täysi uudelleenkirjoitus uusimmalle peliversiolle (2.3.30).
-Joten, ankkalapset, tulkaa takaisin katsomaan, miksi tämä pieni alkuperäinen modi on muuttunut! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Mitä uutta[/h2]
 [list]
@@ -1093,20 +1201,25 @@ Joten, ankkalapset, tulkaa takaisin katsomaan, miksi tämä pieni alkuperäinen 
 [h2]◆ Päivitys / Yhteensopivuus[/h2]
 Vanha settings.ini luetaan automaattisesti; vanhan language-kansion voi poistaa. Testattu versiolla 2.3.30; pitäisi toimia 1.3.10+. Ei muuta UI-resursseja eikä käytä Harmonya.
 
-PS. Kiitos kaikille tuesta! Kahdesta numerosta täysin säädettäväksi modiksi — rakensimme tämän yhdessä. Rakastan teitä ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Anteeksi…… katosin kokonaiseksi vuodeksi.
+
+Ei siksi, ettenkö olisi halunnut päivittää. Aina kun avasin Workshopin ja näin jonkun vielä kommentoivan, tunsin etten ollut tehnyt tarpeeksi hyvin, enkä uskaltanut näyttäytyä…… olen todella pahoillani.
+Sain vihdoin 2.0:n valmiiksi. Olin varmasti monessa paikassa kömpelö. Jos petän sinut jossain taas, kerrothan minulle, niin korjaan heti.
+Jos vielä haluat, tule takaisin katsomaan, miksi tämä pieni alkuperäinen modi on muuttunut. Pelkkä vilkaisu tekisi minut hyvin iloiseksi.
+Huh…… siinä kaikki tältä erää. Menen korjaamaan bugeja.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Kiitos kaikille tuesta—te olette syy, miksi jatkan tämän modin päivittämistä. Alussa näytimme vain numeroita, nyt on asetuksia ja monta kieltä, ja kasvatimme tämän yhdessä. Rakastan teitä ♥
 
 ###瑞典语|瑞典语
 TITLE: Bättre visning av hydrering och mättnad
 DESC:
 [h1]Bättre visning av hydrering och mättnad v2.0[/h1]
-[b]Ett år senare är jag tillbaka.[/b]
-
-Det har gått ett helt år sedan förra uppdateringen……
-Ärligt talat öppnade jag då och då Workshop och läste kommentarerna. Att se att det fortfarande finns ankungar som använder modden värmde verkligen.
-Några frågade ”uppdaterar författaren fortfarande?”…… Ja! Här är jag!
-
-Det här är 2.0 — inte en liten patch, utan en full omskrivning för den senaste spelversionen (2.3.30).
-Så, ankungar, kom tillbaka och se vad den här lilla originella modden har blivit! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Vad är nytt[/h2]
 [list]
@@ -1131,20 +1244,25 @@ Så, ankungar, kom tillbaka och se vad den här lilla originella modden har bliv
 [h2]◆ Uppgradering / Kompatibilitet[/h2]
 Gammal settings.ini läses automatiskt; den gamla language-mappen kan tas bort. Testad på 2.3.30; bör fungera från 1.3.10. Ändrar inte UI-resurser och använder inte Harmony.
 
-PS. Tack alla för stödet! Från två siffror till en helt justerbar mod — vi byggde det tillsammans. Jag älskar er ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Förlåt…… jag försvann i ett helt år.
+
+Inte för att jag inte ville uppdatera. Varje gång jag öppnade Workshop och såg att någon fortfarande kommenterade kände jag att jag inte hade gjort det tillräckligt bra, och jag vågade inte visa mig…… jag är verkligen ledsen.
+Nu är 2.0 äntligen klar. Jag var säkert klumpig på många ställen. Om jag gör er besvikna igen, säg till, så fixar jag det direkt.
+Om ni fortfarande vill, kom tillbaka och se vad den här lilla ursprungliga modden har blivit. Bara en snabb titt skulle göra mig väldigt glad.
+Öh…… det var allt för nu. Jag ska fixa buggar.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Tack alla för stödet—ni är anledningen till att jag fortsätter uppdatera den här modden. I början visade vi bara siffror, nu finns inställningar och många språk, och vi har byggt det tillsammans. Jag älskar er ♥
 
 ###土耳其语|土耳其语
 TITLE: Daha iyi sıvı ve tokluk göstergesi
 DESC:
 [h1]Daha iyi sıvı ve tokluk göstergesi v2.0[/h1]
-[b]Bir yıl sonra geri döndüm.[/b]
-
-Son güncellemeden bu yana tam bir yıl geçti……
-Açıkçası arada bir Workshop'u açıp yorumları okuyordum. Bu modu hâlâ kullanan ördek yavruları olduğunu görmek içimi gerçekten ısıttı.
-Bazıları “yazar hâlâ güncelliyor mu?” diye soruyordu…… Evet! Buradayım!
-
-Bu 2.0 — küçük bir yama değil, en yeni oyun sürümü (2.3.30) için tamamen yeniden yazılmış bir sürüm.
-Öyleyse ördek yavruları, geri dönün ve bu küçük orijinal modun neye dönüştüğünü görün! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Neler yeni[/h2]
 [list]
@@ -1169,20 +1287,25 @@ Bu 2.0 — küçük bir yama değil, en yeni oyun sürümü (2.3.30) için tamam
 [h2]◆ Yükseltme / Uyumluluk[/h2]
 Eski settings.ini otomatik okunur; eski language klasörü silinebilir. 2.3.30'da test edildi; 1.3.10+ sürümlerinde çalışmalı. UI kaynaklarını değiştirmez ve Harmony kullanmaz.
 
-PS. Desteğiniz için hepinize teşekkürler! İki sayıdan tamamen ayarlanabilir bir moda — bunu birlikte inşa ettik. Sizi seviyorum ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Özür dilerim…… tam bir yıl boyunca ortadan kayboldum.
+
+Güncellemek istemediğimden değil. Workshop'u her açtığımda birileri hâlâ yorum yazıyor diye görünce yeterince iyi yapamadığımı hissediyordum ve görünmeye korkuyordum…… gerçekten özür dilerim.
+Sonunda 2.0'ı bitirdim. Birçok yerde kesinlikle acemice davrandım. Eğer sizi yine bir yerde hayal kırıklığına uğratırsam, lütfen söyleyin, hemen düzeltirim.
+Hâlâ isterseniz, geri dönün ve bu küçük ilk modun neye dönüştüğünü görün. Sadece bir bakış bile beni çok mutlu eder.
+Ah…… şimdilik bu kadar. Gidip hataları düzeltiyorum.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Desteğiniz için hepinize teşekkürler—bu modu güncellemeye devam etmemin sebebi sizsiniz. Başta sadece sayılar gösteriyorduk, şimdi ayarlar ve birçok dil var, bunu birlikte büyüttük. Sizi seviyorum ♥
 
 ###越南语|越南语
 TITLE: Hiển thị chỉ số nước và độ no tốt hơn
 DESC:
 [h1]Hiển thị chỉ số nước và độ no tốt hơn v2.0[/h1]
-[b]Một năm sau, tôi đã trở lại.[/b]
-
-Đã tròn một năm kể từ lần cập nhật trước……
-Thật lòng mà nói, thỉnh thoảng tôi vẫn mở Workshop và đọc bình luận. Thấy vẫn còn những chú vịt con dùng mod này khiến tôi thấy rất ấm lòng.
-Có người hỏi “tác giả còn cập nhật không?”…… Có chứ! Tôi đây!
-
-Đây là 2.0 — không phải bản vá nhỏ, mà là viết lại hoàn toàn cho phiên bản game mới nhất (2.3.30).
-Vậy nên, các chú vịt con, hãy quay lại xem mod nhỏ bé ban đầu này đã trở thành gì nhé! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Có gì mới[/h2]
 [list]
@@ -1207,20 +1330,25 @@ Vậy nên, các chú vịt con, hãy quay lại xem mod nhỏ bé ban đầu n�
 [h2]◆ Nâng cấp / Tương thích[/h2]
 settings.ini cũ được đọc tự động; có thể xóa thư mục language cũ. Đã thử trên 2.3.30; nên chạy được từ 1.3.10 trở lên. Không sửa tài nguyên UI và không dùng Harmony.
 
-PS. Cảm ơn mọi người đã ủng hộ! Từ hai con số đến một mod chỉnh được hoàn toàn — chúng ta đã cùng xây nên nó. Yêu mọi người ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Xin lỗi…… mình đã biến mất cả một năm.
+
+Không phải vì mình không muốn cập nhật. Mỗi lần mở Workshop và thấy vẫn có bạn bình luận, mình cảm thấy mình làm chưa đủ tốt và không dám lộ mặt…… thật sự xin lỗi.
+Cuối cùng mình cũng viết xong 2.0. Chắc chắn mình đã vụng về ở nhiều chỗ. Nếu lại khiến bạn thất vọng, hãy nói cho mình biết nhé, mình sẽ sửa ngay.
+Nếu bạn vẫn còn muốn, hãy quay lại xem mod nhỏ bé ban đầu này giờ đã thành thế nào. Chỉ cần nhìn qua một chút thôi mình cũng rất vui rồi.
+Hic…… tạm thời như vậy đã. Mình đi sửa bug đây.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Cảm ơn mọi người đã ủng hộ—các bạn là lý do mình tiếp tục cập nhật mod này. Ban đầu chỉ hiển thị con số, giờ đã có cài đặt và nhiều ngôn ngữ, và chúng ta đã cùng nuôi lớn nó. Yêu mọi người ♥
 
 ###乌克兰语|乌克兰语
 TITLE: Покращене відображення спраги та голоду
 DESC:
 [h1]Покращене відображення спраги та голоду v2.0[/h1]
-[b]Через рік я повернувся.[/b]
-
-Минув цілий рік від останнього оновлення……
-Чесно кажучи, я час від часу відкривав Workshop і читав коментарі. Бачити, що модом досі користуються каченята, справді зігрівало.
-Хтось питав «автор ще оновлює?»…… Так! Ось я!
-
-Це 2.0 — не невелика латка, а повне переписування для найновішої версії гри (2.3.30).
-Тож, каченята, повертайтеся й подивіться, чим став цей маленький оригінальний мод! (๑•̀ㅂ•́)و✧
 
 [h2]◆ Що нового[/h2]
 [list]
@@ -1245,4 +1373,17 @@ DESC:
 [h2]◆ Оновлення / Сумісність[/h2]
 Старий settings.ini читається автоматично; стару папку language можна видалити. Перевірено на 2.3.30; має працювати на 1.3.10+. Не змінює ресурси UI та не використовує Harmony.
 
-PS. Дякую всім за підтримку! Від двох чисел до повністю настроюваного моду — ми збудували це разом. Люблю вас ♥
+[hr][/hr]
+
+[h2]2026.10[/h2]
+Вибачте…… я зникла на цілий рік.
+
+Не тому, що не хотіла оновлювати. Щоразу, коли я відкривала Workshop і бачила, що хтось досі коментує, мені здавалося, що я зробила недостатньо добре, і я боялася показатися…… справді вибачте.
+Нарешті я дописала 2.0. Напевно, багато де я була незграбною. Якщо я знову вас десь розчарую — будь ласка, скажіть мені, і я одразу виправлю.
+Якщо ви ще не проти, поверніться й подивіться, чим став цей маленький початковий мод. Навіть одного погляду мені буде достатньо, щоб дуже зрадіти.
+Ух…… поки що все. Піду виправляти баги.
+
+[hr][/hr]
+
+[h2]2025.10[/h2]
+P.S. Дякую всім за підтримку—саме ви причина, чому я продовжую оновлювати цей мод. Спочатку ми показували лише цифри, тепер є налаштування й багато мов, і ми виростили це разом. Люблю вас ♥
