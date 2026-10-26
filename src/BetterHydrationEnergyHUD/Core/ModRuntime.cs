@@ -4,7 +4,7 @@ namespace BetterHydrationEnergyHUD.Core
     public static class ModRuntime
     {
         public const string ModName = "BetterHydrationEnergyHUD";
-        public const string ModVersion = "2.1.1";
+        public const string ModVersion = "2.1.2";
         public const string Author = "Dorei_Hime";
 
         /// <summary>True once a live WaterHUD/EnergyHUD pair has been bound in a loaded level.</summary>

@@ -1,5 +1,15 @@
 # Release Notes
 
+## v2.1.2 — 2026-10-27（与其他 mod 的兼容修复）
+
+### 修复 / Fixed
+- 某些旧 mod 会在 `LevelManager.OnAfterLevelInitialized` 回调中抛异常（例如「近战cd显示」的 `ActionProgressHUD.parentCanvasGroup` 字段在 2.3.x 已改名为 `SliderCanvasGroup`，触发 `MissingFieldException`）。游戏虽捕获了异常，但 `LevelManager.AfterInit` 永远不会置 true，导致本 mod 的 HUD 一直不绑定、数值不显示。
+- 现在 HUD 增加兼容兜底：`LevelInited` 已为 true、不在加载场景、且主角色存在时，即使 `AfterInit` 为 false 也照常绑定；已实测两个 mod 同时启用时数值正常显示。
+- 该修复不改变「近战cd显示」本身：它仍然因字段过期而无法工作，需要作者更新。
+
+### 验证 / Verification
+- 实机：同时启用 BetterHydrationEnergyHUD v2.1.2 与 近战cd显示，日志中近战 mod 抛完 `MissingFieldException` 之后，本 mod 仍输出 `[BHE] HUD bound in level`，HUD 正常显示（作者确认）。
+
 ## v2.1.1 — 2026-10-26（语言热切换修复）
 
 ### 修复 / Fixed

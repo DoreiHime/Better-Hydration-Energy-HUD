@@ -1,10 +1,10 @@
-# Steam Workshop 全语种文案（30 种，v2.1.1，终版排版）
+# Steam Workshop 全语种文案（30 种，v2.1.2）
 # 排版：h1/h2 上下无空行；list 内无空行；正文段落间保留 1 空行。
 # 格式：###<key>|<Steam 语言下拉显示名> / TITLE: / DESC:
 ###简化中文|简体中文
 TITLE: 更好的吃喝数值可视化
 DESC:
-[h1]更好的吃喝数值可视化 v2.1.1[/h1]
+[h1]更好的吃喝数值可视化 v2.1.2[/h1]
 [h2]◆ 这次到底改了什么[/h2]
 [list]
 [*][b]快捷键可以改了！F10 和其他 mod 冲突的鸭宝可以换键（默认 F10）[/b]
@@ -70,7 +70,7 @@ DESC:
 ###繁体中文|繁体中文
 TITLE: 更好的吃喝數值可視化
 DESC:
-[h1]更好的吃喝數值可視化 v2.1.1[/h1]
+[h1]更好的吃喝數值可視化 v2.1.2[/h1]
 [h2]◆ 這次到底改了什麼[/h2]
 [list]
 [*][b]快捷鍵可以改了！F10 和其他 mod 衝突的鴨寶可以換鍵（預設 F10）[/b]
@@ -156,7 +156,7 @@ DESC:
 ###英语|英语
 TITLE: Better Hydration & Energy HUD
 DESC:
-[h1]Better Hydration & Energy HUD v2.1.1[/h1]
+[h1]Better Hydration & Energy HUD v2.1.2[/h1]
 [h2]◆ What's new[/h2]
 [list]
 [*][b]The hotkey is now rebindable! If F10 conflicts with another mod, just change it (default F10)[/b]
@@ -214,7 +214,7 @@ Ugh... that's all for now. I'm going to fix bugs.
 ###日语|日语
 TITLE: もっと見やすい水分・満腹度表示
 DESC:
-[h1]もっと見やすい水分・満腹度表示 v2.1.1[/h1]
+[h1]もっと見やすい水分・満腹度表示 v2.1.2[/h1]
 [h2]◆ 変わったこと[/h2]
 [list]
 [*][b]ホットキーを変更可能に！F10 が他の mod と衝突する場合は変えられます（既定は F10）[/b]
@@ -265,7 +265,7 @@ DESC:
 ###韩语|韩语
 TITLE: 더 나은 수분·포만감 수치 표시
 DESC:
-[h1]더 나은 수분·포만감 수치 표시 v2.1.1[/h1]
+[h1]더 나은 수분·포만감 수치 표시 v2.1.2[/h1]
 [h2]◆ 달라진 점[/h2]
 [list]
 [*][b]단축키 변경 가능! F10이 다른 모드와 겹치면 바꾸세요(기본 F10)[/b]
@@ -316,7 +316,7 @@ DESC:
 ###俄语|俄语
 TITLE: Улучшенное отображение жажды и голода
 DESC:
-[h1]Улучшенное отображение жажды и голода v2.1.1[/h1]
+[h1]Улучшенное отображение жажды и голода v2.1.2[/h1]
 [h2]◆ Что нового[/h2]
 [list]
 [*][b]Горячую клавишу можно изменить! Если F10 конфликтует с другим модом, поменяйте её (по умолчанию F10)[/b]
@@ -367,7 +367,7 @@ DESC:
 ###泰语|泰语
 TITLE: แสดงค่าน้ำและความอิ่มได้ชัดขึ้น
 DESC:
-[h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.1.1[/h1]
+[h1]แสดงค่าน้ำและความอิ่มได้ชัดขึ้น v2.1.2[/h1]
 [h2]◆ มีอะไรใหม่[/h2]
 [list]
 [*]ค่าตัวเลขขับเคลื่อนด้วยอีเวนต์ ไม่มีการpollบ่อย ๆ อีกต่อไป ต้นทุนประสิทธิภาพเกือบเป็นศูนย์ (ประมาณ 0.3%~0.5% ของเวลเฟรม)
@@ -415,7 +415,7 @@ settings.ini เดิมจะถูกอ่านอัตโนมัติ 
 ###印度尼西亚语|印度尼西亚语
 TITLE: Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
-[h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.1.1[/h1]
+[h1]Tampilan Nilai Hidrasi & Kenyang yang Lebih Baik v2.1.2[/h1]
 [h2]◆ Apa yang baru[/h2]
 [list]
 [*]Nilai berbasis event: tidak ada polling frekuensi tinggi lagi, biaya performa hampir nol (sekitar 0.3%~0.5% waktu frame)
@@ -463,7 +463,7 @@ Huh…… segitu dulu ya. Aku mau memperbaiki bug.
 ###马来语|马来语
 TITLE: Paparan Nilai Hidrasi & Kenyang yang Lebih Baik
 DESC:
-[h1]Paparan Nilai Hidrasi & Kenyang v2.1.1[/h1]
+[h1]Paparan Nilai Hidrasi & Kenyang v2.1.2[/h1]
 [h2]◆ Apa yang baharu[/h2]
 [list]
 [*]Nilai dipacu peristiwa — kos prestasi hampir sifar (sekitar 0.3%~0.5% masa bingkai)
@@ -513,7 +513,7 @@ Huh…… setakat ini dulu ya. Saya pergi betulkan bug.
 ###保加利亚语|保加利亚语
 TITLE: По-добро показване на хидратация и ситост
 DESC:
-[h1]По-добро показване на хидратация и ситост v2.1.1[/h1]
+[h1]По-добро показване на хидратация и ситост v2.1.2[/h1]
 [h2]◆ Какво е ново[/h2]
 [list]
 [*]Стойности, задвижвани от събития: без често запитване, почти нулева цена за производителност (около 0.3%~0.5% от времето за кадър)
@@ -561,7 +561,7 @@ DESC:
 ###捷克语|捷克语
 TITLE: Lepší zobrazení hydratace a sytosti
 DESC:
-[h1]Lepší zobrazení hydratace a sytosti v2.1.1[/h1]
+[h1]Lepší zobrazení hydratace a sytosti v2.1.2[/h1]
 [h2]◆ Co je nového[/h2]
 [list]
 [*]Hodnoty řízené událostmi: žádné časté dotazování, téměř nulová zátěž (asi 0.3%~0.5% času snímku)
@@ -609,7 +609,7 @@ Uf…… to je zatím vše. Jdu opravovat bugy.
 ###丹麦语|丹麦语
 TITLE: Bedre visning af hydrering og mæthed
 DESC:
-[h1]Bedre visning af hydrering og mæthed v2.1.1[/h1]
+[h1]Bedre visning af hydrering og mæthed v2.1.2[/h1]
 [h2]◆ Hvad er nyt[/h2]
 [list]
 [*]Værdier styret af hændelser: ingen hyppig polling, næsten nul ydeevneomkostning (ca. 0.3%~0.5% af frame-tiden)
@@ -657,7 +657,7 @@ Hvis I stadig vil, så kom tilbage og se, hvad dette lille oprindelige mod er bl
 ###德语|德语
 TITLE: Bessere Anzeige von Hydration & Sättigung
 DESC:
-[h1]Bessere Anzeige von Hydration & Sättigung v2.1.1[/h1]
+[h1]Bessere Anzeige von Hydration & Sättigung v2.1.2[/h1]
 [h2]◆ Was ist neu[/h2]
 [list]
 [*]Eventgesteuerte Werte: kein häufiges Polling mehr, fast keine Performancekosten (ca. 0.3%~0.5% der Frame-Zeit)
@@ -705,7 +705,7 @@ Uff…… erst mal so viel. Ich gehe Bugs fixen.
 ###西班牙语-西班牙|西班牙语 - 西班牙
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
-[h1]Mejor visualización de hidratación y saciedad v2.1.1[/h1]
+[h1]Mejor visualización de hidratación y saciedad v2.1.2[/h1]
 [h2]◆ Novedades[/h2]
 [list]
 [*]Valores basados en eventos: sin sondeos frecuentes, coste de rendimiento casi nulo (unos 0.3%~0.5% del tiempo de fotograma)
@@ -753,7 +753,7 @@ Uf…… eso es todo por ahora. Me voy a arreglar bugs.
 ###西班牙语-拉丁美洲|西班牙语 - 拉丁美洲
 TITLE: Mejor visualización de hidratación y saciedad
 DESC:
-[h1]Mejor visualización de hidratación y saciedad v2.1.1[/h1]
+[h1]Mejor visualización de hidratación y saciedad v2.1.2[/h1]
 [h2]◆ Novedades[/h2]
 [list]
 [*]Valores basados en eventos: sin sondeos frecuentes, costo de rendimiento casi nulo (aprox. 0.3%~0.5% del tiempo de cuadro)
@@ -801,7 +801,7 @@ Uf…… eso es todo por ahora. Me voy a arreglar bugs.
 ###希腊语|希腊语
 TITLE: Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού
 DESC:
-[h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.1.1[/h1]
+[h1]Καλύτερη εμφάνιση ενυδάτωσης και κορεσμού v2.1.2[/h1]
 [h2]◆ Τι νέο υπάρχει[/h2]
 [list]
 [*]Τιμές που οδηγούνται από συμβάντα: χωρίς συχνά polls, σχεδόν μηδενικό κόστος απόδοσης (περίπου 0.3%~0.5% του χρόνου καρέ)
@@ -849,7 +849,7 @@ DESC:
 ###法语|法语
 TITLE: Meilleur affichage de l'hydratation et de la satiété
 DESC:
-[h1]Meilleur affichage de l'hydratation et de la satiété v2.1.1[/h1]
+[h1]Meilleur affichage de l'hydratation et de la satiété v2.1.2[/h1]
 [h2]◆ Quoi de neuf[/h2]
 [list]
 [*]Valeurs pilotées par événements : plus d'interrogation fréquente, coût de performance quasi nul (environ 0.3%~0.5% du temps de frame)
@@ -897,7 +897,7 @@ Euh…… c'est tout pour l'instant. Je vais corriger des bugs.
 ###意大利语|意大利语
 TITLE: Visualizzazione migliore di idratazione e sazietà
 DESC:
-[h1]Visualizzazione migliore di idratazione e sazietà v2.1.1[/h1]
+[h1]Visualizzazione migliore di idratazione e sazietà v2.1.2[/h1]
 [h2]◆ Novità[/h2]
 [list]
 [*]Valori basati su eventi: niente polling frequente, costo prestazioni quasi nullo (circa 0.3%~0.5% del tempo di frame)
@@ -945,7 +945,7 @@ Uff…… per ora è tutto. Vado a sistemare i bug.
 ###匈牙利语|匈牙利语
 TITLE: Jobb hidratáció- és jóllakottság-kijelző
 DESC:
-[h1]Jobb hidratáció- és jóllakottság-kijelző v2.1.1[/h1]
+[h1]Jobb hidratáció- és jóllakottság-kijelző v2.1.2[/h1]
 [h2]◆ Mi új?[/h2]
 [list]
 [*]Eseményvezérelt értékek: nincs gyakori lekérdezés, szinte nulla teljesítményköltség (kb. 0.3%~0.5% képkockaidő)
@@ -993,7 +993,7 @@ Hú…… egyelőre ennyi. Megyek javítani a bugokat.
 ###荷兰语|荷兰语
 TITLE: Betere weergave van hydratatie en verzadiging
 DESC:
-[h1]Betere weergave van hydratatie en verzadiging v2.1.1[/h1]
+[h1]Betere weergave van hydratatie en verzadiging v2.1.2[/h1]
 [h2]◆ Wat is er nieuw[/h2]
 [list]
 [*]Waarden op basis van events: geen frequente polling meer, bijna geen prestatiekosten (ongeveer 0.3%~0.5% van de frametijd)
@@ -1041,7 +1041,7 @@ Eh…… dat is het voor nu. Ik ga bugs fixen.
 ###挪威语|挪威语
 TITLE: Bedre visning av hydrering og metthet
 DESC:
-[h1]Bedre visning av hydrering og metthet v2.1.1[/h1]
+[h1]Bedre visning av hydrering og metthet v2.1.2[/h1]
 [h2]◆ Hva er nytt[/h2]
 [list]
 [*]Hendelsesdrevne verdier: ingen hyppig polling, nesten null ytelseskostnad (ca. 0.3%~0.5% av bildetiden)
@@ -1089,7 +1089,7 @@ Hvis dere fortsatt vil, kom tilbake og se hva denne lille opprinnelige modden ha
 ###波兰语|波兰语
 TITLE: Lepsze wyświetlanie nawodnienia i sytości
 DESC:
-[h1]Lepsze wyświetlanie nawodnienia i sytości v2.1.1[/h1]
+[h1]Lepsze wyświetlanie nawodnienia i sytości v2.1.2[/h1]
 [h2]◆ Co nowego[/h2]
 [list]
 [*]Wartości oparte na zdarzeniach: bez częstego odpytywania, niemal zerowy koszt wydajności (około 0.3%~0.5% czasu klatki)
@@ -1137,7 +1137,7 @@ Uch…… to na razie tyle. Idę naprawiać bugi.
 ###葡萄牙语-葡萄牙|葡萄牙语 - 葡萄牙
 TITLE: Melhor visualização de hidratação e saciedade
 DESC:
-[h1]Melhor visualização de hidratação e saciedade v2.1.1[/h1]
+[h1]Melhor visualização de hidratação e saciedade v2.1.2[/h1]
 [h2]◆ O que há de novo[/h2]
 [list]
 [*]Valores baseados em eventos: sem sondagens frequentes, custo de desempenho quase nulo (cerca de 0.3%~0.5% do tempo de frame)
@@ -1185,7 +1185,7 @@ Uh…… é tudo por agora. Vou arranjar bugs.
 ###葡萄牙语-巴西|葡萄牙语 - 巴西
 TITLE: Melhor exibição de hidratação e saciedade
 DESC:
-[h1]Melhor exibição de hidratação e saciedade v2.1.1[/h1]
+[h1]Melhor exibição de hidratação e saciedade v2.1.2[/h1]
 [h2]◆ O que há de novo[/h2]
 [list]
 [*]Valores baseados em eventos: sem polling frequente, custo de desempenho quase zero (cerca de 0.3%~0.5% do tempo de frame)
@@ -1233,7 +1233,7 @@ Uf…… é tudo por agora. Vou consertar bugs.
 ###罗马尼亚语|罗马尼亚语
 TITLE: Afișare mai bună a hidratării și sațietății
 DESC:
-[h1]Afișare mai bună a hidratării și sațietății v2.1.1[/h1]
+[h1]Afișare mai bună a hidratării și sațietății v2.1.2[/h1]
 [h2]◆ Ce este nou[/h2]
 [list]
 [*]Valori bazate pe evenimente: fără interogări frecvente, cost de performanță aproape zero (aproximativ 0.3%~0.5% din timpul cadrului)
@@ -1281,7 +1281,7 @@ Of…… asta e tot deocamdată. Mă duc să repar bug-uri.
 ###芬兰语|芬兰语
 TITLE: Parempi nesteytyksen ja kylläisyyden näyttö
 DESC:
-[h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.1.1[/h1]
+[h1]Parempi nesteytyksen ja kylläisyyden näyttö v2.1.2[/h1]
 [h2]◆ Mitä uutta[/h2]
 [list]
 [*]Tapahtumapohjaiset arvot: ei tiheää kyselyä, lähes nolla suorituskykykustannus (noin 0.3%~0.5% kuvakehyksen ajasta)
@@ -1329,7 +1329,7 @@ Huh…… siinä kaikki tältä erää. Menen korjaamaan bugeja.
 ###瑞典语|瑞典语
 TITLE: Bättre visning av hydrering och mättnad
 DESC:
-[h1]Bättre visning av hydrering och mättnad v2.1.1[/h1]
+[h1]Bättre visning av hydrering och mättnad v2.1.2[/h1]
 [h2]◆ Vad är nytt[/h2]
 [list]
 [*]Händelsestyrda värden: ingen frekvent polling, nästan noll prestandakostnad (cirka 0.3%~0.5% av bildtiden)
@@ -1377,7 +1377,7 @@ Om ni fortfarande vill, kom tillbaka och se vad den här lilla ursprungliga modd
 ###土耳其语|土耳其语
 TITLE: Daha iyi sıvı ve tokluk göstergesi
 DESC:
-[h1]Daha iyi sıvı ve tokluk göstergesi v2.1.1[/h1]
+[h1]Daha iyi sıvı ve tokluk göstergesi v2.1.2[/h1]
 [h2]◆ Neler yeni[/h2]
 [list]
 [*]Olay tabanlı değerler: sık sorgulama yok, performans maliyeti neredeyse sıfır (kare süresinin yaklaşık %0.3~%0.5'i)
@@ -1425,7 +1425,7 @@ Ah…… şimdilik bu kadar. Gidip hataları düzeltiyorum.
 ###越南语|越南语
 TITLE: Hiển thị chỉ số nước và độ no tốt hơn
 DESC:
-[h1]Hiển thị chỉ số nước và độ no tốt hơn v2.1.1[/h1]
+[h1]Hiển thị chỉ số nước và độ no tốt hơn v2.1.2[/h1]
 [h2]◆ Có gì mới[/h2]
 [list]
 [*]Giá trị dựa trên sự kiện: không còn hỏi liên tục, chi phí hiệu năng gần như bằng không (khoảng 0.3%~0.5% thời gian khung hình)
@@ -1473,7 +1473,7 @@ Hic…… tạm thời như vậy đã. Mình đi sửa bug đây.
 ###乌克兰语|乌克兰语
 TITLE: Покращене відображення спраги та голоду
 DESC:
-[h1]Покращене відображення спраги та голоду v2.1.1[/h1]
+[h1]Покращене відображення спраги та голоду v2.1.2[/h1]
 [h2]◆ Що нового[/h2]
 [list]
 [*]Значення на основі подій: без частого опитування, майже нульові витрати продуктивності (близько 0.3%~0.5% часу кадру)

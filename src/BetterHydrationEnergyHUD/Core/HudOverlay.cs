@@ -225,10 +225,19 @@ namespace BetterHydrationEnergyHUD.Core
             {
                 try
                 {
-                    return LevelManager.Instance != null
-                           && LevelManager.LevelInited
-                           && LevelManager.AfterInit
-                           && !SceneLoader.IsSceneLoading;
+                    if (LevelManager.Instance == null) return false;
+                    if (!LevelManager.LevelInited) return false;
+                    if (SceneLoader.IsSceneLoading) return false;
+                    if (LevelManager.AfterInit) return true;
+
+                    // Compatibility fallback:
+                    // LevelManager.InitLevel invokes OnAfterLevelInitialized inside a try/catch
+                    // and only sets afterInit = true *after* the event. If any other mod's
+                    // subscriber throws, the exception is swallowed but afterInit stays false
+                    // forever (e.g. the outdated "近战cd显示" mod throws MissingFieldException
+                    // for ActionProgressHUD.parentCanvasGroup). LevelInited is already true at
+                    // this point, so bind the HUD anyway once the main character exists.
+                    return CharacterMainControl.Main != null;
                 }
                 catch
                 {

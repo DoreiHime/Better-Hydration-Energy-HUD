@@ -4,7 +4,7 @@
 
 HUD mod for **Escape from Duckov**: shows how much is missing and the **current / max** value next to the hydration and hunger rings.
 
-> **v2.1.1** — one DLL, **10 game languages**, **rebindable F10 hotkey**, **zero prerequisites**.
+> **v2.1.2** — one DLL, **10 game languages**, **rebindable F10 hotkey**, **zero prerequisites**.
 
 ## Highlights
 
